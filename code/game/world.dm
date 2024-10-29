@@ -139,6 +139,9 @@ GLOBAL_VAR(tracy_log)
 
 	RunUnattendedFunctions()
 
+	maxx = 510
+	maxy = 510
+
 /// Initializes TGS and loads the returned revising info into GLOB.revdata
 /world/proc/InitTgs()
 	TgsNew(new /datum/tgs_event_handler/impl, TGS_SECURITY_TRUSTED)

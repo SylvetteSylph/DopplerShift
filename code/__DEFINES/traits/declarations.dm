@@ -1320,6 +1320,9 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 ///Trait that prevents mobs from stopping by grabbing objects
 #define TRAIT_NOGRAV_ALWAYS_DRIFT "nograv_always_drift"
 
+/// DOPPLER - Trait for if the trait owner can pass through deep water without anything bad happening
+#define TRAIT_DEEP_WATER_PASSER "ice_road_trucker"
+
 ///Mobs with these trait do not get italicized/quiet speech when speaking in low pressure
 #define TRAIT_SPEECH_BOOSTER "speech_booster"
 

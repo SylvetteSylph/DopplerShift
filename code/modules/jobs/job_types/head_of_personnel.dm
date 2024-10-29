@@ -40,7 +40,7 @@
 
 	family_heirlooms = list(/obj/item/reagent_containers/cup/glass/trophy/silver_cup)
 	rpg_title = "Guild Questgiver"
-	job_flags = STATION_JOB_FLAGS | HEAD_OF_STAFF_JOB_FLAGS
+	// job_flags = STATION_JOB_FLAGS | HEAD_OF_STAFF_JOB_FLAGS
 
 	human_authority = JOB_AUTHORITY_HUMANS_ONLY
 
@@ -71,11 +71,6 @@
 		/obj/item/gun/energy/e_gun,
 		/obj/item/stamp/head/hop,
 		)
-
-/datum/outfit/job/hop/pre_equip(mob/living/carbon/human/H)
-	..()
-	if(check_holidays(IAN_HOLIDAY))
-		undershirt = /datum/sprite_accessory/undershirt/ian
 
 //only pet worth reviving
 /datum/job/head_of_personnel/get_mail_goodies(mob/recipient)
