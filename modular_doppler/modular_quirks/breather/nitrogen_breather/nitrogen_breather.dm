@@ -1,4 +1,4 @@
-/datum/quirk/item_quirk/breather
+/* /datum/quirk/item_quirk/breather // THIS WOULD BE SUB-OPTIMAL IN FANTASYSTATION
 	abstract_parent_type = /datum/quirk/item_quirk/breather
 	icon = FA_ICON_LUNGS_VIRUS
 	var/breath_type = "oxygen"
@@ -43,4 +43,4 @@
 	target_lungs.breath_present += list(/datum/gas/oxygen = "too_much_oxygen")
 	target_lungs.breath_lost += list(/datum/gas/oxygen = "safe_oxygen")
 	// reflect correct lung flags
-	target_lungs.respiration_type = RESPIRATION_N2
+	target_lungs.respiration_type = RESPIRATION_N2 */

@@ -1,4 +1,4 @@
-/datum/preference/choiced/permitted_cybernetic
+/* /datum/preference/choiced/permitted_cybernetic
 	category = PREFERENCE_CATEGORY_MANUALLY_RENDERED
 	savefile_key = "permitted_cybernetic"
 	savefile_identifier = PREFERENCE_CHARACTER
@@ -17,4 +17,4 @@
 	return "Permitted Cybernetic" in preferences.all_quirks
 
 /datum/preference/choiced/permitted_cybernetic/apply_to_human(mob/living/carbon/human/target, value)
-	return
+	return */

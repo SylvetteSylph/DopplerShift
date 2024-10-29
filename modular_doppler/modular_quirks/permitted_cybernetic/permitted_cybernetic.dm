@@ -1,3 +1,4 @@
+/* OOPS NO CYBERNETICS HERE
 GLOBAL_LIST_INIT(possible_quirk_implants, list(
 	"Engineering Toolset" = /obj/item/organ/internal/cyberimp/arm/toolset,
 	"Surgery Toolset" = /obj/item/organ/internal/cyberimp/arm/surgery,
@@ -71,3 +72,4 @@ GLOBAL_LIST_INIT(possible_quirk_implants, list(
 		quirk_holder.icon_state = "hud_imp_quirk"
 	else
 		set_hud_image_inactive(SEC_IMPLANT_HUD)
+*/

@@ -1,7 +1,7 @@
 // What will be supplied to proc/init_possible_values and proc/apply_to_human
 GLOBAL_LIST_INIT(frame_types, list(
 	"none",
-	"bare",
+	/* "bare",
 	"synth_lizard",
 	"bs_one",
 	"bs_two",
@@ -15,13 +15,13 @@ GLOBAL_LIST_INIT(frame_types, list(
 	"wtm",
 	"xmg_one",
 	"xmg_two",
-	"zhp",
+	"zhp", */
 	))
 
 // What will be showed in the drop-down
 GLOBAL_LIST_INIT(frame_type_names, list(
 	"none" = "Species Default",
-	"bare" = "Bare",
+	/* "bare" = "Bare",
 	"synth_lizard" = "Synthetic Lizard",
 	"bs_one" = "Bishop Cyberkinetics",
 	"bs_two" = "Bishop Cyberkinetics 2.0",
@@ -35,7 +35,7 @@ GLOBAL_LIST_INIT(frame_type_names, list(
 	"wtm" = "Ward Takahashi Manufacturing",
 	"xmg_one" = "Xion Manufacturing Group",
 	"xmg_two" = "Xion Manufacturing Group 2.0",
-	"zhp" = "Zeng-Hu Pharmaceuticals",
+	"zhp" = "Zeng-Hu Pharmaceuticals", */
 	))
 
 /datum/species/regenerate_organs(mob/living/carbon/target, datum/species/old_species, replace_current = TRUE, list/excluded_zones, visual_only = FALSE)
