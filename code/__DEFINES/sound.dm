@@ -53,7 +53,7 @@
 #define AMBIENCE_AWAY "away"
 #define AMBIENCE_REEBE "reebe" //unused
 #define AMBIENCE_CREEPY "creepy" //not to be confused with spooky
-#define AMBIENCE_FANTASY_SURFACE "fantasy_surface"
+#define AMBIENCE_FANTASY_SURFACE "fantasy_surface" // DOPPLER EDIT ADDITION
 
 //default byond sound environments
 #define SOUND_ENVIRONMENT_NONE -1

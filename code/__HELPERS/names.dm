@@ -373,7 +373,7 @@ GLOBAL_DATUM(syndicate_code_response_regex, /regex)
 			return "a blood filter"
 		if(TOOL_ROLLINGPIN)
 			return "a rolling pin"
-		if(TOOL_AXE)
-			return "an axe"
+		if(TOOL_AXE) // DOPPLER EDIT ADDITION
+			return "an axe" // DOPPLER EDIT ADDITION
 		else
 			return "something... but the gods didn't set this up right (Please report this bug)"

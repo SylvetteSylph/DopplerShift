@@ -20,11 +20,11 @@
 	high_threshold_cleared = span_info("Your vision functions passably once more.")
 	low_threshold_cleared = span_info("Your vision is cleared of any ailment.")
 
-	actions_types = list(/datum/action/item_action/organ_action/toggle)
-	/// If we are zoomed with our scope component
-	var/zoomed = FALSE
-	/// What range power are we giving to the scope component?
-	var/range_power = 2
+	actions_types = list(/datum/action/item_action/organ_action/toggle) // DOPPLER EDIT CHANGE
+	/// If we are zoomed with our scope component // DOPPLER EDIT CHANGE
+	var/zoomed = FALSE // DOPPLER EDIT CHANGE
+	/// What range power are we giving to the scope component? // DOPPLER EDIT CHANGE
+	var/range_power = 2 // DOPPLER EDIT CHANGE
 
 	/// Sight flags this eye pair imparts on its user.
 	var/sight_flags = NONE
@@ -60,7 +60,7 @@
 	/// Scarring on this organ
 	var/scarring = NONE
 
-/obj/item/organ/internal/eyes/Initialize(mapload)
+/obj/item/organ/internal/eyes/Initialize(mapload) // DOPPLER EDIT ADDITION START
 	. = ..()
 	AddComponent(/datum/component/scope, range_modifier = range_power)
 
@@ -80,7 +80,7 @@
 			return
 
 		zoom.zoom(user)
-		zoomed = TRUE
+		zoomed = TRUE // DOPPLER EDIT ADDITION END
 
 /obj/item/organ/internal/eyes/mob_insert(mob/living/carbon/receiver, special, movement_flags)
 	// If we don't do this before everything else, heterochromia will be reset leading to eye_color_right no longer being accurate

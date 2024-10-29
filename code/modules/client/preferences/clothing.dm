@@ -183,7 +183,7 @@
 	return assoc_to_keys_features(SSaccessories.underwear_list)
 
 /datum/preference/choiced/underwear/create_default_value()
-	return /datum/sprite_accessory/underwear/nude::name
+	return /datum/sprite_accessory/underwear/nude::name // DOPPLER EDIT - ORIGINAL - return /datum/sprite_accessory/underwear/male_hearts::name]
 
 /datum/preference/choiced/underwear/icon_for(value)
 	var/static/icon/lower_half

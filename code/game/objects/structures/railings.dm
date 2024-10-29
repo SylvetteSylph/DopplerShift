@@ -18,8 +18,8 @@
 	///item released when deconstructed
 	var/item_deconstruct = /obj/item/stack/rods
 
-	/// Can it be deconstructed like a regular railing?
-	var/deconstructs_normally = TRUE
+	/// Can it be deconstructed like a regular railing? // DOPPLER EDIT ADDITION
+	var/deconstructs_normally = TRUE // DOPPLER EDIT ADDITION
 
 /datum/armor/structure_railing
 	melee = 35
@@ -79,7 +79,7 @@
 
 /obj/structure/railing/examine(mob/user)
 	. = ..()
-	if(deconstructs_normally)
+	if(deconstructs_normally) // DOPPLER EDIT ADDITION
 		if(anchored == TRUE)
 			. += span_notice("The railing is <b>bolted</b> to the floor.")
 		else
@@ -105,8 +105,8 @@
 
 /obj/structure/railing/wirecutter_act(mob/living/user, obj/item/I)
 	. = ..()
-	if(!deconstructs_normally)
-		return FALSE
+	if(!deconstructs_normally) // DOPPLER EDIT ADDITION
+		return FALSE // DOPPLER EDIT ADDITION
 	if(resistance_flags & INDESTRUCTIBLE)
 		to_chat(user, span_warning("You try to cut apart the railing, but it's too hard!"))
 		I.play_tool_sound(src, 100)
@@ -124,8 +124,8 @@
 ///Implements behaviour that makes it possible to unanchor the railing.
 /obj/structure/railing/wrench_act(mob/living/user, obj/item/I)
 	. = ..()
-	if(!deconstructs_normally)
-		return FALSE
+	if(!deconstructs_normally) // DOPPLER EDIT ADDITION
+		return FALSE // DOPPLER EDIT ADDITION
 	to_chat(user, span_notice("You begin to [anchored ? "unfasten the railing from":"fasten the railing to"] the floor..."))
 	if(I.use_tool(src, user, volume = 75, extra_checks = CALLBACK(src, PROC_REF(check_anchored), anchored)))
 		set_anchored(!anchored)

@@ -14,8 +14,8 @@
 #define SEE_THROUGH_MAP_SHIPPING_CONTAINER "shipping_container"
 ///Seethrough component for the ratvar wreck, in shape of the ratvar wreck
 #define SEE_THROUGH_MAP_RATVAR_WRECK "ratvar"
-/// Seethrough component for just the object, nothing else
-#define SEE_THROUGH_MAP_JUST_THE_OBJECT_TILE "just_one_more_thing"
+/// Seethrough component for just the object, nothing else // DOPPLER EDIT ADDITION
+#define SEE_THROUGH_MAP_JUST_THE_OBJECT_TILE "just_one_more_thing" // DOPPLER EDIT ADDITION
 
 
 /**global statics for the see_through_component coordinate maps
@@ -32,10 +32,10 @@ GLOBAL_LIST_INIT(see_through_maps, list(
 	/*----------------*/list(0, 0, 0)
 	),
 
-	// A
+	// A // DOPPLER EDIT ADDITION START
 	SEE_THROUGH_MAP_JUST_THE_OBJECT_TILE = list(
 	/*----------------*/list(0, 0, 0)
-	),
+	), // DOPPLER EDIT END
 
 	// XXX
 	// XXX

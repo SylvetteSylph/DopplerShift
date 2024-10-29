@@ -71,7 +71,7 @@
 	TOOL_WELDER,
 	TOOL_WIRECUTTER,
 	TOOL_WRENCH,
-	TOOL_AXE,
+	TOOL_AXE, // DOPPLER EDIT ADDITION
 	)
 
 /obj/item/debug/omnitool/attack_self(mob/user)

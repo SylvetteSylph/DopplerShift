@@ -480,8 +480,8 @@
 	else if (siemens_coefficient <= 0.5)
 		.["partially insulated"] = "It is made from a poor insulator that will dampen (but not fully block) electric shocks passing through it."
 
-	if(campfire_fuel_value)
-		. += span_notice("It is flammable and will make a campfire burn <b>[round(campfire_fuel_value / (1 MINUTES), 0.1)] minute(s)</b> longer")
+	if(campfire_fuel_value) // DOPPLER EDIT ADDITION ( AND THE LINE BELOW THIS )
+		. += span_notice("It is flammable and will make a fire burn <b>[round(campfire_fuel_value / (1 MINUTES), 0.1)] minute(s)</b> longer")
 
 	if(resistance_flags & INDESTRUCTIBLE)
 		.["indestructible"] = "It is extremely robust! It'll probably withstand anything that could happen to it!"

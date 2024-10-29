@@ -1,5 +1,5 @@
 // A 10% chance that out of a group of 25 people, one person will get appendicitis in 1 hour.
-#define APPENDICITIS_PROB 0
+#define APPENDICITIS_PROB 0 // DOPPLER EDIT CHANGE
 #define INFLAMATION_ADVANCEMENT_PROB 2
 
 /obj/item/organ/internal/appendix

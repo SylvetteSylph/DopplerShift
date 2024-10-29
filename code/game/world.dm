@@ -139,8 +139,8 @@ GLOBAL_VAR(tracy_log)
 
 	RunUnattendedFunctions()
 
-	maxx = 510
-	maxy = 510
+	maxx = 510 // DOPPLER EDIT ADDITION
+	maxy = 510 // DOPPLER EDIT ADDITION
 
 /// Initializes TGS and loads the returned revising info into GLOB.revdata
 /world/proc/InitTgs()

@@ -36,7 +36,7 @@
 		/obj/effect/spawner/random/medical/memeorgans = 1
 	)
 	rpg_title = "Cleric"
-	// job_flags = STATION_JOB_FLAGS
+	// job_flags = STATION_JOB_FLAGS // DOPPLER EDIT CHANGE
 
 
 /datum/outfit/job/doctor

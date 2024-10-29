@@ -190,12 +190,12 @@ GLOBAL_LIST_INIT(creepy_ambience,list(
 	'sound/effects/hallucinations/wail.ogg',
 ))
 
-GLOBAL_LIST_INIT(fantasy_surface_ambience,list(
+GLOBAL_LIST_INIT(fantasy_surface_ambience,list( // DOPPLER EDIT ADDITION START
 	'sound/ambience/fantasy/wind_ambience_1.ogg',
 	'sound/ambience/fantasy/wind_ambience_2.ogg',
 	'sound/ambience/fantasy/wind_ambience_3.ogg',
 	'sound/ambience/fantasy/wind_ambience_4.ogg',
-))
+)) // DOPPLER EDIT END
 
 GLOBAL_LIST_INIT(ambience_assoc,list(
 	AMBIENCE_AWAY = GLOB.away_ambience,
@@ -213,5 +213,5 @@ GLOBAL_LIST_INIT(ambience_assoc,list(
 	AMBIENCE_RUINS = GLOB.ruins_ambience,
 	AMBIENCE_SPACE = GLOB.space_ambience,
 	AMBIENCE_SPOOKY = GLOB.spooky_ambience,
-	AMBIENCE_FANTASY_SURFACE = GLOB.fantasy_surface_ambience
+	AMBIENCE_FANTASY_SURFACE = GLOB.fantasy_surface_ambience // DOPPLER EDIT ADDITION
 ))
