@@ -1,4 +1,4 @@
-/datum/loadout_category/feet
+/* /datum/loadout_category/feet
 	category_name = "Feet"
 	category_ui_icon = FA_ICON_SHOE_PRINTS
 	type_to_generate = /datum/loadout_item/shoes
@@ -121,4 +121,4 @@
 
 /datum/loadout_item/shoes/wraps/leggy
 	name = "Cloth Legwraps"
-	item_path = /obj/item/clothing/shoes/wraps/leggy
+	item_path = /obj/item/clothing/shoes/wraps/leggy */

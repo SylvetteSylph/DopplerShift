@@ -1,5 +1,5 @@
 /// Accessory Items (Moves overrided items to backpack)
-/datum/loadout_category/accessories
+/* /datum/loadout_category/accessories // DOPPLER EDIT REMOVAL WHOLE FILE
 	category_name = "Accessory"
 	category_ui_icon = FA_ICON_VEST
 	type_to_generate = /datum/loadout_item/accessory
@@ -89,4 +89,4 @@
 /datum/loadout_item/accessory/pride
 	name = "Pride Pin"
 	item_path = /obj/item/clothing/accessory/pride
-	can_be_reskinned = TRUE
+	can_be_reskinned = TRUE */ // DOPPLER EDIT REMOVAL END

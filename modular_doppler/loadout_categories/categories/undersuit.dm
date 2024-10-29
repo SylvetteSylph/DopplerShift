@@ -1,4 +1,4 @@
-/datum/loadout_category/undersuit
+/* /datum/loadout_category/undersuit
 	category_name = "Undersuit"
 	category_ui_icon = FA_ICON_SHIRT
 	type_to_generate = /datum/loadout_item/undersuit
@@ -262,4 +262,4 @@
 
 /datum/loadout_item/undersuit/gear_harness
 	name = "Gear Harness"
-	item_path = /obj/item/clothing/under/misc/gear_harness
+	item_path = /obj/item/clothing/under/misc/gear_harness */

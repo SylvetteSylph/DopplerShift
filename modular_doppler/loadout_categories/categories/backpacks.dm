@@ -1,4 +1,4 @@
-/datum/loadout_category/backpack
+/* /datum/loadout_category/backpack
 	category_name = "Back"
 	category_ui_icon = FA_ICON_ARCHIVE
 	type_to_generate = /datum/loadout_item/backpack
@@ -48,4 +48,4 @@
 
 /datum/loadout_item/backpack/messenger/industrial
 	name = "Custom Industrial Messenger Bag"
-	item_path = /obj/item/storage/backpack/messenger/eng/custom
+	item_path = /obj/item/storage/backpack/messenger/eng/custom */

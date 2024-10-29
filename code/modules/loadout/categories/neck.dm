@@ -23,7 +23,7 @@
 	name = "Scarf (Larger, Colorable)"
 	item_path = /obj/item/clothing/neck/infinity_scarf
 
-/datum/loadout_item/neck/necktie
+/* /datum/loadout_item/neck/necktie // DOPPLER EDIT REMOVAL
 	name = "Necktie (Colorable)"
 	item_path = /obj/item/clothing/neck/tie
 
@@ -33,4 +33,4 @@
 
 /datum/loadout_item/neck/necktie_loose
 	name = "Necktie (Loose)"
-	item_path = /obj/item/clothing/neck/tie/detective
+	item_path = /obj/item/clothing/neck/tie/detective */

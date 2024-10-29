@@ -1,5 +1,5 @@
 /// Head Slot Items (Deletes overrided items)
-/datum/loadout_category/head
+/* /datum/loadout_category/head // DOPPLER EDIT REMOVAL ALSO THIS WHOLE FILE
 	category_name = "Head"
 	category_ui_icon = FA_ICON_HAT_COWBOY
 	type_to_generate = /datum/loadout_item/head
@@ -147,7 +147,7 @@
 /datum/loadout_item/head/geranium
 	name = "Geranium"
 	item_path = /obj/item/food/grown/poppy/geranium
-	
+
 /datum/loadout_item/head/harebell
 	name = "Harebell"
 	item_path = /obj/item/food/grown/harebell
@@ -155,4 +155,4 @@
 /datum/loadout_item/head/wig
 	name = "Wig"
 	item_path = /obj/item/clothing/head/wig/natural
-	additional_displayed_text = list("Hair Color")
+	additional_displayed_text = list("Hair Color") */ // DOPPLER EDIT REMOVAL END

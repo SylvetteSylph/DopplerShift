@@ -1,4 +1,4 @@
-/datum/loadout_category/belt
+/* /datum/loadout_category/belt
 	category_name = "Belt"
 	category_ui_icon = FA_ICON_SCREWDRIVER_WRENCH
 	type_to_generate = /datum/loadout_item/belts
@@ -135,4 +135,4 @@
 
 /datum/loadout_item/belts/deforest_surgical
 	name = "Firest Responder Med-kit"
-	item_path = /obj/item/storage/backpack/duffelbag/deforest_surgical
+	item_path = /obj/item/storage/backpack/duffelbag/deforest_surgical */

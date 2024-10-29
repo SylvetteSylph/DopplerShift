@@ -1,4 +1,4 @@
-/datum/loadout_category/ears
+/* /datum/loadout_category/ears
 	category_name = "Ears"
 	category_ui_icon = FA_ICON_EAR_LISTEN
 	type_to_generate = /datum/loadout_item/ears
@@ -26,4 +26,4 @@
 
 /datum/loadout_item/ears/frontier
 	name = "Frontier Radio"
-	item_path = /obj/item/radio/headset/headset_frontier_colonist
+	item_path = /obj/item/radio/headset/headset_frontier_colonist */

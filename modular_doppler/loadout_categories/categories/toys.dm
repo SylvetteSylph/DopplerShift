@@ -1,5 +1,5 @@
 /// Inhand items (Moves overrided items to backpack)
-/datum/loadout_category/toys
+/* /datum/loadout_category/toys
 	category_name = "Recreative"
 	category_ui_icon = FA_ICON_GUITAR
 	type_to_generate = /datum/loadout_item/toy
@@ -75,4 +75,4 @@
 /datum/loadout_item/toy/harmonica
 	name = "Harmonica"
 	item_path = /obj/item/instrument/harmonica
-	restricted_roles =  list(JOB_PRISONER)
+	restricted_roles =  list(JOB_PRISONER) */

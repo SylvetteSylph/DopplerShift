@@ -1,4 +1,4 @@
-/datum/loadout_category/face
+/* /datum/loadout_category/face
 	category_name = "Face"
 	category_ui_icon = FA_ICON_MASK
 	type_to_generate = /datum/loadout_item/mask
@@ -74,4 +74,4 @@
 
 /datum/loadout_item/mask/neck_gaiter
 	name = "Neck Gaiter"
-	item_path = /obj/item/clothing/mask/neck_gaiter
+	item_path = /obj/item/clothing/mask/neck_gaiter */

@@ -1,4 +1,4 @@
-/datum/loadout_item/head/chicken
+/* /datum/loadout_item/head/chicken
 	name = "Chicken Hat"
 	item_path = /obj/item/clothing/head/costume/chicken
 
@@ -100,4 +100,4 @@
 
 /datum/loadout_item/head/maid_headband
 	name = "Maid Headband"
-	item_path = /obj/item/clothing/head/costume/maidheadband
+	item_path = /obj/item/clothing/head/costume/maidheadband */

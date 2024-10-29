@@ -1,6 +1,6 @@
-/datum/loadout_item/neck/colonial_cloak
+/* /datum/loadout_item/neck/colonial_cloak
 	name = "Colonial Cloak"
-	item_path = /obj/item/clothing/neck/cloak/colonial
+	item_path = /obj/item/clothing/neck/cloak/colonial */
 
 /datum/loadout_item/neck/robe_cape
 	name = "Robe Cape"
@@ -22,6 +22,6 @@
 	name = "Face Scarf"
 	item_path = /obj/item/clothing/neck/face_scarf
 
-/datum/loadout_item/neck/maid_neck_cover
+/* /datum/loadout_item/neck/maid_neck_cover
 	name = "Maid Neck Cover"
-	item_path = /obj/item/clothing/neck/maid_neck_cover
+	item_path = /obj/item/clothing/neck/maid_neck_cover */

@@ -1,4 +1,4 @@
-
+/*
 /datum/loadout_item/inhand/cane/crutch
 	name = "Crutch"
 	item_path = /obj/item/cane/crutch
@@ -33,4 +33,4 @@
 
 /datum/loadout_item/inhand/aac_device
 	name = "AAC Device"
-	item_path = /obj/item/aac_device
+	item_path = /obj/item/aac_device */

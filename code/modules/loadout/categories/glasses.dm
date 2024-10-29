@@ -1,5 +1,5 @@
 /// Glasses Slot Items (Moves overrided items to backpack)
-/datum/loadout_category/glasses
+/* /datum/loadout_category/glasses // DOPPLER EDIT REMOVAL THIS ENTIRE FILE
 	category_name = "Glasses"
 	category_ui_icon = FA_ICON_GLASSES
 	type_to_generate = /datum/loadout_item/glasses
@@ -56,4 +56,4 @@
 
 /datum/loadout_item/glasses/eyepatch/medical
 	name = "Medical Eyepatch"
-	item_path = /obj/item/clothing/glasses/eyepatch/medical
+	item_path = /obj/item/clothing/glasses/eyepatch/medical */ // DOPPLER EDIT REMOVAL END

@@ -1,5 +1,5 @@
 /// Inhand items (Moves overrided items to backpack)
-/datum/loadout_category/inhands
+/* /datum/loadout_category/inhands // DOPPLER EDIT REMOVAL THIS WHOLE FILE TOO
 	category_name = "Inhand"
 	category_ui_icon = FA_ICON_BRIEFCASE
 	type_to_generate = /datum/loadout_item/inhand
@@ -30,4 +30,4 @@
 
 /datum/loadout_item/inhand/briefcase_secure
 	name = "Briefcase (Secure)"
-	item_path = /obj/item/storage/briefcase/secure
+	item_path = /obj/item/storage/briefcase/secure */ // DOPPLER EDIT REMOVAL END

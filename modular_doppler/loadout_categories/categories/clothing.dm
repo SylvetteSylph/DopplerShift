@@ -1,4 +1,4 @@
-/datum/loadout_category/suit
+/* /datum/loadout_category/suit
 	category_name = "Suit"
 	category_ui_icon = FA_ICON_VEST
 	type_to_generate = /datum/loadout_item/suit
@@ -518,4 +518,4 @@
 
 /datum/loadout_item/suit/chap_blackmonk
 	name = "Monk's Black Habit"
-	item_path = /obj/item/clothing/suit/chaplainsuit/habit
+	item_path = /obj/item/clothing/suit/chaplainsuit/habit */

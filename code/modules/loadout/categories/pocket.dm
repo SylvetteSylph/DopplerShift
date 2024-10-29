@@ -1,5 +1,5 @@
 /// Pocket items (Moved to backpack)
-/datum/loadout_category/pocket
+/* /datum/loadout_category/pocket // DOPPLER EDIT REMOVAL THIS WHOLE FILE
 	category_name = "Items"
 	category_ui_icon = FA_ICON_PEN
 	type_to_generate = /datum/loadout_item/pocket_items
@@ -192,4 +192,4 @@
 
 /datum/loadout_item/pocket_items/d00
 	name = "D00"
-	item_path = /obj/item/dice/d00
+	item_path = /obj/item/dice/d00 */ // DOPPLER EDIT REMOVAL END

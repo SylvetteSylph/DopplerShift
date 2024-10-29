@@ -2,6 +2,8 @@
 *	LOADOUT ITEM DATUMS FOR THE HAND SLOT
 */
 
+/*
+
 /datum/loadout_category/hands
 	category_name = "Hands"
 	category_ui_icon = FA_ICON_HAND
@@ -74,4 +76,4 @@
 
 /datum/loadout_item/gloves/maid_arm_covers
 	name = "Maid Costume"
-	item_path = /obj/item/clothing/gloves/maid
+	item_path = /obj/item/clothing/gloves/maid */
