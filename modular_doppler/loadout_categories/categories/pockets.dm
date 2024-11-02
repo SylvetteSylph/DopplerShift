@@ -1,4 +1,4 @@
-/* /datum/loadout_category/pocket
+/datum/loadout_category/pocket
 	max_allowed = MAX_ALLOWED_MISC_ITEMS
 
 // Because plushes have a second desc var that needs to be updated
@@ -238,4 +238,4 @@
 
 /datum/loadout_item/pocket_items/civil_defense
 	name = "Civil Defense Med-kit"
-	item_path = /obj/item/storage/medkit/civil_defense/stocked */
+	item_path = /obj/item/storage/medkit/civil_defense/stocked

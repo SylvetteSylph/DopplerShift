@@ -1,9 +1,9 @@
-/* /datum/quirk/item_quirk/breather // THIS WOULD BE SUB-OPTIMAL IN FANTASYSTATION
+/datum/quirk/item_quirk/breather
 	abstract_parent_type = /datum/quirk/item_quirk/breather
 	icon = FA_ICON_LUNGS_VIRUS
 	var/breath_type = "oxygen"
 
-/datum/quirk/item_quirk/breather/nitrogen_breather
+/* /datum/quirk/item_quirk/breather/nitrogen_breather // THIS WOULD BE SUB-OPTIMAL IN FANTASYSTATION
 	name = "Nitrogen Breather"
 	desc = "You breathe nitrogen, even if you might not normally breathe it. Oxygen is poisonous."
 	medical_record_text = "Patient can only breathe nitrogen."
