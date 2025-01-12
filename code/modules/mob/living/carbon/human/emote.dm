@@ -186,7 +186,7 @@
 
 /datum/emote/living/carbon/human/blink/run_emote(mob/living/carbon/human/user, params, type_override, intentional)
 	. = ..()
-	user.update_body_parts_head_only() // Refreshing instantly makes the user blink
+	//user.update_body_parts_head_only() // DOPPLER EDIT: disabled until fixed upstream (very bad)
 
 /datum/emote/living/carbon/human/blink_r
 	key = "blink_r"
@@ -203,8 +203,9 @@
 
 /datum/emote/living/carbon/human/blink_r/run_emote(mob/user, params, type_override, intentional)
 	. = ..()
-	for (var/i in 1 to 3)
-		addtimer(CALLBACK(user, TYPE_PROC_REF(/mob/living/carbon/human, update_body_parts_head_only)), i * 0.3 SECONDS)
+	// DOPPLER EDIT: below disabled until fixed upstream (very bad)
+	/*for (var/i in 1 to 3)
+		addtimer(CALLBACK(user, TYPE_PROC_REF(/mob/living/carbon/human, update_body_parts_head_only)), i * 0.3 SECONDS)*/
 
 ///Snowflake emotes only for le epic chimp
 /datum/emote/living/carbon/human/monkey
