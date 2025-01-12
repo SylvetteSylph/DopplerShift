@@ -34,12 +34,12 @@ export const NtosCrewManifest = (props) => {
                     <Table.Cell bold>{entry.name}</Table.Cell>
                     <Table.Cell>
                       {entry.rank === entry.trim ? (
-                          entry.rank
-                        ) : (
-                          <>
-                            {entry.rank} ({entry.trim})
-                          </>
-                        )}
+                        entry.rank
+                      ) : (
+                        <>
+                          {entry.rank} ({entry.trim})
+                        </>
+                      )}
                     </Table.Cell>
                   </Table.Row>
                 ))}
