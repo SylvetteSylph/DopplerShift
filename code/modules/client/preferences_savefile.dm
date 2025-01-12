@@ -319,6 +319,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 			language = _text2path(language)
 		save_languages[language] = value
 	languages = save_languages
+	alt_job_titles = save_data?["alt_job_titles"]
 	/// DOPPLER SHIFT ADDITION END
 
 	//try to fix any outdated data if necessary
