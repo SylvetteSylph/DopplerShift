@@ -514,7 +514,6 @@
 	//shoes
 	if(shoes && !(obscured & ITEM_SLOT_FEET)  && !(shoes.item_flags & EXAMINE_SKIP))
 		. += "[t_He] [t_is] wearing [shoes.examine_title_worn(user)] on [t_his] feet."
-
 // DOPPLER EDIT END
 
 /// Collects info displayed about any HUDs the user has when examining src
