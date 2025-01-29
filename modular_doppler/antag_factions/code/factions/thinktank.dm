@@ -28,3 +28,4 @@
 	name = "Grey Tool Kit"
 	description = "A complete set of bleeding edge engineering tools. The multitool even identifies wire functions for you and your lesser mind. How considerate of your sponsor."
 	item = /obj/item/storage/belt/military/abductor/full
+	cost = 2
