@@ -4,6 +4,7 @@
 	With this in mind, Cybersun's employed all manners of agents to slow down the opposition, keep authorities in their pocket, and find the Next Big Thing. Brilliant engineers and roboticists often find themselves attracting the attention of Cybersun, for better or for worse. Interestingly, sources report that the top-brass has taken an interest in the occult."
 	antagonist_types = list(/datum/antagonist/traitor, /datum/antagonist/spy)
 	faction_category = /datum/uplink_category/faction_special/cybersun
+	entry_line = span_boldnotice("AGENT ACKNOWLEDGED. CI Human Resources has extended your acces grant to encompass a selection of approved experimental goods: consult your uplink for more details. Do not fail, operative.")
 
 /datum/uplink_category/faction_special/cybersun
 	name = "Cybersun Industries Special Equipment"

@@ -3,6 +3,7 @@
 	description = "The term 'no honor among thieves' holds very little water with the ruthless Uz'ka, an organized crime outfit based out of a farflung ice-world in the reaches of 4CA space. Their operatives are every bit as implacable and grounded as the frigid realm that spawned their cultural practices, and they are widely known to expect the same dedication from independent contractors that they occasionally hire to pursue their interests elsewhere in the sector."
 	antagonist_types = list(/datum/antagonist/traitor, /datum/antagonist/spy)
 	faction_category = /datum/uplink_category/faction_special/uzka
+	entry_line = span_boldnotice("The Uz'ka watch. Do not shame us. Achieve your goals and honor your word, or do not return. We gift you a choice of honored armaments: seek your uplink for more details.")
 
 /datum/uplink_category/faction_special/uzka
 	name = "Honorable Armaments"

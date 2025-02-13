@@ -4,6 +4,7 @@
 	However, pushing boundaries is not done without a fuss. Indeed, Venezia is relentless in it's pursuit of acquiring anything from new species to unique samples. From their conception, they've employed all manner of agents to stay on top of any medical and genetic advancements, through subterfuge, force and always proxies."
 	antagonist_types = list(/datum/antagonist/traitor, /datum/antagonist/spy)
 	faction_category = /datum/uplink_category/faction_special/venezia
+	entry_line = span_boldnotice("Venezian subcontractor: authorized. Please consult your allocated uplink device for extra modificiation kits authorized for your current mission.")
 
 /datum/uplink_category/faction_special/venezia
 	name = "Authorized Short-Term Venezian Enhancements"
@@ -40,17 +41,17 @@
 
 /datum/antag_faction_item/venezia/covert_gene_kit
 	name = "\"Necronom IV\" Covert Gene Kit"
-	description = "Non-lethal biological weaponry, unapparelled terrain manipulation and a formidable acid glands make these discrete tailored organs uniquely suited for kidnapping and escapes."
+	description = "Non-lethal biological weaponry, unparalleled terrain manipulation and a formidable acid glands make these discrete tailored organs uniquely suited for kidnapping and escapes."
 	item = /obj/item/storage/box/syndie_kit/venezia_covert_holder
 	cost = 15
 
 // laser-eyes genemod
 /obj/item/dnainjector/lasereyesmut/venezia
 	name = "\"L'Ecarlate\" Self-Defense Optic Genemod"
-	desc = "Developed as an exotic yet efficient self defense genemod,it enables optic organs to project energy blasts at will. it's developpement was halted due to it's side effects- a permanent, intense glow from the pupils, and hefty migraines."
+	desc = "Developed as an exotic yet efficient self defense genemod,it enables optic organs to project energy blasts at will. Its development was halted due to it's side effects- a permanent, intense glow from the pupils, and hefty migraines."
 
 /datum/antag_faction_item/venezia/self_defense_optics
 	name = "\"L'Ecarlate\" Self-Defense Optic Genemod"
-	description = "Developed as an exotic yet efficient self defense genemod,it enables optic organs to project energy blasts at will. it's developpement was halted due to it's side effects- a permanent, intense glow from the pupils, and hefty migraines."
+	description = "Developed as an exotic yet efficient self defense genemod, it enables optic organs to project energy blasts at will. Its development was halted due to it's side effects- a permanent, intense glow from the pupils, and hefty migraines."
 	item = /obj/item/dnainjector/lasereyesmut/venezia
 	cost = 11
