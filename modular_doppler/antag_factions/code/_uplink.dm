@@ -1,9 +1,14 @@
 
 /datum/antagonist/traitor/on_gain()
 	. = ..()
-	var/datum/antag_faction/faction = new /datum/antag_faction/cybersun // TODO: retrieve path from prefs
-	if (faction.type == /datum/antag_faction/none)
+	var/list/factions = list()
+	for (var/datum/antag_faction/a_faction in GLOB.antag_factions)
+		factions += a_faction
+
+	var/datum/antag_faction/faction = tgui_input_list(owner.current, "Choose your faction", "Factions", sort_names(factions))
+	if (QDELETED(src) || QDELETED(owner) || QDELETED(owner.current) || QDELETED(faction) || faction.type == /datum/antag_faction/none)
 		return
+
 	if (src.type in faction.antagonist_types)
 		// apply the TC adjustment
 		uplink_handler.telecrystals += faction.bonus_tc
