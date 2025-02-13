@@ -8,7 +8,10 @@
 	while (!faction) // spin up a thing so people can choose what they want
 		faction_choice = query_antag_faction_choice(src, owner.current)
 
-		if (faction_choice.type == /datum/antag_faction/none || isnull(faction_choice))
+		if (!faction_choice)
+			return
+
+		if (faction_choice.type == /datum/antag_faction/none)
 			return
 
 		to_chat(owner.current, span_boldbig(faction_choice.name))
