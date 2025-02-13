@@ -76,3 +76,5 @@
 ////
 
 #define TRAIT_WORN_EXAMINE "worn_examine"
+/// Trait given to a brain that is able to accept souls from a RSD
+#define TRAIT_RSD_COMPATIBLE "rsd_compatible"
