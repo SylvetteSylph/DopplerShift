@@ -3,6 +3,7 @@
 	desc = "You own or otherwise have access to a spacefaring vessel capable of docking with the station, and spawn in it at roundstart."
 	gain_text = span_info("Your trusty vessel is at hand.")
 	lose_text = span_warning("You've lost your vessel...")
+	medical_record_text = "Subject has registered micro-g hypovolemia screening due to space vessel ownership."
 	icon = FA_ICON_SHIP
 	value = 8
 	var/datum/turf_reservation/owned_ship_reservation
