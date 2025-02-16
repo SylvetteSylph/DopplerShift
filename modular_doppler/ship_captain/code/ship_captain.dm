@@ -32,9 +32,9 @@
 
 	var/turf/bottom_left = owned_ship_reservation.bottom_left_turfs[1]
 	our_shuttle_template.load(bottom_left, centered = FALSE)
-
+	//we may need to do the spawn-movement in a callback on a timer, as paxil mentions that perhaps the templates aren't loading in immediately
 	// need to find a safe turf and drop us there
-	var/affected_turfs = our_shuttle_template.get_affected_turfs(bottom_left, centered = TRUE)
+	var/affected_turfs = owned_ship_reservation.reserved_turfs //our_shuttle_template.get_affected_turfs(bottom_left, centered = FALSE)
 	var/turf/spawn_turf
 	for (var/turf/shuttle_turf in affected_turfs)
 		if (is_safe_turf(shuttle_turf))
@@ -48,10 +48,22 @@
 	var/mob/living/carbon/human/human_holder = quirk_holder
 	human_holder.forceMove(spawn_turf)
 
-	to_chat(human_holder, span_notice("<b>OOC NOTE</b>: If you're using a larger ship (like the mothership), please try to avoid automatic docking (use the navigation computer and place your ship manually near the station and EVA across). There are also known issues with rotation screwing up some shuttle templates, and staff can't fix this for you if it happens mid round!"))
+	to_chat(human_holder, span_notice("<b>OOC NOTE</b>: If you're using a larger ship, please try to avoid automatic docking (use the navigation computer and place your ship manually near the station and EVA across). There are also known issues with rotation screwing up some shuttle templates, and staff can't fix this for you if it happens mid round!"))
+
+/datum/quirk/ship_captain/remove()
+	. = ..()
+	if (owned_ship_reservation)
+		owned_ship_reservation.Release()
+	// we shouldn't clear the shuttle because the only way we can do this is by jumping to nullspace, which will qdel everything inside the shuttle.
+
 
 // TODO: transponder prefs to rename the area?
 // TODO: announce on command comms when thing spawns nearby (is this even possible?)
+// TODO: add some 'cold storage' thing that lets people move their ships back to reservation space and call them seamlessly to a docking port?
+// TODO: add more docking ports to the lavaland wastes
+// TODO: seed random megabeacons throughout space so people can land there?
+// TODO: add some means of initial communication with the station to shuttles
+// TODO: make some smaller salvage pod type shuttles
 
 /datum/quirk_constant_data/ship_captain
 	associated_typepath = /datum/quirk/ship_captain
@@ -85,6 +97,7 @@ GLOBAL_LIST_INIT(purchasable_ship_hulls, generate_purchasable_ship_hulls())
 /proc/generate_purchasable_ship_hulls()
 	var/list/hulls = list()
 	var/list/shuttle_types = subtypesof(/datum/map_template/shuttle/personal_buyable/ferries) + subtypesof(/datum/map_template/shuttle/personal_buyable/mining) + subtypesof(/datum/map_template/shuttle/personal_buyable/incomplete)
+	// remove the mothership from it
 	for(var/datum/map_template/shuttle/personal_buyable/path as anything in shuttle_types)
 		hulls["[path.name]"] = path
 
