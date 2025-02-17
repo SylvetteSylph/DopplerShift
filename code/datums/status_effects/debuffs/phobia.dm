@@ -6,7 +6,7 @@
 
 /datum/status_effect/minor_phobia_reaction/on_apply()
 	. = ..()
-	owner.painful_scream() // DOPPLER EDIT: check for painkilling before screaming
+	owner.emote("scream")
 	owner.set_jitter_if_lower(6 SECONDS)
 	owner.add_mood_event("phobia_minor", /datum/mood_event/startled)
 

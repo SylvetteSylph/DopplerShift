@@ -30,7 +30,7 @@
 
 /datum/status_effect/terrified/on_apply()
 	RegisterSignal(owner, COMSIG_CARBON_PRE_MISC_HELP, PROC_REF(comfort_owner))
-	owner.painful_scream() // DOPPLER EDIT: check for painkilling before screaming
+	owner.emote("scream")
 	to_chat(owner, span_alert("The darkness closes in around you, shadows dance around the corners of your vision... It feels like something is watching you!"))
 	return TRUE
 
@@ -149,7 +149,7 @@
 	terror_buildup += amount
 	owner.Knockdown(0.5 SECONDS)
 	if(prob(50))
-		owner.painful_scream() // DOPPLER EDIT: check for painkilling before screaming
+		owner.emote("scream")
 
 /// The status effect popup for the terror status effect
 /atom/movable/screen/alert/status_effect/terrified

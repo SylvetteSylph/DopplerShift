@@ -106,7 +106,7 @@
 
 /datum/mutation/human/paranoia/on_life(seconds_per_tick, times_fired)
 	if(SPT_PROB(2.5, seconds_per_tick) && owner.stat == CONSCIOUS)
-		owner.painful_scream() // DOPPLER EDIT: check for painkilling before screaming
+		owner.emote("scream")
 		if(prob(25))
 			owner.adjust_hallucinations(40 SECONDS)
 

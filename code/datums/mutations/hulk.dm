@@ -154,7 +154,7 @@
 	yeeted_person.visible_message(span_danger("[the_hulk] starts spinning [yeeted_person] around by [yeeted_person.p_their()] tail!"), \
 					span_userdanger("[the_hulk] starts spinning you around by your tail!"), span_hear("You hear wooshing sounds!"), null, the_hulk)
 	to_chat(the_hulk, span_danger("You start spinning [yeeted_person] around by [yeeted_person.p_their()] tail!"))
-	the_hulk.painful_scream() // DOPPLER EDIT: check for painkilling before screaming
+	the_hulk.emote("scream")
 	yeeted_person.painful_scream() // DOPPLER EDIT: check for painkilling before screaming
 	swing_loop(the_hulk, yeeted_person, 0, original_dir)
 
