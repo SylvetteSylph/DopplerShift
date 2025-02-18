@@ -50,15 +50,15 @@
 /area/shuttle/personally_bought/endurance_salvage)
 "i" = (
 /obj/structure/cable,
-/obj/machinery/power/smes/battery_pack/precharged{
-	pixel_y = 5
-	},
 /obj/machinery/atmospherics/components/unary/passive_vent/layer2{
 	dir = 4
 	},
-/obj/machinery/power/terminal{
-	dir = 4
+/obj/structure/closet/crate/secure/plasma{
+	anchored = 1
 	},
+/obj/item/stack/sheet/mineral/plasma/five,
+/obj/item/stack/sheet/mineral/plasma/five,
+/obj/item/stack/sheet/mineral/plasma/five,
 /turf/open/floor/plating,
 /area/shuttle/personally_bought/endurance_salvage)
 "k" = (
@@ -185,6 +185,16 @@
 /obj/structure/railing/eva_handhold/directional/east,
 /turf/closed/wall/mineral/plastitanium,
 /area/shuttle/personally_bought/endurance_salvage)
+"G" = (
+/obj/machinery/power/shuttle_engine/propulsion{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/cable,
+/turf/open/floor/plating/airless,
+/area/shuttle/personally_bought/endurance_salvage)
 "H" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
@@ -218,8 +228,14 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/shuttle/personally_bought/endurance_salvage)
 "L" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/east,
+/turf/open/floor/plating/airless,
 /area/shuttle/personally_bought/endurance_salvage)
 "N" = (
 /obj/structure/cable,
@@ -276,16 +292,6 @@
 /obj/structure/cable,
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/personally_bought/endurance_salvage)
-"W" = (
-/obj/machinery/power/shuttle_engine/propulsion{
-	dir = 8
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
-/obj/structure/cable,
-/turf/open/floor/plating/airless,
-/area/shuttle/personally_bought/endurance_salvage)
 "X" = (
 /obj/structure/window/reinforced/survival_pod/spawner/directional/east,
 /obj/machinery/portable_atmospherics/canister/air,
@@ -312,32 +318,26 @@
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/personally_bought/endurance_salvage)
 "Z" = (
-/obj/machinery/power/shuttle_engine/heater{
-	dir = 8
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/obj/structure/window/reinforced/survival_pod/spawner/directional/east,
-/turf/open/floor/plating/airless,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/shuttle/personally_bought/endurance_salvage)
 
 (1,1,1) = {"
 a
 A
 f
-W
+G
 i
 A
 a
 "}
 (2,1,1) = {"
 o
-Z
+L
 t
-Z
+L
 h
-Z
+L
 x
 "}
 (3,1,1) = {"
@@ -354,7 +354,7 @@ r
 B
 Q
 N
-L
+Z
 X
 b
 "}

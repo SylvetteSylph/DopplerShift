@@ -16,7 +16,7 @@
 
 /datum/map_template/shuttle/personal_buyable/pod/endurance_salvage
 	name = "RA-Cu Endurance Pod"
-	description = "A larger, tri-engined skew of of the Rendolyne Astronautics RA-Ca, the RA-Cu is an 'endurance' pod intended for extended operations at a particular site, featuring an external ship battery and generator combo, appliances, greywater plumbing, and a climate-controlled sleeping bunk that fits one. Space and storage are at a -serious- premium, but the livability of these ships for their relative price is just about second to none for a solo space traveler. They are however, notoriously fuel inefficient."
+	description = "A larger, tri-engined skew of of the Rendolyne Astronautics RA-Ca, the RA-Cu is an 'endurance' pod intended for extended operations at a particular site, featuring extra appliances, greywater plumbing, and a climate-controlled sleeping bunk that fits one. Space and storage are at a -serious- premium, but the livability of these ships for their relative price is just about second to none for a solo space traveler. They are however, notoriously fuel inefficient and come with a small internal battery, but are at least equipped with an extra external fuel rack to ease hand-reloading."
 	credit_cost = CARGO_CRATE_VALUE * 12
 	suffix = "salvage_endurance"
 	width = 8
