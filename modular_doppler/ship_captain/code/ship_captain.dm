@@ -12,6 +12,8 @@
 /datum/quirk/ship_captain/post_add()
 	. = ..()
 	// we have to post_add this otherwise it'll fire on every spawn which we really, really don't want
+	// HEY!!! we need to check to make sure we're either on the shuttle coming in OR on station z-level
+	// otherwise shit like nukies who have the quirk will pop in and then immediately tp to their own shuttle
 
 	var/template_path_key = quirk_holder.client?.prefs.read_preference(/datum/preference/choiced/ship_captain_hull)
 	var/template_path = GLOB.purchasable_ship_hulls[template_path_key]
@@ -90,7 +92,15 @@
 	return "Ship Captain" in preferences.all_quirks
 
 /datum/preference/choiced/ship_captain_hull/apply_to_human(mob/living/carbon/human/target, value)
-	return // is it possible to use this to readout info on each ship type?
+	return
+
+/datum/preference/choiced/ship_captain_hull/is_valid(value)
+	. = ..()
+	var/datum/map_template/shuttle/personal_buyable/our_choice = GLOB.purchasable_ship_hulls[value]
+	if (our_choice)
+		to_chat(usr, span_info("<b>[our_choice.name]</b>"))
+		to_chat(usr, span_info("<b>Vessel size</b>: [our_choice.personal_shuttle_size]"))
+		to_chat(usr, span_info(our_choice.description))
 
 GLOBAL_LIST_INIT(purchasable_ship_hulls, generate_purchasable_ship_hulls())
 
