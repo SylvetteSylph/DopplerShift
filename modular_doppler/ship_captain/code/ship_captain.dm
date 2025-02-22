@@ -23,9 +23,6 @@
 		return
 	if (!is_station_level(human_holder.z) && !locate(human_holder.z) in reserved_z) // sometimes players join in on a transit shuttle, which happens in a reserved z-level, so
 		return
-	if (LAZYLEN(human_holder.mind?.antag_datums)) // don't bother with any of this if we're an antag of any kind upon creation
-		to_chat(human_holder, span_warning("...if you weren't currently wrapped up in something else. (<b>OOC</b>: your ship hasn't been spawned because you're currently an antagonist!)"))
-		return
 	if (HAS_TRAIT(human_holder, TRAIT_BITRUNNER_AVATAR)) // don't spawn this on bitrunner avatars obviously
 		return
 
