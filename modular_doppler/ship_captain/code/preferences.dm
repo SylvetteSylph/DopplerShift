@@ -17,7 +17,7 @@
 	return assoc_to_keys(GLOB.purchasable_ship_hulls)
 
 /datum/preference/choiced/ship_captain_hull/create_default_value()
-	return "CAS Hafila"
+	return assoc_to_keys(GLOB.purchasable_ship_hulls)[1]
 
 /datum/preference/choiced/ship_captain_hull/is_accessible(datum/preferences/preferences)
 	if (!..())
