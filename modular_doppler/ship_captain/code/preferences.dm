@@ -14,10 +14,10 @@
 	can_randomize = FALSE
 
 /datum/preference/choiced/ship_captain_hull/init_possible_values()
-	return assoc_to_keys(GLOB.purchasable_ship_hulls)
+	return list("Random") + assoc_to_keys(GLOB.purchasable_ship_hulls)
 
 /datum/preference/choiced/ship_captain_hull/create_default_value()
-	return assoc_to_keys(GLOB.purchasable_ship_hulls)[1]
+	return "Random"
 
 /datum/preference/choiced/ship_captain_hull/is_accessible(datum/preferences/preferences)
 	if (!..())

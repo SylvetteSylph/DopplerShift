@@ -45,9 +45,17 @@
 				return
 
 	var/template_path_key = quirk_holder.client?.prefs.read_preference(/datum/preference/choiced/ship_captain_hull)
-	var/template_path = GLOB.purchasable_ship_hulls[template_path_key]
+	var/template_path
 	if (template_path_key)
-		our_shuttle_template = new template_path()
+		if (template_path_key == "Random")
+			template_path = GLOB.purchasable_ship_hulls[pick(assoc_to_keys(GLOB.purchasable_ship_hulls))]
+		else
+			template_path = GLOB.purchasable_ship_hulls[template_path_key]
+
+	if (!template_path)
+		CRASH("failed to select ship template!")
+
+	our_shuttle_template = new template_path()
 
 	if (!our_shuttle_template)
 		CRASH("failed to make ship template for captain quirk at prefs read stage")
