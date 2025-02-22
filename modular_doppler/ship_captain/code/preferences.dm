@@ -28,14 +28,6 @@
 /datum/preference/choiced/ship_captain_hull/apply_to_human(mob/living/carbon/human/target, value)
 	return
 
-/datum/preference/choiced/ship_captain_hull/is_valid(value)
-	. = ..()
-	var/datum/map_template/shuttle/personal_buyable/our_choice = GLOB.purchasable_ship_hulls[value]
-	if (our_choice)
-		to_chat(usr, span_info("<b>[our_choice.name]</b>"))
-		to_chat(usr, span_info("<b>Vessel size</b>: [our_choice.personal_shuttle_size]"))
-		to_chat(usr, span_info(our_choice.description))
-
 // TRANSPONDER/SHIP NAME
 /datum/preference/text/ship_captain_name
 	category = PREFERENCE_CATEGORY_MANUALLY_RENDERED
