@@ -13,7 +13,8 @@ export const ship_captain_name: Feature<string> = {
 
 export const ship_captain_crewkey: Feature<string> = {
   name: 'Crew Key Identifier',
-  description: 'If a shuttle with the same crew key identifier is already spawned, you will join that as crew instead of spawning a new shuttle (unless this is set to Solo).',
+  description:
+    "If a shuttle with the same crew key identifier is already spawned, you will join that as crew instead of spawning a new shuttle (unless this is set to Solo).",
   component: FeatureShortTextInput,
 };
 
