@@ -24,7 +24,6 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/personally_bought/endurance_salvage)
 "e" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/delivery/white,
 /obj/machinery/door/airlock/external,
@@ -43,7 +42,6 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/shuttle/personally_bought/endurance_salvage)
 "h" = (
-/obj/structure/cable,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
@@ -100,7 +98,6 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/shuttle/personally_bought/endurance_salvage)
 "t" = (
-/obj/structure/cable,
 /obj/structure/cable,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/shuttle/personally_bought/endurance_salvage)
