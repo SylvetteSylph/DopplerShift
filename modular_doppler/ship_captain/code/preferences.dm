@@ -2,8 +2,11 @@
 	associated_typepath = /datum/quirk/ship_captain
 	customization_options = list(
 		/datum/preference/choiced/ship_captain_hull,
+		/datum/preference/text/ship_captain_name,
+		/datum/preference/text/ship_captain_crewkey,
 	)
 
+// HULL TYPE
 /datum/preference/choiced/ship_captain_hull
 	category = PREFERENCE_CATEGORY_MANUALLY_RENDERED
 	savefile_key = "ship_captain_hull"
@@ -20,7 +23,7 @@
 	if (!..())
 		return FALSE
 
-	return "Ship Captain" in preferences.all_quirks
+	return "Spacefarer" in preferences.all_quirks
 
 /datum/preference/choiced/ship_captain_hull/apply_to_human(mob/living/carbon/human/target, value)
 	return
@@ -32,3 +35,42 @@
 		to_chat(usr, span_info("<b>[our_choice.name]</b>"))
 		to_chat(usr, span_info("<b>Vessel size</b>: [our_choice.personal_shuttle_size]"))
 		to_chat(usr, span_info(our_choice.description))
+
+// TRANSPONDER/SHIP NAME
+/datum/preference/text/ship_captain_name
+	category = PREFERENCE_CATEGORY_MANUALLY_RENDERED
+	savefile_key = "ship_captain_name"
+	savefile_identifier = PREFERENCE_CHARACTER
+	can_randomize = FALSE
+
+/datum/preference/text/ship_captain_name/create_default_value()
+	return "Default"
+
+/datum/preference/text/ship_captain_name/is_accessible(datum/preferences/preferences)
+	if (!..())
+		return FALSE
+
+	return "Spacefarer" in preferences.all_quirks
+
+/datum/preference/text/ship_captain_name/apply_to_human(mob/living/carbon/human/target, value)
+	return
+
+
+// CREWING KEY
+/datum/preference/text/ship_captain_crewkey
+	category = PREFERENCE_CATEGORY_MANUALLY_RENDERED
+	savefile_key = "ship_captain_crewkey"
+	savefile_identifier = PREFERENCE_CHARACTER
+	can_randomize = FALSE
+
+/datum/preference/text/ship_captain_crewkey/create_default_value()
+	return "Solo"
+
+/datum/preference/text/ship_captain_crewkey/is_accessible(datum/preferences/preferences)
+	if (!..())
+		return FALSE
+
+	return "Spacefarer" in preferences.all_quirks
+
+/datum/preference/text/ship_captain_crewkey/apply_to_human(mob/living/carbon/human/target, value)
+	return
