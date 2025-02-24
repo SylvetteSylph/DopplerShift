@@ -144,6 +144,7 @@
 /area/shuttle/personally_bought/cramped_salvage)
 "S" = (
 /obj/machinery/space_heater/wall_mounted/directional/north,
+/obj/effect/landmark/ship_captain_spawner,
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/personally_bought/cramped_salvage)
 "T" = (

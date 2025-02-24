@@ -23,26 +23,14 @@
 		return
 
 	if (crewing_key && crewing_key != "Solo")
-		var/area/potential_spawn_area = GLOB.ship_captain_pairs[crewing_key]
-		var/turf/crew_spawn_turf
-		if (potential_spawn_area)
-			// someone else has taken this key, so we're now in "crew mode"
-			// find a safe turf in this area wherever it is and port us to it
-			for (var/turf/possible_spawn_turf in potential_spawn_area.contents)
-				if (is_safe_turf(possible_spawn_turf))
-					crew_spawn_turf = possible_spawn_turf
-					break
-
-			if (crew_spawn_turf)
-				var/area/joined_ship = crew_spawn_turf.loc
-				to_chat(human_holder, span_notice("You board the [joined_ship.name], and prepare for another shift of work."))
-				human_holder.forceMove(crew_spawn_turf)
-				return
-			else
-				// uh oh no safe turfs - the shuttle is spaced or something else bad has happened...
-				to_chat(human_holder, span_boldwarning("You could not be moved to your designated ship as crew as there is nowhere safe to place you. Please ahelp to be moved manually."))
-				message_admins("[human_holder] failed to join ship key '[crewing_key]' as crew: no safe turfs found. Consider moving them manually.")
-				return
+		var/turf/crew_arrival_turf = get_turf(GLOB.ship_code_to_spawn_marker[crewing_key])
+		// If someone else has a ship that already has the same key, then we don't spawn a new one
+		// Congrats, you are now enlisted
+		if(crew_arrival_turf)
+			var/area/joined_ship = crew_arrival_turf.loc
+			to_chat(human_holder, span_notice("You board the [joined_ship.name], and prepare for another shift of work."))
+			human_holder.forceMove(crew_arrival_turf)
+			return
 
 	var/template_path_key = quirk_holder.client?.prefs.read_preference(/datum/preference/choiced/ship_captain_hull)
 	var/template_path
@@ -71,32 +59,37 @@
 	var/turf/bottom_left = owned_ship_reservation.bottom_left_turfs[1]
 	our_shuttle_template.load(bottom_left, centered = FALSE)
 
-	// do any area customizations where appropriate
-	var/ship_name = quirk_holder.client?.prefs.read_preference(/datum/preference/text/ship_captain_name)
-	var/area/spawned_area = get_area(bottom_left)
-	if (ship_name != "Default")
-		rename_area(spawned_area, ship_name)
-
-	// save our area - we'll need this for ship captain pairing
-	quirk_shuttle_area = spawned_area
-
-	// need to find a safe turf and drop us there
+	// Finds the first shuttle turfs out of all of the reservation reserved turfs
 	var/affected_turfs = owned_ship_reservation.reserved_turfs
-	var/turf/spawn_turf
-	for (var/turf/shuttle_turf in affected_turfs)
+	var/turf/first_shuttle_turf_found
+	for(var/turf/shuttle_turf in affected_turfs)
 		if (is_safe_turf(shuttle_turf))
-			spawn_turf = shuttle_turf
+			first_shuttle_turf_found = shuttle_turf
 			break
 
-	if (!spawn_turf)
-		CRASH("failed to find a safe turf for ship captain shuttle spawning...")
+	var/area/shuttle/new_shuttle_area = get_area(first_shuttle_turf_found)
+	var/new_shuttle_id
+	var/obj/effect/landmark/ship_captain_spawner/our_spawner
+
+	// Links the ship to it's spawner
+	for(var/obj/docking_port/mobile/pcport in new_shuttle_area)
+		new_shuttle_id += pcport.shuttle_id
+		GLOB.ship_code_to_spawn_marker += crewing_key
+		our_spawner = GLOB.ship_id_to_spawn_marker[new_shuttle_id]
+		if(crewing_key && crewing_key != "Solo")
+			GLOB.ship_code_to_spawn_marker[crewing_key] = our_spawner
+		break
+
+	// do any area customizations where appropriate
+	var/ship_name = quirk_holder.client?.prefs.read_preference(/datum/preference/text/ship_captain_name)
+	if(ship_name != "Default")
+		rename_area(new_shuttle_area, ship_name)
+
+	// save our area - we'll need this for ship captain pairing
+	quirk_shuttle_area = new_shuttle_area
 
 	// otherwise, move us there
-	human_holder.forceMove(spawn_turf)
-
-	// we're successful at this point, so earmark our crewing key and in the global pairing registry - IF we're not solo
-	if (GLOB.ship_captain_pairs && crewing_key != "Solo")
-		GLOB.ship_captain_pairs[crewing_key] = quirk_shuttle_area
+	human_holder.forceMove(get_turf(our_spawner))
 
 	// let command know shut up i know it's hacky
 	for(var/obj/machinery/computer/communications/comms_console in GLOB.shuttle_caller_list)
@@ -135,7 +128,19 @@
 			if (culprit)
 				message_admins("Spacefaring quirk deletion tried to clean up a shuttle, but couldn't because of [culprit][ADMIN_JMP(culprit)]. Tidy up manually w/ shuttle manipulator if an issue.")
 
+/obj/effect/landmark/ship_captain_spawner
+	name = "Ship Captain Ship Spawner"
+
+/obj/effect/landmark/ship_captain_spawner/Initialize(mapload)
+	. = ..()
+	var/area/shuttle/spawn_area = get_area(src)
+	if(!istype(spawn_area))
+		return
+	for(var/obj/docking_port/mobile/pcport in spawn_area)
+		GLOB.ship_id_to_spawn_marker += pcport.shuttle_id
+		GLOB.ship_id_to_spawn_marker[pcport.shuttle_id] = src
+		return // There should only be one of you on a ship you know
+
 // TODO: add more docking ports to the lavaland wastes
-// TODO: seed random megabeacons throughout space so people can land there?
 // TODO: put a megabeacon at roundstart/mapload on the lavalands top waste z level
 // TODO: add some means of initial communication with the station to shuttles

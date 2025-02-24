@@ -239,6 +239,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/light/cold/directional/south,
+/obj/effect/landmark/ship_captain_spawner,
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/personally_bought/endurance_salvage)
 "P" = (
