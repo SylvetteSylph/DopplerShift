@@ -89,7 +89,15 @@
 	quirk_shuttle_area = new_shuttle_area
 
 	// otherwise, move us there
-	human_holder.forceMove(get_turf(our_spawner))
+	var/turf/forcemove_turf = get_turf(our_spawner)
+	if(forcemove_turf)
+		human_holder.forceMove(forcemove_turf)
+	else if(length(new_shuttle_area.contents))
+		for(var/turf/backup_spawn_turf in new_shuttle_area.contents)
+			if(is_safe_turf(backup_spawn_turf))
+				human_holder.forceMove(backup_spawn_turf)
+	else
+		message_admins("[quirk_holder] couldn't find literally anywhere to spawn it's ship owner, that's fucked up.")
 
 	// let command know shut up i know it's hacky
 	for(var/obj/machinery/computer/communications/comms_console in GLOB.shuttle_caller_list)
