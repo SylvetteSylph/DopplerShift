@@ -206,4 +206,5 @@ GLOBAL_LIST_INIT(ambience_assoc,list(
 	AMBIENCE_RUINS = GLOB.ruins_ambience,
 	AMBIENCE_SPACE = GLOB.space_ambience,
 	AMBIENCE_SPOOKY = GLOB.spooky_ambience,
+	AMBIENCE_FANTASY_SURFACE = GLOB.fantasy_surface_ambience,
 ))
