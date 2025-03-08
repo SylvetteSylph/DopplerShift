@@ -5,7 +5,6 @@
 	"map_file": "rimworld.dmm",
 	"space_ruin_levels": 0,
 	"space_empty_leves": 0,
-	"minetype": "none",
 	"planetary": 1,
 	"ignored_unit_tests": [
 		"/datum/unit_test/antag_moodlets",

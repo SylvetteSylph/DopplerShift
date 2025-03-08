@@ -67,3 +67,7 @@ endmap
 
 map runtimestation
 endmap
+
+map rimworld
+	default
+endmap
