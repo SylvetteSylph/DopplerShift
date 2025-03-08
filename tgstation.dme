@@ -456,6 +456,7 @@
 #include "code\__DEFINES\~doppler_defines\vv.dm"
 #include "code\__DEFINES\~doppler_defines\wounds.dm"
 #include "code\__DEFINES\~doppler_defines\traits\declarations.dm"
+#include "code\__DEFINES\~sloppler_defines\icon_smoothing.dm"
 #include "code\__HELPERS\_auxtools_api.dm"
 #include "code\__HELPERS\_dreamluau.dm"
 #include "code\__HELPERS\_lists.dm"
@@ -7404,4 +7405,7 @@
 #include "modular_doppler\xenoarch\code\modules\research\xenoarch\xenoarch_machine.dm"
 #include "modular_doppler\xenoarch\code\modules\research\xenoarch\xenoarch_reward.dm"
 #include "modular_doppler\xenoarch\code\modules\research\xenoarch\xenoarch_tool.dm"
+#include "modular_sloppler\nature_turfs\dirt_and_stone.dm"
+#include "modular_sloppler\nature_turfs\rock_walls.dm"
+#include "modular_sloppler\nature_turfs\water.dm"
 // END_INCLUDE
