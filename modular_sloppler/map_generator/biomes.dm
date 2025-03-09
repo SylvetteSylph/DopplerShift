@@ -28,7 +28,14 @@
 	feature_density = 0
 	fauna_density = 0
 	flora_types = list(
-		/obj/structure/flora/rimworld_grass = 1,
+		/obj/structure/flora/rimworld_grass = 3,
+		/obj/structure/flora/rimworld_grass/short = 3,
+		/obj/structure/flora/rimworld_grass/yellow_flower = 1,
+		/obj/structure/flora/rimworld_grass/red_flower = 1,
+		/obj/structure/flora/rimworld_grass/blue_flower = 1,
+		/obj/structure/flora/rimworld_grass/bramble = 2,
+		/obj/structure/flora/rimworld_grass/bush = 1,
+		/obj/structure/flora/rimworld_grass/moss = 2,
 	)
 	feature_types = list()
 
