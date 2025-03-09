@@ -54,6 +54,9 @@
 	desc = "A tree, plain and simple."
 	icon = 'modular_sloppler/fluff_plants/plants64x64.dmi'
 	icon_state = "will_of_man"
+	transform = TRANSLATE_MATRIX(-16,0)
+	layer = FLY_LAYER
+	plane = ABOVE_GAME_PLANE
 
 	harvestable = FALSE
 	can_uproot = FALSE
@@ -63,6 +66,14 @@
 
 	flora_flags = FLORA_WOODEN
 	max_integrity = 500
+
+/obj/structure/flora/rimworld_tree/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/seethrough, get_seethrough_map())
+
+/// Gets the seethrough map for standing behind the tree
+/obj/structure/flora/rimworld_tree/proc/get_seethrough_map()
+	return SEE_THROUGH_MAP_DEFAULT
 
 /obj/structure/flora/rimworld_tree/birch
 	name = "birch tree"
