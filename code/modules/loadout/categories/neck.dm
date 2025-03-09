@@ -7,6 +7,10 @@
 
 /datum/loadout_item/neck
 	abstract_type = /datum/loadout_item/neck
+/* DOPPLER EDIT START: ORIGINAL:
+/datum/loadout_item/neck/insert_path_into_outfit(datum/outfit/outfit, mob/living/carbon/human/equipper, visuals_only = FALSE)
+	outfit.neck = item_path
+*/
 
 /datum/loadout_item/neck/insert_path_into_outfit(datum/outfit/outfit, mob/living/carbon/human/equipper, visuals_only = FALSE, override_items = LOADOUT_OVERRIDE_BACKPACK)
 	if(override_items == LOADOUT_OVERRIDE_BACKPACK && !visuals_only)
@@ -15,6 +19,7 @@
 		outfit.neck = item_path
 	else
 		outfit.neck = item_path
+// DOPPLER EDIT END
 
 /datum/loadout_item/neck/scarf_greyscale
 	name = "Scarf (Colorable)"
