@@ -36,6 +36,12 @@
 		/obj/structure/flora/rimworld_grass/bramble = 3,
 		/obj/structure/flora/rimworld_grass/bush = 1,
 		/obj/structure/flora/rimworld_grass/moss = 3,
+		/obj/structure/flora/rimworld_tree/birch = 1,
+		/obj/structure/flora/rimworld_tree/birch/two = 1,
+		/obj/structure/flora/rimworld_tree/poplar = 1,
+		/obj/structure/flora/rimworld_tree/poplar/two = 1,
+		/obj/structure/flora/rimworld_tree/oak = 1,
+		/obj/structure/flora/rimworld_tree/oak/two = 1,
 	)
 	feature_types = list()
 

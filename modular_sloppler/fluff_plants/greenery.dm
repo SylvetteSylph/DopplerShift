@@ -46,3 +46,44 @@
 	name = "moss"
 	desc = "A patch of moss."
 	icon_state = "moss"
+
+// Top of the tree to ya
+
+/obj/structure/flora/rimworld_tree
+	name = "the very concept of a tree"
+	desc = "A tree, plain and simple."
+	icon = 'modular_sloppler/fluff_plants/plants64x64.dmi'
+	icon_state = "will_of_man"
+
+	harvestable = FALSE
+	can_uproot = FALSE
+	product_types = null
+
+	density = TRUE
+
+	flora_flags = FLORA_WOODEN
+	max_integrity = 500
+
+/obj/structure/flora/rimworld_tree/birch
+	name = "birch tree"
+	desc = "A tree, this one has white bark striped black."
+	icon_state = "birch_1"
+
+/obj/structure/flora/rimworld_tree/birch/two
+	icon_state = "birch_2"
+
+/obj/structure/flora/rimworld_tree/poplar
+	name = "poplar tree"
+	desc = "A tree, this one grows tall and narrow, but should still make like a tree and go nowhere regardless of this."
+	icon_state = "poplar_1"
+
+/obj/structure/flora/rimworld_tree/poplar/two
+	icon_state = "poplar_2"
+
+/obj/structure/flora/rimworld_tree/oak
+	name = "oak tree"
+	desc = "A tree, the most tree there ever was."
+	icon_state = "oak_1"
+
+/obj/structure/flora/rimworld_tree/oak/two
+	icon_state = "oak_2"

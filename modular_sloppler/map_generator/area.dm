@@ -16,6 +16,12 @@
 	min_ambience_cooldown = 1 MINUTES
 	max_ambience_cooldown = 2 MINUTES
 
+/area/vintage/add_base_lighting()
+	. = ..()
+	luminosity = 1
+	for(var/turf/light_turf in contents)
+		light_turf.luminosity = 1
+
 /area/vintage/surface_generator
 	name = "Surface"
 	map_generator = /datum/map_generator/rimworld_generator
