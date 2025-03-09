@@ -1,6 +1,6 @@
 /datum/map_generator/rimworld_generator
 	/// Used to select "zoom" level into the perlin noise, higher numbers result in slower transitions
-	var/perlin_zoom = 55
+	var/perlin_zoom = 20
 
 /datum/map_generator/rimworld_generator/generate_terrain(list/turfs, area/generate_in)
 	. = ..()

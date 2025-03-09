@@ -54,7 +54,7 @@
 	desc = "A tree, plain and simple."
 	icon = 'modular_sloppler/fluff_plants/plants64x64.dmi'
 	icon_state = "will_of_man"
-	transform = TRANSLATE_MATRIX(-16,0)
+	SET_BASE_PIXEL(-16,0)
 	layer = FLY_LAYER
 	plane = ABOVE_GAME_PLANE
 
