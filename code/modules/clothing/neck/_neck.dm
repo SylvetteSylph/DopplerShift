@@ -297,7 +297,7 @@
 				else
 					if(appendix.damage > 10 && carbon_patient.stat == CONSCIOUS)
 						render_list += "<span class='danger ml-1'>[target] screams when you lift your hand from [target.p_their()] appendix!</span>\n"//scream if their appendix is damaged and they're awake
-						target.emote("scream")
+						target.painful_scream() // DOPPLER EDIT: check for painkilling before screaming
 						appendix_okay = FALSE
 
 				if(liver_okay && appendix_okay)//if they have all their organs and have no detectable damage
@@ -502,7 +502,7 @@
 
 /obj/item/clothing/neck/beads
 	name = "plastic bead necklace"
-	desc = "A cheap, plastic bead necklace. Show team spirit! Collect them! Throw them away! The posibilites are endless!"
+	desc = "A cheap, plastic bead necklace. Show team spirit! Collect them! Throw them away! The possibilities are endless!"
 	icon = 'icons/obj/clothing/neck.dmi'
 	icon_state = "beads"
 	color = "#ffffff"

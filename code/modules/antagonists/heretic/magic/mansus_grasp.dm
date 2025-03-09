@@ -64,9 +64,8 @@
 		return TRUE
 
 	carbon_hit.adjust_timed_status_effect(4 SECONDS, /datum/status_effect/speech/slurring/heretic)
-	carbon_hit.AdjustKnockdown(5 SECONDS)
+	carbon_hit.AdjustKnockdown(5 SECONDS, daze_amount = 3 SECONDS)
 	carbon_hit.adjustStaminaLoss(80)
-	carbon_hit.apply_status_effect(/datum/status_effect/next_shove_stuns)
 
 	return TRUE
 
@@ -131,7 +130,7 @@
 			carbon_user.adjustFireLoss(20)
 			playsound(carbon_user, 'sound/effects/wounds/sizzle1.ogg', 70, vary = TRUE)
 			if(prob(50))
-				carbon_user.emote("scream")
+				carbon_user.painful_scream() // DOPPLER EDIT: check for painkilling before screaming
 				carbon_user.adjust_stutter(26 SECONDS)
 
 		source.cast_on_hand_hit(src, user, user)

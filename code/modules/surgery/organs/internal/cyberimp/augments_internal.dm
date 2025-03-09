@@ -64,7 +64,7 @@
 	for(var/obj/item/stored_item as anything in stored_items)
 		throw_target = pick(oview(range))
 		stored_item.throw_at(throw_target, range, 2)
-		to_chat(owner, span_warning("Your [owner.get_held_index_name(owner.get_held_index_of_item(stored_item))] spasms and throws the [stored_item.name]!"))
+		to_chat(owner, span_warning("Your [owner.get_held_index_name(owner.get_held_index_of_item(stored_item))] spasms and throws \the [stored_item]!"))
 	stored_items = list()
 
 
@@ -221,6 +221,11 @@
 
 /obj/item/organ/cyberimp/brain/connector/proc/remove_skillchip(obj/item/organ/brain/chippy_brain)
 	var/obj/item/skillchip/skillchip = show_radial_menu(owner, owner, chippy_brain.skillchips)
+	//DOPPLER EDIT CHANGE
+	if(!skillchip.can_be_removed)
+		to_chat(owner, span_warning("The lockchip refuses to latch with your connector's actuators!"))
+		return
+	//DOPPLER EDIT CHANGE
 	if(skillchip)
 		owner.remove_skillchip(skillchip, silent = FALSE)
 		skillchip.forceMove(owner.drop_location())

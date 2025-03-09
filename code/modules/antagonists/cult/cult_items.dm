@@ -1257,7 +1257,7 @@ Striking a noncultist, however, will tear their flesh."}
 
 /obj/projectile/magic/arcane_barrage/blood
 	name = "blood bolt"
-	icon_state = "mini_leaper"
+	icon_state = "blood_bolt"
 	nondirectional_sprite = TRUE
 	damage_type = BRUTE
 	impact_effect_type = /obj/effect/temp_visual/dir_setting/bloodsplatter
@@ -1306,7 +1306,6 @@ Striking a noncultist, however, will tear their flesh."}
 /obj/item/blood_beam/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, CULT_TRAIT)
-
 
 /obj/item/blood_beam/interact_with_atom(atom/interacting_with, mob/living/user, list/modifiers)
 	return ranged_interact_with_atom(interacting_with, user, modifiers)
@@ -1396,7 +1395,7 @@ Striking a noncultist, however, will tear their flesh."}
 						L.Paralyze(20)
 						L.adjustBruteLoss(45)
 						playsound(L, 'sound/effects/hallucinations/wail.ogg', 50, TRUE)
-						L.emote("scream")
+						L.painful_scream() // DOPPLER EDIT: check for painkilling before screaming
 		user.Beam(temp_target, icon_state="blood_beam", time = 7, beam_type = /obj/effect/ebeam/blood)
 
 

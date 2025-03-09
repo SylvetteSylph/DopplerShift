@@ -8,6 +8,7 @@
 	medical_record_text = "Patient records may have been tampered with in the past."
 	quirk_flags = QUIRK_HIDE_FROM_SCAN
 	mail_goodies = list(/obj/item/storage/briefcase/secure)
+	mob_trait = TRAIT_CRIMINAL_CONNECTIONS
 
 /datum/quirk/item_quirk/underworld_connections/add_unique(client/client_source)
 	if (ishuman(quirk_holder))
@@ -101,7 +102,7 @@ GLOBAL_LIST_INIT(possible_uplink_skins, list(
 	if (!..())
 		return FALSE
 
-	return "Underworld Connections" in preferences.all_quirks
+	return "Black Market Smuggler" in preferences.all_quirks
 
 /datum/preference/choiced/uplink_skin/apply_to_human(mob/living/carbon/human/target, value)
 	return
@@ -117,7 +118,7 @@ GLOBAL_LIST_INIT(possible_uplink_skins, list(
 	if (!..())
 		return FALSE
 
-	return "Underworld Connections" in preferences.all_quirks
+	return "Black Market Smuggler" in preferences.all_quirks
 
 /datum/preference/text/uplink_name/serialize(input)
 	return htmlrendertext(input)
@@ -135,7 +136,7 @@ GLOBAL_LIST_INIT(possible_uplink_skins, list(
 	if (!..())
 		return FALSE
 
-	return "Underworld Connections" in preferences.all_quirks
+	return "Black Market Smuggler" in preferences.all_quirks
 
 /datum/preference/text/uplink_desc/serialize(input)
 	return htmlrendertext(input)
