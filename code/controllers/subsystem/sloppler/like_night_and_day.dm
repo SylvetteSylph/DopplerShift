@@ -1,7 +1,7 @@
 SUBSYSTEM_DEF(daynight)
 	name = "Daynight"
 	flags = SS_NO_FIRE
-	init_order = INIT_ORDER_NIGHT_AND_DAY
+	init_order = 1000 // THE LAST ONE FUCK YOU
 	runlevels = RUNLEVELS_DEFAULT
 	/// List of all areas we check for in the day/night cycle
 	var/list/areas_influenced = list(
