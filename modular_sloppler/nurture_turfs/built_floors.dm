@@ -1,5 +1,5 @@
 /turf/open/rimworld_constructed
-	name = "debug constructed wall"
+	name = "debug constructed floor"
 	desc = "Wall? I hope there's no Marts around here to see this."
 
 	icon = 'icons/vintagestation/floor/nurture/unsmooth.dmi'
@@ -11,12 +11,22 @@
 	tiled_dirt = FALSE
 	planetary_atmos = TRUE
 
+	footstep = FOOTSTEP_FLOOR
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+
 // Actual floors for real
 
 /turf/open/rimworld_constructed/plank
 	name = "wooden flooring"
 	desc = "Planks and boards nailed to the ground. Keep away from fire."
 	icon_state = "plank"
+
+	footstep = FOOTSTEP_WOOD
+	barefootstep = FOOTSTEP_WOOD_BAREFOOT
+	clawfootstep = FOOTSTEP_WOOD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/rimworld_constructed/brick
 	name = "stone brick flooring"

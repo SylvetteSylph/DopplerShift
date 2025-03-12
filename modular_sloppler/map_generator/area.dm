@@ -16,10 +16,6 @@
 	min_ambience_cooldown = 1 MINUTES
 	max_ambience_cooldown = 2 MINUTES
 
-/area/vintage/Initialize(mapload)
-	. = ..()
-	add_base_lighting() // I like to read
-
 /area/vintage/add_base_lighting()
 	. = ..()
 	luminosity = 1
@@ -32,3 +28,11 @@
 	area_has_base_lighting = TRUE
 	base_lighting_alpha = 255
 	outdoors = TRUE
+
+/area/vintage/indoors
+	name = "Indoors"
+	area_flags = NONE
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+	area_has_base_lighting = TRUE
+	base_lighting_alpha = 75
+	base_lighting_color = "#336699"

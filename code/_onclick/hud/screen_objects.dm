@@ -153,7 +153,7 @@
 	if(!A.outdoors)
 		to_chat(usr, span_warning("There is already a defined structure here."))
 		return TRUE
-	create_area(usr)
+	create_area(usr, /area/vintage/indoors) // SLOPPLER EDIT - create_area(usr)
 
 /atom/movable/screen/language_menu
 	name = "language menu"
