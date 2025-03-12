@@ -5,7 +5,7 @@
 	icon = 'icons/vintagestation/wall/nature/stone.dmi'
 	icon_state = "stone-0"
 	base_icon_state = "stone"
-	smoothing_flags = SMOOTH_BITMASK
+	smoothing_flags = SMOOTH_BITMASK|SMOOTH_OBJ
 	smoothing_groups = SMOOTH_GROUP_CLOSED_TURFS
 	canSmoothWith = SMOOTH_GROUP_CLOSED_TURFS + SMOOTH_GROUP_RIMWORLD_DOORS
 

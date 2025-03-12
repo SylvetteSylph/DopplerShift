@@ -5,7 +5,7 @@
 	icon = 'icons/vintagestation/wall/nurture/debug.dmi'
 	icon_state = "debug-0"
 	base_icon_state = "debug"
-	smoothing_flags = SMOOTH_BITMASK
+	smoothing_flags = SMOOTH_BITMASK|SMOOTH_OBJ
 	smoothing_groups = SMOOTH_GROUP_CLOSED_TURFS
 	canSmoothWith = SMOOTH_GROUP_CLOSED_TURFS + SMOOTH_GROUP_RIMWORLD_DOORS
 
