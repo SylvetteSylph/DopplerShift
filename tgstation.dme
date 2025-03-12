@@ -7406,6 +7406,7 @@
 #include "modular_doppler\xenoarch\code\modules\research\xenoarch\xenoarch_machine.dm"
 #include "modular_doppler\xenoarch\code\modules\research\xenoarch\xenoarch_reward.dm"
 #include "modular_doppler\xenoarch\code\modules\research\xenoarch\xenoarch_tool.dm"
+#include "modular_sloppler\building_structures\doors.dm"
 #include "modular_sloppler\fluff_plants\greenery.dm"
 #include "modular_sloppler\map_generator\area.dm"
 #include "modular_sloppler\map_generator\biomes.dm"
@@ -7413,4 +7414,6 @@
 #include "modular_sloppler\nature_turfs\dirt_and_stone.dm"
 #include "modular_sloppler\nature_turfs\rock_walls.dm"
 #include "modular_sloppler\nature_turfs\water.dm"
+#include "modular_sloppler\nurture_turfs\built_floors.dm"
+#include "modular_sloppler\nurture_turfs\built_walls.dm"
 // END_INCLUDE

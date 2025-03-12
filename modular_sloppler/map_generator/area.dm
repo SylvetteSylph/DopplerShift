@@ -16,6 +16,10 @@
 	min_ambience_cooldown = 1 MINUTES
 	max_ambience_cooldown = 2 MINUTES
 
+/area/vintage/Initialize(mapload)
+	. = ..()
+	add_base_lighting() // I like to read
+
 /area/vintage/add_base_lighting()
 	. = ..()
 	luminosity = 1
