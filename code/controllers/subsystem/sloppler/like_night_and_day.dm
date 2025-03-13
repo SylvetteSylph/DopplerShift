@@ -40,6 +40,7 @@ SUBSYSTEM_DEF(daynight)
 	var/maximum_light_power = 2
 
 /datum/controller/subsystem/daynight/Initialize()
+	fill_daynight_turfs_list()
 	addtimer(CALLBACK(src, PROC_REF(start_afternoon_transition)), 10 MINUTES)
 	return SS_INIT_SUCCESS
 
@@ -49,6 +50,17 @@ SUBSYSTEM_DEF(daynight)
 	for(var/area_to_check in areas_influenced)
 		areas_to_edit += GLOB.areas_by_type[area_to_check]
 	return areas_to_edit
+
+/// Finds all the turfs we need to keep track of for lighting and whatnot
+/datum/controller/subsystem/daynight/proc/fill_daynight_turfs_list()
+	var/list/areas_pulled_from = get_areas_to_edit()
+	for(var/area/area_to_check in areas_pulled_from)
+		for(var/turf/new_light_turf in area_to_check.contents)
+			GLOB.daynight_effected_turfs += new_light_turf
+			new_light_turf.light_color = GLOB.daynight_light_color
+			new_light_turf.light_power = GLOB.daynight_light_power
+			new_light_turf.light_range = GLOB.daynight_light_power + 1
+			new_light_turf.light_height = LIGHTING_HEIGHT_FLOOR
 
 /// Starts the transition to afternoon
 /datum/controller/subsystem/daynight/proc/start_afternoon_transition(iteration = 1)
