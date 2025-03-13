@@ -1,3 +1,7 @@
+GLOBAL_VAR_INIT(daynight_light_color, "#FFFFFF")
+GLOBAL_VAR_INIT(daynight_light_power, 2)
+GLOBAL_VAR_INIT(daynight_light_alpha, 255)
+
 SUBSYSTEM_DEF(daynight)
 	name = "Daynight"
 	flags = SS_NO_FIRE
@@ -32,6 +36,9 @@ SUBSYSTEM_DEF(daynight)
 	/// How long night lasts
 	var/night_duration = 10 MINUTES
 
+	/// The base for max light power to do math with
+	var/maximum_light_power = 2
+
 /datum/controller/subsystem/daynight/Initialize()
 	addtimer(CALLBACK(src, PROC_REF(start_afternoon_transition)), 10 MINUTES)
 	return SS_INIT_SUCCESS
@@ -48,8 +55,15 @@ SUBSYSTEM_DEF(daynight)
 	var/list/areas_edited_now = get_areas_to_edit()
 	for(var/area/surface_area in areas_edited_now)
 		surface_area.base_lighting_alpha = LERP(daytime_alpha, day_transition_alpha, iteration / 5)
+		GLOB.daynight_light_alpha = surface_area.base_lighting_alpha
 		surface_area.base_lighting_color = hsl_gradient(iteration / 5, 0, daytime_color, 1, day_transition_color)
+		GLOB.daynight_light_color = surface_area.base_lighting_color
+		GLOB.daynight_light_power = GLOB.daynight_light_alpha * (maximum_light_power / 255)
 		surface_area.update_base_lighting()
+	for(var/turf/light_update_turf in GLOB.daynight_effected_turfs)
+		light_update_turf.light_color = GLOB.daynight_light_color
+		light_update_turf.light_power = GLOB.daynight_light_power
+		light_update_turf.light_range = GLOB.daynight_light_power + 1
 	if(iteration < 5)
 		addtimer(CALLBACK(src, PROC_REF(start_afternoon_transition), iteration + 1), day_transition_duration / 5)
 		return
@@ -60,8 +74,15 @@ SUBSYSTEM_DEF(daynight)
 	var/list/areas_edited_now = get_areas_to_edit()
 	for(var/area/surface_area in areas_edited_now)
 		surface_area.base_lighting_alpha = LERP(day_transition_alpha, golden_hour_alpha, iteration / 5)
+		GLOB.daynight_light_alpha = surface_area.base_lighting_alpha
 		surface_area.base_lighting_color = hsl_gradient(iteration / 5, 0, day_transition_color, 1, golden_hour_color)
+		GLOB.daynight_light_color = surface_area.base_lighting_color
+		GLOB.daynight_light_power = GLOB.daynight_light_alpha * (maximum_light_power / 255)
 		surface_area.update_base_lighting()
+	for(var/turf/light_update_turf in GLOB.daynight_effected_turfs)
+		light_update_turf.light_color = GLOB.daynight_light_color
+		light_update_turf.light_power = GLOB.daynight_light_power
+		light_update_turf.light_range = GLOB.daynight_light_power + 1
 	if(iteration < 5)
 		addtimer(CALLBACK(src, PROC_REF(start_afternoon_golden_hour), iteration + 1), day_transition_duration / 5)
 		return
@@ -72,8 +93,15 @@ SUBSYSTEM_DEF(daynight)
 	var/list/areas_edited_now = get_areas_to_edit()
 	for(var/area/surface_area in areas_edited_now)
 		surface_area.base_lighting_alpha = LERP(golden_hour_alpha, night_alpha, iteration / 5)
+		GLOB.daynight_light_alpha = surface_area.base_lighting_alpha
 		surface_area.base_lighting_color = hsl_gradient(iteration / 5, 0, golden_hour_color, 1, night_color)
+		GLOB.daynight_light_color = surface_area.base_lighting_color
+		GLOB.daynight_light_power = GLOB.daynight_light_alpha * (maximum_light_power / 255)
 		surface_area.update_base_lighting()
+	for(var/turf/light_update_turf in GLOB.daynight_effected_turfs)
+		light_update_turf.light_color = GLOB.daynight_light_color
+		light_update_turf.light_power = GLOB.daynight_light_power
+		light_update_turf.light_range = GLOB.daynight_light_power + 1
 	if(iteration < 5)
 		addtimer(CALLBACK(src, PROC_REF(start_end_of_day), iteration + 1), day_transition_duration / 10)
 		return
@@ -84,8 +112,15 @@ SUBSYSTEM_DEF(daynight)
 	var/list/areas_edited_now = get_areas_to_edit()
 	for(var/area/surface_area in areas_edited_now)
 		surface_area.base_lighting_alpha = LERP(night_alpha, golden_hour_alpha, iteration / 5)
+		GLOB.daynight_light_alpha = surface_area.base_lighting_alpha
 		surface_area.base_lighting_color = hsl_gradient(iteration / 5, 0, night_color, 1, golden_hour_color)
+		GLOB.daynight_light_color = surface_area.base_lighting_color
+		GLOB.daynight_light_power = GLOB.daynight_light_alpha * (maximum_light_power / 255)
 		surface_area.update_base_lighting()
+	for(var/turf/light_update_turf in GLOB.daynight_effected_turfs)
+		light_update_turf.light_color = GLOB.daynight_light_color
+		light_update_turf.light_power = GLOB.daynight_light_power
+		light_update_turf.light_range = GLOB.daynight_light_power + 1
 	if(iteration < 5)
 		addtimer(CALLBACK(src, PROC_REF(start_morning_golden_hour), iteration + 1), day_transition_duration / 5)
 		return
@@ -96,8 +131,15 @@ SUBSYSTEM_DEF(daynight)
 	var/list/areas_edited_now = get_areas_to_edit()
 	for(var/area/surface_area in areas_edited_now)
 		surface_area.base_lighting_alpha = LERP(golden_hour_alpha, day_transition_alpha, iteration / 5)
+		GLOB.daynight_light_alpha = surface_area.base_lighting_alpha
 		surface_area.base_lighting_color = hsl_gradient(iteration / 5, 0, golden_hour_color, 1, day_transition_color)
+		GLOB.daynight_light_color = surface_area.base_lighting_color
+		GLOB.daynight_light_power = GLOB.daynight_light_alpha * (maximum_light_power / 255)
 		surface_area.update_base_lighting()
+	for(var/turf/light_update_turf in GLOB.daynight_effected_turfs)
+		light_update_turf.light_color = GLOB.daynight_light_color
+		light_update_turf.light_power = GLOB.daynight_light_power
+		light_update_turf.light_range = GLOB.daynight_light_power + 1
 	if(iteration < 5)
 		addtimer(CALLBACK(src, PROC_REF(start_morning_transition), iteration + 1), day_transition_duration / 5)
 		return
@@ -108,8 +150,15 @@ SUBSYSTEM_DEF(daynight)
 	var/list/areas_edited_now = get_areas_to_edit()
 	for(var/area/surface_area in areas_edited_now)
 		surface_area.base_lighting_alpha = LERP(day_transition_alpha, daytime_alpha, iteration / 5)
+		GLOB.daynight_light_alpha = surface_area.base_lighting_alpha
 		surface_area.base_lighting_color = hsl_gradient(iteration / 5, 0, day_transition_color, 1, daytime_color)
+		GLOB.daynight_light_color = surface_area.base_lighting_color
+		GLOB.daynight_light_power = GLOB.daynight_light_alpha * (maximum_light_power / 255)
 		surface_area.update_base_lighting()
+	for(var/turf/light_update_turf in GLOB.daynight_effected_turfs)
+		light_update_turf.light_color = GLOB.daynight_light_color
+		light_update_turf.light_power = GLOB.daynight_light_power
+		light_update_turf.light_range = GLOB.daynight_light_power + 1
 	if(iteration < 5)
 		addtimer(CALLBACK(src, PROC_REF(start_mid_day), iteration + 1), day_transition_duration / 15)
 		return

@@ -12,7 +12,9 @@
 	/// Is this door currently opened
 	var/door_open = FALSE
 	/// The sound it makes when opening
-	var/movement_sound = null
+	var/opening_sound = null
+	/// The sound it makes when closing
+	var/closing_sound = null
 	/// How long it takes to open this door
 	var/opening_time = 1 SECONDS
 
@@ -36,13 +38,15 @@
 			return
 		icon_state = base_icon_state
 		door_open = FALSE
+		if(closing_sound)
+			playsound(src, closing_sound, 50, TRUE)
 	else
 		if(!do_after(user, opening_time, src))
 			return
 		icon_state = "[base_icon_state]-open"
 		door_open = TRUE
-	if(movement_sound)
-		playsound(src, movement_sound, 50, TRUE)
+		if(opening_sound)
+			playsound(src, opening_sound, 50, TRUE)
 	set_density(!door_open)
 	set_opacity(!door_open)
 	air_update_turf(TRUE)
@@ -56,7 +60,8 @@
 	icon_state = "wood"
 	base_icon_state = "wood"
 	max_integrity = 200
-	movement_sound = null
+	opening_sound = 'sound/machines/closet/wooden_closet_open.ogg'
+	closing_sound = 'sound/machines/closet/wooden_closet_close.ogg'
 	opening_time = 1 SECONDS
 
 /obj/structure/rimworld_door/stone
@@ -65,5 +70,6 @@
 	icon_state = "stone"
 	base_icon_state = "stone"
 	max_integrity = 400
-	movement_sound = null
+	opening_sound = 'sound/effects/stonedoor_openclose.ogg'
+	closing_sound = 'sound/effects/stonedoor_openclose.ogg'
 	opening_time = 3 SECONDS

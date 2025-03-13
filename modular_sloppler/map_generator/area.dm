@@ -1,3 +1,5 @@
+GLOBAL_LIST_EMPTY(daynight_effected_turfs)
+
 /area/vintage
 	name = "Vintage Area Basetype (DONT USE)"
 	icon = 'icons/area/areas_station.dmi'
@@ -15,12 +17,27 @@
 	ambience_index = AMBIENCE_FANTASY_SURFACE
 	min_ambience_cooldown = 1 MINUTES
 	max_ambience_cooldown = 2 MINUTES
+	/// If lighting behaves like it's outside
+	var/outside_lights = FALSE
 
-/area/vintage/add_base_lighting()
+/area/vintage/Entered(atom/movable/arrived, area/old_area)
 	. = ..()
-	luminosity = 1
-	for(var/turf/light_turf in contents)
-		light_turf.luminosity = 1
+	if(isturf(arrived) && outside_lights)
+		var/turf/arrived_turf = arrived
+		daynight_effected_turfs += arrived_turf
+		arrived_turf.light_color = GLOB.daynight_light_color
+		arrived_turf.light_power = GLOB.daynight_light_power
+		arrived_turf.light_range = GLOB.daynight_light_power + 1
+		arrived_turf.light_height = LIGHTING_HEIGHT_FLOOR
+
+/area/vintage/Exited(atom/movable/gone, direction)
+	. = ..()
+	if(isturf(gone) && outside_lights)
+		daynight_effected_turfs -= gone
+		arrived_turf.light_color = initial(arrived_turf.light_color)
+		arrived_turf.light_power = initial(arrived_turf.light_power)
+		arrived_turf.light_range = initial(arrived_turf.light_range)
+		arrived_turf.light_height = initial(arrived_turf.light_height)
 
 /area/vintage/surface_generator
 	name = "Surface"
@@ -34,5 +51,5 @@
 	area_flags = NONE
 	sound_environment = SOUND_AREA_SMALL_ENCLOSED
 	area_has_base_lighting = TRUE
-	base_lighting_alpha = 75
+	base_lighting_alpha = 150
 	base_lighting_color = "#336699"
