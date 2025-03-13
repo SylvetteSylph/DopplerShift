@@ -6,6 +6,7 @@
 	base_icon_state = "debug"
 	density = TRUE
 	opacity = TRUE
+	anchored = TRUE
 	max_integrity = 200
 	can_atmos_pass = ATMOS_PASS_DENSITY
 	smoothing_groups = SMOOTH_GROUP_RIMWORLD_DOORS

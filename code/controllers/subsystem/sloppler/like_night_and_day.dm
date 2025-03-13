@@ -39,8 +39,14 @@ SUBSYSTEM_DEF(daynight)
 	/// The base for max light power to do math with
 	var/maximum_light_power = 2
 
+/// FIX THESE LATER
+
+/// THE LIGHT UPDATES SUPER SLOW
+/// MAYBE MAKE IT A SIGNAL THAT UPDATES ALL OF THE LIGHTING AT ONCE INSTEAD OF ONE BY ONE?
+/// ALTRENATIVELY MAKE A FUNCTION TO ONLY MAKE TURFS THAT ARE NEXT TO A DIFFERENT AREA THE ONES THAT GLOW?
+/// IT WORKS JUST WAY TOO SLOW TO BE USABLE I THINK.
+
 /datum/controller/subsystem/daynight/Initialize()
-	fill_daynight_turfs_list()
 	addtimer(CALLBACK(src, PROC_REF(start_afternoon_transition)), 10 MINUTES)
 	return SS_INIT_SUCCESS
 
@@ -51,7 +57,7 @@ SUBSYSTEM_DEF(daynight)
 		areas_to_edit += GLOB.areas_by_type[area_to_check]
 	return areas_to_edit
 
-/// Finds all the turfs we need to keep track of for lighting and whatnot
+/// Finds all the turfs we need to keep track of for lighting and whatnot, for backup and debug use
 /datum/controller/subsystem/daynight/proc/fill_daynight_turfs_list()
 	var/list/areas_pulled_from = get_areas_to_edit()
 	for(var/area/area_to_check in areas_pulled_from)
@@ -60,7 +66,7 @@ SUBSYSTEM_DEF(daynight)
 			new_light_turf.light_color = GLOB.daynight_light_color
 			new_light_turf.light_power = GLOB.daynight_light_power
 			new_light_turf.light_range = GLOB.daynight_light_power + 1
-			new_light_turf.light_height = LIGHTING_HEIGHT_FLOOR
+			new_light_turf.light_height = LIGHTING_HEIGHT
 
 /// Starts the transition to afternoon
 /datum/controller/subsystem/daynight/proc/start_afternoon_transition(iteration = 1)
@@ -76,6 +82,7 @@ SUBSYSTEM_DEF(daynight)
 		light_update_turf.light_color = GLOB.daynight_light_color
 		light_update_turf.light_power = GLOB.daynight_light_power
 		light_update_turf.light_range = GLOB.daynight_light_power + 1
+		light_update_turf.update_light()
 	if(iteration < 5)
 		addtimer(CALLBACK(src, PROC_REF(start_afternoon_transition), iteration + 1), day_transition_duration / 5)
 		return
@@ -95,6 +102,7 @@ SUBSYSTEM_DEF(daynight)
 		light_update_turf.light_color = GLOB.daynight_light_color
 		light_update_turf.light_power = GLOB.daynight_light_power
 		light_update_turf.light_range = GLOB.daynight_light_power + 1
+		light_update_turf.update_light()
 	if(iteration < 5)
 		addtimer(CALLBACK(src, PROC_REF(start_afternoon_golden_hour), iteration + 1), day_transition_duration / 5)
 		return
@@ -114,6 +122,7 @@ SUBSYSTEM_DEF(daynight)
 		light_update_turf.light_color = GLOB.daynight_light_color
 		light_update_turf.light_power = GLOB.daynight_light_power
 		light_update_turf.light_range = GLOB.daynight_light_power + 1
+		light_update_turf.update_light()
 	if(iteration < 5)
 		addtimer(CALLBACK(src, PROC_REF(start_end_of_day), iteration + 1), day_transition_duration / 10)
 		return
@@ -133,6 +142,7 @@ SUBSYSTEM_DEF(daynight)
 		light_update_turf.light_color = GLOB.daynight_light_color
 		light_update_turf.light_power = GLOB.daynight_light_power
 		light_update_turf.light_range = GLOB.daynight_light_power + 1
+		light_update_turf.update_light()
 	if(iteration < 5)
 		addtimer(CALLBACK(src, PROC_REF(start_morning_golden_hour), iteration + 1), day_transition_duration / 5)
 		return
@@ -152,6 +162,7 @@ SUBSYSTEM_DEF(daynight)
 		light_update_turf.light_color = GLOB.daynight_light_color
 		light_update_turf.light_power = GLOB.daynight_light_power
 		light_update_turf.light_range = GLOB.daynight_light_power + 1
+		light_update_turf.update_light()
 	if(iteration < 5)
 		addtimer(CALLBACK(src, PROC_REF(start_morning_transition), iteration + 1), day_transition_duration / 5)
 		return
@@ -171,6 +182,7 @@ SUBSYSTEM_DEF(daynight)
 		light_update_turf.light_color = GLOB.daynight_light_color
 		light_update_turf.light_power = GLOB.daynight_light_power
 		light_update_turf.light_range = GLOB.daynight_light_power + 1
+		light_update_turf.update_light()
 	if(iteration < 5)
 		addtimer(CALLBACK(src, PROC_REF(start_mid_day), iteration + 1), day_transition_duration / 15)
 		return

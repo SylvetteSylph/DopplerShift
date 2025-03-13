@@ -1,5 +1,9 @@
 GLOBAL_LIST_EMPTY(daynight_effected_turfs)
 
+/area
+	/// If lighting behaves like it's outside and is affected by daynight
+	var/outside_lights = FALSE
+
 /area/vintage
 	name = "Vintage Area Basetype (DONT USE)"
 	icon = 'icons/area/areas_station.dmi'
@@ -17,28 +21,6 @@ GLOBAL_LIST_EMPTY(daynight_effected_turfs)
 	ambience_index = AMBIENCE_FANTASY_SURFACE
 	min_ambience_cooldown = 1 MINUTES
 	max_ambience_cooldown = 2 MINUTES
-	/// If lighting behaves like it's outside
-	var/outside_lights = FALSE
-
-/area/vintage/Entered(atom/movable/arrived, area/old_area)
-	. = ..()
-	if(isturf(arrived) && outside_lights)
-		var/turf/arrived_turf = arrived
-		GLOB.daynight_effected_turfs += arrived_turf
-		arrived_turf.light_color = GLOB.daynight_light_color
-		arrived_turf.light_power = GLOB.daynight_light_power
-		arrived_turf.light_range = GLOB.daynight_light_power + 1
-		arrived_turf.light_height = LIGHTING_HEIGHT_FLOOR
-
-/area/vintage/Exited(atom/movable/gone, direction)
-	. = ..()
-	if(isturf(gone) && outside_lights)
-		var/turf/gone_turf = gone
-		GLOB.daynight_effected_turfs -= gone_turf
-		gone_turf.light_color = initial(gone_turf.light_color)
-		gone_turf.light_power = initial(gone_turf.light_power)
-		gone_turf.light_range = initial(gone_turf.light_range)
-		gone_turf.light_height = initial(gone_turf.light_height)
 
 /area/vintage/surface_generator
 	name = "Surface"
@@ -46,6 +28,7 @@ GLOBAL_LIST_EMPTY(daynight_effected_turfs)
 	area_has_base_lighting = TRUE
 	base_lighting_alpha = 255
 	outdoors = TRUE
+	outside_lights = TRUE
 
 /area/vintage/indoors
 	name = "Indoors"

@@ -1,4 +1,4 @@
-/turf/open/misc/rimworld_super_dirt
+/turf/open/misc/rimworld_dirt/super
 	name = "rich dirt"
 	desc = "Extra tasty dirt, for plants, that is."
 	gender = PLURAL
@@ -16,7 +16,7 @@
 
 	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
 	planetary_atmos = TRUE
-	baseturfs = /turf/open/misc/rimworld_super_dirt
+	baseturfs = /turf/open/misc/rimworld_dirt/super
 
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
@@ -50,6 +50,38 @@
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
+/turf/open/misc/rimworld_dirt/Initialize(mapload)
+	. = ..()
+	var/area/our_area = get_area(src)
+	if(our_area.outside_lights)
+		set_up_outside_lights()
+
+/turf/open/misc/rimworld_dirt/proc/set_up_outside_lights()
+	GLOB.daynight_effected_turfs += src
+	light_color = GLOB.daynight_light_color
+	light_power = GLOB.daynight_light_power
+	light_range = GLOB.daynight_light_power + 1
+	light_height = LIGHTING_HEIGHT
+	update_light()
+
+// Terrible solution to my problems
+/turf/open/misc/rimworld_dirt/on_change_area(area/old_area, area/new_area)
+	. = ..()
+	if(new_area.outside_lights)
+		GLOB.daynight_effected_turfs += src
+		light_color = GLOB.daynight_light_color
+		light_power = GLOB.daynight_light_power
+		light_range = GLOB.daynight_light_power + 1
+		light_height = LIGHTING_HEIGHT
+		update_light()
+	else
+		GLOB.daynight_effected_turfs -= src
+		light_color = initial(light_color)
+		light_power = initial(light_power)
+		light_range = initial(light_range)
+		light_height = initial(light_height)
+		update_light()
+
 /turf/open/misc/rimworld_mud
 	name = "mud"
 	desc = "Typically, this means water is near."
@@ -77,6 +109,38 @@
 
 	slowdown = 0.6
 
+/turf/open/misc/rimworld_mud/Initialize(mapload)
+	. = ..()
+	var/area/our_area = get_area(src)
+	if(our_area.outside_lights)
+		set_up_outside_lights()
+
+/turf/open/misc/rimworld_mud/proc/set_up_outside_lights()
+	GLOB.daynight_effected_turfs += src
+	light_color = GLOB.daynight_light_color
+	light_power = GLOB.daynight_light_power
+	light_range = GLOB.daynight_light_power + 1
+	light_height = LIGHTING_HEIGHT
+	update_light()
+
+// Terrible solution to my problems
+/turf/open/misc/rimworld_mud/on_change_area(area/old_area, area/new_area)
+	. = ..()
+	if(new_area.outside_lights)
+		GLOB.daynight_effected_turfs += src
+		light_color = GLOB.daynight_light_color
+		light_power = GLOB.daynight_light_power
+		light_range = GLOB.daynight_light_power + 1
+		light_height = LIGHTING_HEIGHT
+		update_light()
+	else
+		GLOB.daynight_effected_turfs -= src
+		light_color = initial(light_color)
+		light_power = initial(light_power)
+		light_range = initial(light_range)
+		light_height = initial(light_height)
+		update_light()
+
 /turf/open/misc/rimworld_stone
 	name = "rough stone"
 	desc = "Try not to trip, now."
@@ -101,3 +165,35 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+
+/turf/open/misc/rimworld_stone/Initialize(mapload)
+	. = ..()
+	var/area/our_area = get_area(src)
+	if(our_area.outside_lights)
+		set_up_outside_lights()
+
+/turf/open/misc/rimworld_stone/proc/set_up_outside_lights()
+	GLOB.daynight_effected_turfs += src
+	light_color = GLOB.daynight_light_color
+	light_power = GLOB.daynight_light_power
+	light_range = GLOB.daynight_light_power + 1
+	light_height = LIGHTING_HEIGHT
+	update_light()
+
+// Terrible solution to my problems
+/turf/open/misc/rimworld_stone/on_change_area(area/old_area, area/new_area)
+	. = ..()
+	if(new_area.outside_lights)
+		GLOB.daynight_effected_turfs += src
+		light_color = GLOB.daynight_light_color
+		light_power = GLOB.daynight_light_power
+		light_range = GLOB.daynight_light_power + 1
+		light_height = LIGHTING_HEIGHT
+		update_light()
+	else
+		GLOB.daynight_effected_turfs -= src
+		light_color = initial(light_color)
+		light_power = initial(light_power)
+		light_range = initial(light_range)
+		light_height = initial(light_height)
+		update_light()

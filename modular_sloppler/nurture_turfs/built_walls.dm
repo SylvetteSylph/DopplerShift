@@ -12,6 +12,38 @@
 	baseturfs = /turf/baseturf_bottom
 	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
 
+/turf/closed/rimworld_constructed/Initialize(mapload)
+	. = ..()
+	var/area/our_area = get_area(src)
+	if(our_area.outside_lights)
+		set_up_outside_lights()
+
+/turf/closed/rimworld_constructed/proc/set_up_outside_lights()
+	GLOB.daynight_effected_turfs += src
+	light_color = GLOB.daynight_light_color
+	light_power = GLOB.daynight_light_power
+	light_range = GLOB.daynight_light_power + 1
+	light_height = LIGHTING_HEIGHT
+	update_light()
+
+// Terrible solution to my problems
+/turf/closed/rimworld_constructed/on_change_area(area/old_area, area/new_area)
+	. = ..()
+	if(new_area.outside_lights)
+		GLOB.daynight_effected_turfs += src
+		light_color = GLOB.daynight_light_color
+		light_power = GLOB.daynight_light_power
+		light_range = GLOB.daynight_light_power + 1
+		light_height = LIGHTING_HEIGHT
+		update_light()
+	else
+		GLOB.daynight_effected_turfs -= src
+		light_color = initial(light_color)
+		light_power = initial(light_power)
+		light_range = initial(light_range)
+		light_height = initial(light_height)
+		update_light()
+
 // Actual walls for real
 
 /turf/closed/rimworld_constructed/plank
