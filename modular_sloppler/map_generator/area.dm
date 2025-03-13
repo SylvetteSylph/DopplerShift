@@ -24,7 +24,7 @@ GLOBAL_LIST_EMPTY(daynight_effected_turfs)
 	. = ..()
 	if(isturf(arrived) && outside_lights)
 		var/turf/arrived_turf = arrived
-		daynight_effected_turfs += arrived_turf
+		GLOB.daynight_effected_turfs += arrived_turf
 		arrived_turf.light_color = GLOB.daynight_light_color
 		arrived_turf.light_power = GLOB.daynight_light_power
 		arrived_turf.light_range = GLOB.daynight_light_power + 1
@@ -33,11 +33,12 @@ GLOBAL_LIST_EMPTY(daynight_effected_turfs)
 /area/vintage/Exited(atom/movable/gone, direction)
 	. = ..()
 	if(isturf(gone) && outside_lights)
-		daynight_effected_turfs -= gone
-		arrived_turf.light_color = initial(arrived_turf.light_color)
-		arrived_turf.light_power = initial(arrived_turf.light_power)
-		arrived_turf.light_range = initial(arrived_turf.light_range)
-		arrived_turf.light_height = initial(arrived_turf.light_height)
+		var/turf/gone_turf = gone
+		GLOB.daynight_effected_turfs -= gone_turf
+		gone_turf.light_color = initial(gone_turf.light_color)
+		gone_turf.light_power = initial(gone_turf.light_power)
+		gone_turf.light_range = initial(gone_turf.light_range)
+		gone_turf.light_height = initial(gone_turf.light_height)
 
 /area/vintage/surface_generator
 	name = "Surface"
