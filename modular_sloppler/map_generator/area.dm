@@ -17,8 +17,8 @@
 	power_light = FALSE
 	requires_power = TRUE
 	ambience_index = AMBIENCE_FANTASY_SURFACE
-	min_ambience_cooldown = 1 MINUTES
-	max_ambience_cooldown = 2 MINUTES
+	min_ambience_cooldown = 7 MINUTES
+	max_ambience_cooldown = 9 MINUTES
 
 /area/vintage/add_base_lighting()
 	. = ..()

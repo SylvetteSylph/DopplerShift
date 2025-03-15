@@ -11,3 +11,17 @@
 
 	baseturfs = /turf/open/misc/rimworld_stone
 	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
+
+/turf/closed/rimworld_mineral/attack_hand(mob/user, list/modifiers)
+	. = ..()
+	if(.)
+		return
+	if(do_after(user, 10 SECONDS, target = src))
+		playsound(src, SFX_STONE_DROP, 75, TRUE)
+		epic_loot()
+		qdel(src)
+
+/// Use this proc to make ores and whatnot spawn when mined
+/turf/closed/rimworld_mineral/proc/epic_loot()
+	if(prob(40))
+		new /obj/item/stack/rimworld_stone(get_turf(src))
