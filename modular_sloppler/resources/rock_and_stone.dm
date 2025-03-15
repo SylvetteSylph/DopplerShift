@@ -4,8 +4,8 @@
 	name = "boulder"
 	desc = "I attacka you with a rock."
 	icon = 'modular_sloppler/resources/icons/resources.dmi'
-	icon_state = "rock_1"
-	base_icon_state = "rock"
+	icon_state = "boulder_1"
+	base_icon_state = "boulder"
 	inhand_icon_state = null
 	w_class = WEIGHT_CLASS_BULKY
 	force = 15

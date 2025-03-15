@@ -6,6 +6,13 @@
 	"space_ruin_levels": 0,
 	"space_empty_leves": 0,
 	"planetary": 1,
+	"traits": [
+		{
+			"Linkage": null,
+			"Baseturf": "/turf/open/misc/rimworld_stone",
+			"No Parallax": true
+		}
+	],
 	"ignored_unit_tests": [
 		"/datum/unit_test/antag_moodlets",
 		"/datum/unit_test/cargo_dep_order_locations",
