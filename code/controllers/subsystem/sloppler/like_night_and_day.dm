@@ -67,6 +67,7 @@ SUBSYSTEM_DEF(daynight)
 			new_light_turf.light_power = GLOB.daynight_light_power
 			new_light_turf.light_range = GLOB.daynight_light_power + 1
 			new_light_turf.light_height = LIGHTING_HEIGHT
+			INVOKE_ASYNC(new_light_turf, TYPE_PROC_REF(/atom/, update_light))
 
 /// Starts the transition to afternoon
 /datum/controller/subsystem/daynight/proc/start_afternoon_transition(iteration = 1)
@@ -82,7 +83,7 @@ SUBSYSTEM_DEF(daynight)
 		light_update_turf.light_color = GLOB.daynight_light_color
 		light_update_turf.light_power = GLOB.daynight_light_power
 		light_update_turf.light_range = GLOB.daynight_light_power + 1
-		light_update_turf.update_light()
+		INVOKE_ASYNC(light_update_turf, TYPE_PROC_REF(/atom/, update_light))
 	if(iteration < 5)
 		addtimer(CALLBACK(src, PROC_REF(start_afternoon_transition), iteration + 1), day_transition_duration / 5)
 		return
@@ -102,7 +103,7 @@ SUBSYSTEM_DEF(daynight)
 		light_update_turf.light_color = GLOB.daynight_light_color
 		light_update_turf.light_power = GLOB.daynight_light_power
 		light_update_turf.light_range = GLOB.daynight_light_power + 1
-		light_update_turf.update_light()
+		INVOKE_ASYNC(light_update_turf, TYPE_PROC_REF(/atom/, update_light))
 	if(iteration < 5)
 		addtimer(CALLBACK(src, PROC_REF(start_afternoon_golden_hour), iteration + 1), day_transition_duration / 5)
 		return
@@ -122,7 +123,7 @@ SUBSYSTEM_DEF(daynight)
 		light_update_turf.light_color = GLOB.daynight_light_color
 		light_update_turf.light_power = GLOB.daynight_light_power
 		light_update_turf.light_range = GLOB.daynight_light_power + 1
-		light_update_turf.update_light()
+		INVOKE_ASYNC(light_update_turf, TYPE_PROC_REF(/atom/, update_light))
 	if(iteration < 5)
 		addtimer(CALLBACK(src, PROC_REF(start_end_of_day), iteration + 1), day_transition_duration / 10)
 		return
@@ -142,7 +143,7 @@ SUBSYSTEM_DEF(daynight)
 		light_update_turf.light_color = GLOB.daynight_light_color
 		light_update_turf.light_power = GLOB.daynight_light_power
 		light_update_turf.light_range = GLOB.daynight_light_power + 1
-		light_update_turf.update_light()
+		INVOKE_ASYNC(light_update_turf, TYPE_PROC_REF(/atom/, update_light))
 	if(iteration < 5)
 		addtimer(CALLBACK(src, PROC_REF(start_morning_golden_hour), iteration + 1), day_transition_duration / 5)
 		return
@@ -162,7 +163,7 @@ SUBSYSTEM_DEF(daynight)
 		light_update_turf.light_color = GLOB.daynight_light_color
 		light_update_turf.light_power = GLOB.daynight_light_power
 		light_update_turf.light_range = GLOB.daynight_light_power + 1
-		light_update_turf.update_light()
+		INVOKE_ASYNC(light_update_turf, TYPE_PROC_REF(/atom/, update_light))
 	if(iteration < 5)
 		addtimer(CALLBACK(src, PROC_REF(start_morning_transition), iteration + 1), day_transition_duration / 5)
 		return
@@ -182,7 +183,7 @@ SUBSYSTEM_DEF(daynight)
 		light_update_turf.light_color = GLOB.daynight_light_color
 		light_update_turf.light_power = GLOB.daynight_light_power
 		light_update_turf.light_range = GLOB.daynight_light_power + 1
-		light_update_turf.update_light()
+		INVOKE_ASYNC(light_update_turf, TYPE_PROC_REF(/atom/, update_light))
 	if(iteration < 5)
 		addtimer(CALLBACK(src, PROC_REF(start_mid_day), iteration + 1), day_transition_duration / 15)
 		return
