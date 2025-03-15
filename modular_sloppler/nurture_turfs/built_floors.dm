@@ -16,38 +16,6 @@
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
-/turf/open/rimworld_constructed/Initialize(mapload)
-	. = ..()
-	var/area/our_area = get_area(src)
-	if(our_area.outside_lights)
-		set_up_outside_lights()
-
-/turf/open/rimworld_constructed/proc/set_up_outside_lights()
-	GLOB.daynight_effected_turfs += src
-	light_color = GLOB.daynight_light_color
-	light_power = GLOB.daynight_light_power
-	light_range = GLOB.daynight_light_power + 1
-	light_height = LIGHTING_HEIGHT
-	update_light()
-
-// Terrible solution to my problems
-/turf/open/rimworld_constructed/on_change_area(area/old_area, area/new_area)
-	. = ..()
-	if(new_area.outside_lights)
-		GLOB.daynight_effected_turfs += src
-		light_color = GLOB.daynight_light_color
-		light_power = GLOB.daynight_light_power
-		light_range = GLOB.daynight_light_power + 1
-		light_height = LIGHTING_HEIGHT
-		update_light()
-	else
-		GLOB.daynight_effected_turfs -= src
-		light_color = initial(light_color)
-		light_power = initial(light_power)
-		light_range = initial(light_range)
-		light_height = initial(light_height)
-		update_light()
-
 // Actual floors for real
 
 /turf/open/rimworld_constructed/plank
