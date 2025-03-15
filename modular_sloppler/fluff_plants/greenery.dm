@@ -12,6 +12,14 @@
 	flora_flags = FLORA_HERBAL
 	max_integrity = 10
 
+/obj/structure/flora/rimworld_grass/attack_hand(mob/user, list/modifiers)
+	. = ..()
+	if(.)
+		return
+	if(do_after(user, 1 SECONDS, target = src))
+		playsound(src, SFX_CRUNCHY_BUSH_WHACK, 50, TRUE)
+		qdel(src)
+
 /obj/structure/flora/rimworld_grass/short
 	name = "short grass"
 	desc = "A patch of short grass."
@@ -74,6 +82,15 @@
 /// Gets the seethrough map for standing behind the tree
 /obj/structure/flora/rimworld_tree/proc/get_seethrough_map()
 	return SEE_THROUGH_MAP_DEFAULT
+
+/obj/structure/flora/rimworld_tree/attack_hand(mob/user, list/modifiers)
+	. = ..()
+	if(.)
+		return
+	if(do_after(user, 10 SECONDS, target = src))
+		playsound(src, SFX_TREE_CHOP, 50, TRUE)
+		new /obj/item/stack/rimworld_logs(get_turf(src), rand(8, 15))
+		qdel(src)
 
 /obj/structure/flora/rimworld_tree/birch
 	name = "birch tree"
