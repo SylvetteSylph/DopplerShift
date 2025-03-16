@@ -16,6 +16,7 @@
 	. = ..()
 	if(.)
 		return
+	playsound(src, SFX_CRUNCHY_BUSH_WHACK, 50, TRUE)
 	if(do_after(user, 1 SECONDS, target = src))
 		playsound(src, SFX_CRUNCHY_BUSH_WHACK, 50, TRUE)
 		qdel(src)
@@ -87,6 +88,7 @@
 	. = ..()
 	if(.)
 		return
+	playsound(src, SFX_TREE_CHOP, 50, TRUE)
 	if(do_after(user, 10 SECONDS, target = src))
 		playsound(src, SFX_TREE_CHOP, 50, TRUE)
 		new /obj/item/stack/rimworld_logs(get_turf(src), rand(8, 15))
