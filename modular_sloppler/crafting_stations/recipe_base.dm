@@ -11,6 +11,8 @@
 	var/relevant_skill = /datum/skill/athletics
 	/// How much experience in our relevant skill do we give upon completion?
 	var/relevant_skill_reward = 30
+	/// What sound do we make when doing the recipe
+	var/production_sound = 'sound/items/hammering_wood.ogg'
 
 /datum/rimworld_recipe/debug_tester
 	recipe_name = "players giving their opinion on a map"

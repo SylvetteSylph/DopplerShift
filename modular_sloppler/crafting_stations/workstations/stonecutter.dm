@@ -18,3 +18,4 @@
 	crafting_time = 4 SECONDS
 	relevant_skill = /datum/skill/mining
 	relevant_skill_reward = SKILL_EXP_GRANT_LITTLE
+	production_sound = SFX_STONE_DROP

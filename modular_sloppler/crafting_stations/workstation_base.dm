@@ -130,6 +130,7 @@
 	currently_working = TRUE
 	to_chat(user, span_notice("You start working on selected recipe: [selected_recipe.recipe_name]!"))
 	var/recipe_modified_time = selected_recipe.crafting_time * user.mind.get_skill_modifier(selected_recipe.relevant_skill, SKILL_SPEED_MODIFIER)
+	playsound(src, selected_recipe.production_sound, 50, TRUE)
 	if(!do_after(user, recipe_modified_time, src))
 		to_chat(user, span_warning("Crafting interrupted!"))
 		currently_working = FALSE
@@ -180,6 +181,7 @@
 	use_or_delete_recipe_requirements(things_to_use, recipe_to_follow)
 	var/obj/newly_created_thing
 	newly_created_thing = new recipe_to_follow.resulting_item(get_turf(src))
+	playsound(src, selected_recipe.production_sound, 50, TRUE)
 	if(!newly_created_thing)
 		message_admins("[src] just failed to create something while crafting!")
 		return FALSE

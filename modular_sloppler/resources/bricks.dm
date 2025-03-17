@@ -2,8 +2,11 @@
 
 GLOBAL_LIST_INIT(rimworld_brick_recipes, list(
 	new/datum/stack_recipe("brick wall", /turf/closed/rimworld_constructed/brick, 3, time = 2.5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND, category = CAT_STRUCTURE),
-	new/datum/stack_recipe("brick floor", /turf/open/rimworld_constructed/brick, 1, time = 1 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND, category = CAT_STRUCTURE),
-	new/datum/stack_recipe("stone door", /obj/structure/rimworld_door/stone, 5, time = 5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND, category = CAT_STRUCTURE),
+	new/datum/stack_recipe("brick floor", /turf/open/rimworld_constructed/brick, 1, time = 1 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_ONE_PER_TURF, category = CAT_STRUCTURE),
+	new/datum/stack_recipe("stone door", /obj/structure/rimworld_door/stone, 5, time = 5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_ONE_PER_TURF, category = CAT_STRUCTURE),
+	new/datum/stack_recipe_list("furniture", list( \
+		new/datum/stack_recipe("stone counter", /obj/structure/table/rimworld/stone, 2, time = 2 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_ONE_PER_TURF, category = CAT_STRUCTURE), \
+	)),
 ))
 
 /obj/item/stack/rimworld_bricks
