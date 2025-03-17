@@ -222,6 +222,7 @@ export const DmTarget = new Juke.Target({
     'icons/**',
     'interface/**',
     'modular_doppler/**', // DOPPLER EDIT ADDITION - Making the CBT work.
+    'modular_sloppler/**', // SLOPPLER ADDITION
     'sound/**',
     `${DME_NAME}.dme`,
     NamedVersionFile,
