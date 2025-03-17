@@ -82,7 +82,7 @@
 		. += span_notice("There is no recipe currently selected for production. Try <b>Right-Clicking</b> this to fix that?")
 		return
 	. += span_notice("The selected recipe is: <b>[initial(selected_recipe.recipe_name)]</b>")
-	. += span_notice("Gather the required materials, listed below, <b>atop the bench</b>, then start <b>Left-Click</b> to complete it!")
+	. += span_notice("Gather the required materials, listed below, <b>atop the bench</b>, then <b>Left-Click</b> to complete it!")
 	if(!length(selected_recipe.recipe_requirements))
 		. += span_boldwarning("Somehow, this recipe has no requirements, report this as this shouldn't happen.")
 		return
@@ -100,12 +100,13 @@
 /obj/structure/table/rimworld_crafter/attack_hand_secondary(mob/user, list/modifiers)
 	if(currently_working)
 		to_chat(user, span_warning("This station is currently being worked at, you can't distrupt them like that!"))
-		return
+		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 	var/recipe_choice = tgui_input_list(user, "Select Recipe", "Recipe Selection", recipe_names_to_path)
 	if(!recipe_choice)
 		to_chat(user, span_warning("No recipe selection made."))
-		return
-	selected_recipe = recipe_names_to_path[recipe_choice]
+		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
+	var/recipe_holder = recipe_names_to_path[recipe_choice]
+	selected_recipe = new recipe_holder()
 	to_chat(user, span_notice("Recipe selected: [initial(selected_recipe.recipe_name)]."))
 	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
@@ -183,6 +184,7 @@
 		message_admins("[src] just failed to create something while crafting!")
 		return FALSE
 	user.mind.adjust_experience(skill_to_grant, skill_amount)
+	qdel(selected_recipe)
 	selected_recipe = null
 	update_appearance()
 	return newly_created_thing

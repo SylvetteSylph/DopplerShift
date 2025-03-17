@@ -1,14 +1,13 @@
 /turf/closed/rimworld_constructed
 	name = "debug constructed wall"
 	desc = "Wall? I hope there's no Marts around here to see this."
-
 	icon = 'icons/vintagestation/wall/nurture/debug.dmi'
 	icon_state = "debug-0"
 	base_icon_state = "debug"
 	smoothing_flags = SMOOTH_BITMASK|SMOOTH_OBJ
 	smoothing_groups = SMOOTH_GROUP_CLOSED_TURFS
 	canSmoothWith = SMOOTH_GROUP_CLOSED_TURFS + SMOOTH_GROUP_RIMWORLD_DOORS
-
+	luminosity = 1
 	baseturfs = /turf/baseturf_bottom
 	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
 

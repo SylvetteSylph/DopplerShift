@@ -16,7 +16,7 @@
 	recipe_name = "players giving their opinion on a map"
 	recipe_requirements = list(
 		/obj/item/stack/rimworld_logs = 2,
-		/obj/item/aicard = 1,
+		/obj/item/stack/rimworld_stone = 1,
 	)
 	resulting_item = /obj/item/toy/plush/whiny_plushie
 	crafting_time = 10 SECONDS

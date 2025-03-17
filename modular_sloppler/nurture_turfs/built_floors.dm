@@ -1,16 +1,14 @@
 /turf/open/rimworld_constructed
 	name = "debug constructed floor"
 	desc = "Wall? I hope there's no Marts around here to see this."
-
 	icon = 'icons/vintagestation/floor/nurture/unsmooth.dmi'
 	icon_state = "debug"
 	layer = MID_TURF_LAYER - 0.03 // Under dirt and mud and whatnot. Update if anything lower than this exists
-
 	baseturfs = /turf/baseturf_bottom
 	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
 	tiled_dirt = FALSE
 	planetary_atmos = TRUE
-
+	luminosity = 1
 	footstep = FOOTSTEP_FLOOR
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW

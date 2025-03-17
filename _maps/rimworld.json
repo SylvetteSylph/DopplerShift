@@ -6,6 +6,7 @@
 	"space_ruin_levels": 0,
 	"space_empty_leves": 0,
 	"planetary": 1,
+	"minetype": "none",
 	"traits": [
 		{
 			"Linkage": null,
