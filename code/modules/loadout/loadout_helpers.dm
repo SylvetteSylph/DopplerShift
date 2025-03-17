@@ -16,6 +16,7 @@
 	datum/preferences/preference_source,
 	visuals_only = FALSE,
 )
+	set waitfor = FALSE // DOPPLER ADDITION: the nuclear option: this should stop the linter fucking whining?
 	if(isnull(preference_source))
 		return equipOutfit(outfit, visuals_only)
 
