@@ -40,6 +40,7 @@
 		return FALSE
 	*/
 	var/obj/item/storage/briefcase/empty/briefcase
+	var/list/new_contents
 	if (!isnull(override_preference) && override_preference == LOADOUT_OVERRIDE_CASE && !visuals_only)
 		briefcase = new(loc)
 		for(var/datum/loadout_item/item as anything in loadout_datums)
@@ -48,6 +49,7 @@
 		briefcase.name = "[preference_source.read_preference(/datum/preference/name/real_name)]'s travel suitcase"
 		equipOutfit(equipped_outfit, visuals_only)
 		put_in_hands(briefcase)
+		new_contents = briefcase.get_all_contents()
 	else
 		// Slap our things into the outfit given
 		for(var/datum/loadout_item/item as anything in loadout_datums)
@@ -55,10 +57,10 @@
 		// Equip the outfit loadout items included
 		if(!equipped_outfit.equip(src, visuals_only))
 			return FALSE
-	// DOPPLER EDIT END
+		new_contents = get_all_gear()
 
 	// Handle any snowflake on_equips
-	var/list/new_contents = isnull(briefcase) ? get_all_gear() : briefcase.get_all_contents() // DOPPLER EDIT CHANGE - Original: var/list/new_contents = isnull(briefcase) ? get_all_gear() : briefcase.get_all_contents()
+	// DOPPLER EDIT END
 	var/update = NONE
 	for(var/datum/loadout_item/item as anything in loadout_datums)
 		var/obj/item/equipped = locate(item.item_path) in new_contents
