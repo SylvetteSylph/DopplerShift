@@ -1,3 +1,5 @@
+#define CRAFTED_BRICKS_AMOUNT 6
+
 GLOBAL_LIST_INIT(rimworld_brick_recipes, list(
 	new/datum/stack_recipe("brick wall", /turf/closed/rimworld_constructed/brick, 3, time = 2.5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND, category = CAT_STRUCTURE),
 	new/datum/stack_recipe("brick floor", /turf/open/rimworld_constructed/brick, 1, time = 1 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND, category = CAT_STRUCTURE),
@@ -25,3 +27,8 @@ GLOBAL_LIST_INIT(rimworld_brick_recipes, list(
 /obj/item/stack/rimworld_bricks/get_main_recipes()
 	. = ..()
 	. = GLOB.rimworld_brick_recipes
+
+/obj/item/stack/rimworld_bricks/crafted
+	amount = CRAFTED_BRICKS_AMOUNT
+
+#undef CRAFTED_BRICKS_AMOUNT

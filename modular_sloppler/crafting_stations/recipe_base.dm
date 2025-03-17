@@ -4,7 +4,7 @@
 	/// The items required to create the resulting item
 	var/list/recipe_requirements
 	/// What the end result of this recipe should be
-	var/resulting_item = /obj/item/forging
+	var/resulting_item = /obj/item
 	/// How long does it normally take to make this?
 	var/crafting_time = 10 SECONDS
 	/// What skill is relevant to the creation of this item?
