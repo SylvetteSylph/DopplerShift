@@ -1,6 +1,6 @@
 #define AMBIENCE_FANTASY_SURFACE "fantasy_surface"
 
-GLOBAL_LIST_INIT(fantasy_surface_ambience,list(
+GLOBAL_LIST_INIT(fantasy_surface_ambience, list(
 	'modular_sloppler/ambience/wind/1_Strike It Again.wav',
 	'modular_sloppler/ambience/wind/2_The Capital.wav',
 	'modular_sloppler/ambience/wind/3_Bruising The Fat (Shar Ikal).wav',

@@ -129,7 +129,7 @@
 	currently_working = TRUE
 	to_chat(user, span_notice("You start working on selected recipe: [selected_recipe.recipe_name]!"))
 	var/recipe_modified_time = selected_recipe.crafting_time * user.mind.get_skill_modifier(selected_recipe.relevant_skill, SKILL_SPEED_MODIFIER)
-	if(!do_after(user, selected_recipe.crafting_time, src))
+	if(!do_after(user, recipe_modified_time, src))
 		to_chat(user, span_warning("Crafting interrupted!"))
 		currently_working = FALSE
 		return
@@ -183,7 +183,7 @@
 		message_admins("[src] just failed to create something while crafting!")
 		return FALSE
 	user.mind.adjust_experience(skill_to_grant, skill_amount)
-	clear_recipe()
+	selected_recipe = null
 	update_appearance()
 	return newly_created_thing
 
