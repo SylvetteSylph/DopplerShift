@@ -11,6 +11,7 @@
 	force = 15
 	throwforce = 10
 	slowdown = 0.5
+	max_amount = 1
 	/// How many variations of sprite does this have?
 	var/icon_variations = 3
 
