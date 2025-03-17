@@ -7413,6 +7413,7 @@
 #include "modular_sloppler\crafting_stations\workstation_base.dm"
 #include "modular_sloppler\crafting_stations\workstations\stonecutter.dm"
 #include "modular_sloppler\fluff_plants\greenery.dm"
+#include "modular_sloppler\furniture\chairs.dm"
 #include "modular_sloppler\furniture\tables.dm"
 #include "modular_sloppler\map_generator\area.dm"
 #include "modular_sloppler\map_generator\biomes.dm"

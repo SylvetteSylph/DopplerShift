@@ -8,7 +8,8 @@
 	frame = null
 	framestack = null
 	glass_shard_type = null
-	buildstack = null
+	buildstack = /obj/item/stack/rimworld_logs
+	buildstackamount = 2
 	can_flip = FALSE
 	resistance_flags = FLAMMABLE
 	max_integrity = 100
@@ -21,7 +22,8 @@
 	icon = 'icons/vintagestation/tables/stone_table.dmi'
 	icon_state = "stone_table-0"
 	base_icon_state = "stone_table"
-	can_flip = FALSE
+	buildstack = /obj/item/stack/rimworld_bricks
+	buildstackamount = 2
 	resistance_flags = FIRE_PROOF
 	max_integrity = 150
 	smoothing_groups = SMOOTH_GROUP_RIMWORLD_STONE_TABLE

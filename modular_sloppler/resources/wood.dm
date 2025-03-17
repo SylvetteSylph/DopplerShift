@@ -8,6 +8,7 @@ GLOBAL_LIST_INIT(rimworld_log_recipes, list(
 	)),
 	new/datum/stack_recipe_list("furniture", list( \
 		new/datum/stack_recipe("wooden table", /obj/structure/table/rimworld, 2, time = 2 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_ONE_PER_TURF, category = CAT_STRUCTURE), \
+		new/datum/stack_recipe("wooden chair", /obj/structure/chair/rimworld, 1, time = 2 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_ONE_PER_TURF, category = CAT_STRUCTURE), \
 	)),
 ))
 
