@@ -40,7 +40,7 @@
 		return FALSE
 	*/
 	var/obj/item/storage/briefcase/empty/briefcase
-	if (override_preference == LOADOUT_OVERRIDE_CASE && !visuals_only)
+	if (!isnull(override_preference) && override_preference == LOADOUT_OVERRIDE_CASE && !visuals_only)
 		briefcase = new(loc)
 		for(var/datum/loadout_item/item as anything in loadout_datums)
 			new item.item_path(briefcase)
