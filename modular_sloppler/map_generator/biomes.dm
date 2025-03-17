@@ -53,7 +53,7 @@
 	feature_density = 20
 	fauna_density = 0
 	flora_types = list()
-	feature_types = feature_types = list(
+	feature_types = list(
 		/obj/item/stack/rimworld_stone = 1,
 	)
 
