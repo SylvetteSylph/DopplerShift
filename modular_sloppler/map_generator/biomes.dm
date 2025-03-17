@@ -16,10 +16,13 @@
 
 /datum/biome/rimworld_mud
 	turf_type = /turf/open/misc/rimworld_mud
-	flora_density = 0
+	flora_density = 2.5
 	feature_density = 0
 	fauna_density = 0
-	flora_types = list()
+	flora_types = list(
+		/obj/structure/flora/fantasy_regrowing = 1,
+		/obj/structure/flora/fantasy_regrowing/ungrown = 2,
+	)
 	feature_types = list()
 
 /datum/biome/rimworld_dirt
@@ -28,20 +31,23 @@
 	feature_density = 15
 	fauna_density = 0
 	flora_types = list(
-		/obj/structure/flora/rimworld_grass = 6,
-		/obj/structure/flora/rimworld_grass/short = 4,
-		/obj/structure/flora/rimworld_grass/yellow_flower = 1,
-		/obj/structure/flora/rimworld_grass/red_flower = 1,
-		/obj/structure/flora/rimworld_grass/blue_flower = 1,
-		/obj/structure/flora/rimworld_grass/bramble = 3,
-		/obj/structure/flora/rimworld_grass/bush = 1,
-		/obj/structure/flora/rimworld_grass/moss = 3,
-		/obj/structure/flora/rimworld_tree/birch = 1,
-		/obj/structure/flora/rimworld_tree/birch/two = 1,
-		/obj/structure/flora/rimworld_tree/poplar = 1,
-		/obj/structure/flora/rimworld_tree/poplar/two = 1,
-		/obj/structure/flora/rimworld_tree/oak = 1,
-		/obj/structure/flora/rimworld_tree/oak/two = 1,
+		/obj/structure/flora/rimworld_grass = 8,
+		/obj/structure/flora/rimworld_grass/short = 6,
+		/obj/structure/flora/rimworld_grass/yellow_flower = 3,
+		/obj/structure/flora/rimworld_grass/red_flower = 3,
+		/obj/structure/flora/rimworld_grass/blue_flower = 3,
+		/obj/structure/flora/rimworld_grass/bramble = 5,
+		/obj/structure/flora/rimworld_grass/bush = 3,
+		/obj/structure/flora/rimworld_grass/moss = 5,
+		/obj/structure/flora/rimworld_tree/birch = 3,
+		/obj/structure/flora/rimworld_tree/birch/two = 3,
+		/obj/structure/flora/rimworld_tree/poplar = 3,
+		/obj/structure/flora/rimworld_tree/poplar/two = 13,
+		/obj/structure/flora/rimworld_tree/oak = 3,
+		/obj/structure/flora/rimworld_tree/oak/two = 3,
+		/obj/structure/flora/fantasy_regrowing/rice = 1,
+		/obj/structure/flora/fantasy_regrowing/hideroot = 1,
+		/obj/structure/flora/fantasy_regrowing/groundnut = 1,
 	)
 	feature_types = list(
 		/obj/item/stack/rimworld_stone = 1,
