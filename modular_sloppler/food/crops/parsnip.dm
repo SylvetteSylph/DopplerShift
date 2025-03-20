@@ -18,7 +18,7 @@
 	harvest_verb_suffix = "s"
 	knife_harvest = FALSE
 	harvest_with_hands = TRUE
-	delete_on_harvest = FALSE
+	delete_on_harvest = TRUE
 	regrowth_time_low = 12 MINUTES
 	regrowth_time_high = 16 MINUTES
 

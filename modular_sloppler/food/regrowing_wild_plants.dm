@@ -6,6 +6,7 @@
 	icon = 'modular_sloppler/food/icons/plants.dmi'
 	icon_state = "rat_weed"
 	base_icon_state = "rat_weed"
+	max_integrity = 50
 	gender = PLURAL
 	product_types = list(
 		/obj/item/food/fantasy_grown/ratweed_leaf = 1,

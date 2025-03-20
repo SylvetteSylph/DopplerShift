@@ -53,7 +53,7 @@
 		/obj/structure/flora/fantasy_regrowing/onions = 1,
 		/obj/structure/flora/fantasy_regrowing/kenaf = 1,
 		/obj/structure/flora/fantasy_regrowing/cotton = 1,
-		/obj/structure/flora/fantasy_regrowing/berries = 1,
+		/obj/structure/flora/fantasy_regrowing/grapes = 1,
 	)
 	feature_types = list(
 		/obj/item/stack/rimworld_stone = 1,

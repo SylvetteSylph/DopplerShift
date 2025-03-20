@@ -1,4 +1,4 @@
-/obj/structure/flora/fantasy_regrowing/berries
+/obj/structure/flora/fantasy_regrowing/grapes
 	name = "colberry bush"
 	desc = "A quite comically small tree, with large bunches of berries that grow from it's branches."
 	harvested_name = "picked colberry bush"
@@ -51,9 +51,9 @@
 /obj/item/food/fantasy_grown/grape_seeds
 	name = "colberry seedlets"
 	desc = "The seeds from the centers of colberries, which you haven't eaten yet."
-	icon_state = "grape_seeds"
+	icon_state = "grapes_seeds"
 	foodtypes = NUTS
-	plant_to_make = /obj/structure/flora/fantasy_regrowing/berries/ungrown
+	plant_to_make = /obj/structure/flora/fantasy_regrowing/grapes/ungrown
 	turfs_we_plant_on = list(
 		/turf/open/misc/rimworld_dirt,
 	)
