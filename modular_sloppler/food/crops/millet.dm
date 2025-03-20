@@ -1,23 +1,23 @@
-/obj/structure/flora/fantasy_regrowing/rice
-	name = "white-grain"
+/obj/structure/flora/fantasy_regrowing/millet
+	name = "pearl millet"
 	desc = "A plant that grows like tall grass, with edible white grains when processed."
-	harvested_name = "growing white-grain"
+	harvested_name = "growing pearl millet"
 	harvested_desc = "A plant that grows like tall grass, with edible white grains when processed. This one's not quite there yet."
-	icon_state = "rice"
-	base_icon_state = "rice"
-	harvest_icon_state = "rice_growing"
+	icon_state = "millet"
+	base_icon_state = "millet"
+	harvest_icon_state = "millet_growing"
 	gender = PLURAL
 	product_types = list(
-		/obj/item/food/fantasy_grown/rice_panicle = 1,
-		/obj/item/food/fantasy_grown/rice_seeds = 1,
+		/obj/item/food/fantasy_grown/millet_panicle = 1,
+		/obj/item/food/fantasy_grown/millet_seeds = 1,
 	)
 	harvest_amount_low = 2
 	harvest_amount_high = 4
 	harvest_with_hands = TRUE
 	delete_on_harvest = TRUE
-	harvest_message_low = "You cut the white-grain."
-	harvest_message_med = "You cut the white-grain."
-	harvest_message_high = "You cut the white-grain."
+	harvest_message_low = "You cut the millet."
+	harvest_message_med = "You cut the millet."
+	harvest_message_high = "You cut the millet."
 	harvest_message_true_thresholds = TRUE
 	harvest_verb = "cut"
 	harvest_verb_suffix = "s down"
@@ -28,15 +28,15 @@
 	knife_harvest = FALSE
 	spawns_harvested = FALSE
 
-/obj/structure/flora/fantasy_regrowing/rice/ungrown
+/obj/structure/flora/fantasy_regrowing/millet/ungrown
 	spawns_harvested = TRUE
 
-/// rice panicle
+/// Millet panicle
 
-/obj/item/food/fantasy_grown/rice_panicle
-	name = "white-grain panicle"
-	desc = "A big bunch of white-grain stalks, with the husks that contain the actual grain still attached."
-	icon_state = "rice"
+/obj/item/food/fantasy_grown/millet_panicle
+	name = "pearl millet panicle"
+	desc = "A big bunch of pearl millet stalks, with the husks that contain the actual grain still attached."
+	icon_state = "millet"
 	foodtypes = GRAIN
 	turfs_we_plant_on = list()
 	plant_to_make = null
@@ -51,12 +51,12 @@
 
 // Seeds
 
-/obj/item/food/fantasy_grown/rice_seeds
-	name = "white-grain seedlets"
-	desc = "The seeds of the white-grain plant, used for growing more."
-	icon_state = "rice_seeds"
+/obj/item/food/fantasy_grown/millet_seeds
+	name = "pearl millet seedlets"
+	desc = "The seeds of the pearl millet plant, used for growing more."
+	icon_state = "millet_seeds"
 	foodtypes = NUTS
-	plant_to_make = /obj/structure/flora/fantasy_regrowing/rice/ungrown
+	plant_to_make = /obj/structure/flora/fantasy_regrowing/millet/ungrown
 	turfs_we_plant_on = list(
 		/turf/open/misc/rimworld_dirt,
 	)

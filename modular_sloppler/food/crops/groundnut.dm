@@ -1,7 +1,7 @@
 /obj/structure/flora/fantasy_regrowing/groundnut
-	name = "highland groundnut"
+	name = "highland groundnut bush"
 	desc = "A plant common to highlands that hangs low to the ground, producing edible nuts."
-	harvested_name = "harvested highland groundnut"
+	harvested_name = "picked highland groundnut bush"
 	harvested_desc = "A plant common to highlands that hangs low to the ground, producing edible nuts. This one currently seems neuter, ouch."
 	icon_state = "groundnuts"
 	base_icon_state = "groundnuts"

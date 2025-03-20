@@ -22,9 +22,9 @@
 	/// The sound of fermentation
 	var/datum/looping_sound/boiling/soundloop
 	/// Sound played when the lid is opened.
-	var/lid_open_sound = 'sound/effects/stonedoor_openclose.ogg'
+	var/lid_open_sound = 'modular_sloppler/furniture/sounds/ceramic_open.wav'
 	/// Sound played when the lid is closed.
-	var/lid_close_sound = 'sound/effects/stonedoor_openclose.ogg'
+	var/lid_close_sound = 'modular_sloppler/furniture/sounds/ceramic_open.wav'
 	/// How much volume should the vessel have inside it
 	var/barrel_volume = 200
 

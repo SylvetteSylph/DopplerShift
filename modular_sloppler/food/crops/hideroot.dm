@@ -1,7 +1,7 @@
 /obj/structure/flora/fantasy_regrowing/hideroot
 	name = "hideroot growth"
 	desc = "A leafy plant with thick roots wrapped in a tough bark-like material, like a strong animal's hide."
-	harvested_name = "hideroot sprout"
+	harvested_name = "growing hideroot sprout"
 	harvested_desc = "A leafy plant with thick roots wrapped in a tough bark-like material, like a strong animal's hide. This one looks short and is likely still growing"
 	icon_state = "hideroot"
 	base_icon_state = "hideroot"
