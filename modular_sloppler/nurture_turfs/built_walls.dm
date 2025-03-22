@@ -26,7 +26,7 @@
 		ScrapeAway()
 
 /// Use this proc to make ores and whatnot spawn when mined
-/turf/closed/rimworld_mineral/proc/epic_loot()
+/turf/closed/rimworld_constructed/proc/epic_loot()
 	return
 
 // Actual walls for real
