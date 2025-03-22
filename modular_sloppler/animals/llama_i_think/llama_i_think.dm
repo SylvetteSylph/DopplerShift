@@ -16,6 +16,7 @@
 	attack_vis_effect = ATTACK_EFFECT_KICK
 	faction = list(FACTION_NEUTRAL)
 	mob_biotypes = MOB_ORGANIC | MOB_BEAST
+	layer = MOB_LAYER
 	health = 50
 	maxHealth = 50
 	melee_damage_lower = 3
@@ -34,7 +35,7 @@
 		/obj/item/food/fantasy_grown/rice_panicle,
 		/obj/item/food/fantasy_grown/millet_panicle,
 	)
-	AddComponent(/datum/component/tameable, food_types = food_types, tame_chance = 25, bonus_tame_chance = 15)
+	AddComponent(/datum/component/tameable, food_types = food_types, tame_chance = 25, bonus_tame_chance = 15, unique = TRUE)
 
 /mob/living/basic/rimworld_llama_i_think/examine(mob/user)
 	. = ..()
@@ -50,6 +51,9 @@
 		/datum/ai_planning_subtree/flee_target,
 	))
 
+/mob/living/basic/rimworld_llama_i_think/spawn_gibs(drop_bitflags)
+	return
+
 // Babby
 
 /mob/living/basic/rimworld_llama_i_think/young
@@ -64,7 +68,7 @@
 
 /mob/living/basic/rimworld_llama_i_think/young/Initialize(mapload)
 	. = ..()
-	ai_controller.set_blackboard_key(BB_FIND_MOM_TYPES, /mob/living/basic/rimworld_llama_i_think)
+	ai_controller.set_blackboard_key(BB_FIND_MOM_TYPES, list(/mob/living/basic/rimworld_llama_i_think))
 	AddComponent(\
 		/datum/component/growth_and_differentiation,\
 		growth_time = 10 MINUTES,\

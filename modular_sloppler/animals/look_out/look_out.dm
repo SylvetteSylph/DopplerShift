@@ -14,6 +14,7 @@
 	attack_vis_effect = ATTACK_EFFECT_SLASH
 	faction = list(FACTION_NEUTRAL)
 	mob_biotypes = MOB_ORGANIC | MOB_BEAST
+	layer = MOB_LAYER
 	health = 30
 	maxHealth = 30
 	melee_damage_lower = 1
@@ -35,7 +36,7 @@
 		/obj/item/food/fantasy_grown/ratweed_seeds,
 		/obj/item/food/fantasy_grown/rice_seeds,
 	)
-	AddComponent(/datum/component/tameable, food_types = food_types, tame_chance = 25, bonus_tame_chance = 15)
+	AddComponent(/datum/component/tameable, food_types = food_types, tame_chance = 25, bonus_tame_chance = 15, unique = TRUE)
 	if(lays_eggs)
 		AddComponent(\
 			/datum/component/egg_layer,\
@@ -70,6 +71,9 @@
 	visible_message(span_notice("[src] seems less afraid of people."))
 	new /obj/effect/temp_visual/heart(loc)
 
+/mob/living/basic/rimworld_look_out/spawn_gibs(drop_bitflags)
+	return
+
 // Babby
 
 /mob/living/basic/rimworld_look_out/young
@@ -85,7 +89,7 @@
 
 /mob/living/basic/rimworld_look_out/young/Initialize(mapload)
 	. = ..()
-	ai_controller.set_blackboard_key(BB_FIND_MOM_TYPES, /mob/living/basic/rimworld_look_out)
+	ai_controller.set_blackboard_key(BB_FIND_MOM_TYPES, list(/mob/living/basic/rimworld_look_out))
 	AddComponent(\
 		/datum/component/growth_and_differentiation,\
 		growth_time = 6 MINUTES,\

@@ -16,6 +16,7 @@
 	attack_vis_effect = ATTACK_EFFECT_KICK
 	faction = list(FACTION_NEUTRAL)
 	mob_biotypes = MOB_ORGANIC | MOB_BEAST
+	layer = MOB_LAYER
 	speed = 0.75
 	health = 80
 	maxHealth = 80
@@ -24,13 +25,15 @@
 	environment_smash = ENVIRONMENT_SMASH_NONE
 	blood_volume = BLOOD_VOLUME_NORMAL
 	ai_controller = /datum/ai_controller/basic_controller/rimworld_yakovlev
+	/// Does this one produce milk, used to stop babies from doing it
+	var/makes_milk = TRUE
 
 /mob/living/basic/rimworld_yakovlev/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/footstep, footstep_type = FOOTSTEP_MOB_HEAVY)
 	AddElement(/datum/element/ai_retaliate)
 	AddElement(/datum/element/ai_flee_while_injured)
-	if(gender != MALE)
+	if((gender != MALE) && makes_milk)
 		AddComponent(/datum/component/mob_harvest_cool, \
 			harvest_tool = /obj/item/rimworld_cup, \
 			produced_item_typepath = /obj/item/food/rimworld_milk/yak, \
@@ -45,12 +48,12 @@
 		/obj/item/food/fantasy_grown/rice_panicle,
 		/obj/item/food/fantasy_grown/millet_panicle,
 	)
-	AddComponent(/datum/component/tameable, food_types = food_types, tame_chance = 25, bonus_tame_chance = 15)
+	AddComponent(/datum/component/tameable, food_types = food_types, tame_chance = 25, bonus_tame_chance = 15, unique = TRUE)
 
 /mob/living/basic/rimworld_yakovlev/examine(mob/user)
 	. = ..()
 	. += span_notice("It seems to like millet and white-grain.")
-	if(gender == MALE)
+	if((gender == MALE) && makes_milk)
 		. += span_notice("[src] appears to be male, and thus won't produce milk.")
 
 /mob/living/basic/rimworld_yakovlev/tamed(mob/living/tamer, atom/food)
@@ -63,6 +66,9 @@
 		/datum/ai_planning_subtree/flee_target,
 	))
 
+/mob/living/basic/rimworld_yakovlev/spawn_gibs(drop_bitflags)
+	return
+
 // Babby
 
 /mob/living/basic/rimworld_yakovlev/young
@@ -74,10 +80,11 @@
 	health = 40
 	maxHealth = 40
 	ai_controller = /datum/ai_controller/basic_controller/rimworld_babby
+	makes_milk = FALSE
 
 /mob/living/basic/rimworld_yakovlev/young/Initialize(mapload)
 	. = ..()
-	ai_controller.set_blackboard_key(BB_FIND_MOM_TYPES, /mob/living/basic/rimworld_yakovlev)
+	ai_controller.set_blackboard_key(BB_FIND_MOM_TYPES, list(/mob/living/basic/rimworld_yakovlev))
 	AddComponent(\
 		/datum/component/growth_and_differentiation,\
 		growth_time = 10 MINUTES,\

@@ -8,10 +8,10 @@
 	harvest_icon_state = "rice_growing"
 	gender = PLURAL
 	product_types = list(
-		/obj/item/food/fantasy_grown/rice_panicle = 1,
+		/obj/item/food/fantasy_grown/rice_panicle = 2,
 		/obj/item/food/fantasy_grown/rice_seeds = 1,
 	)
-	harvest_amount_low = 2
+	harvest_amount_low = 3
 	harvest_amount_high = 4
 	harvest_with_hands = TRUE
 	delete_on_harvest = TRUE
