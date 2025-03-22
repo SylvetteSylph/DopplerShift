@@ -85,7 +85,7 @@
  * Arguments:
  * * mob/user - who is trying to do this
  */
-/datum/component/mob_harvest/proc/harvest_item(mob/user, obj/used_item)
+/datum/component/mob_harvest_cool/proc/harvest_item(mob/user, obj/used_item)
 	if(amount_ready < 1)
 		to_chat(user, span_warning("[parent] doesn't seem to have enough [produced_item_desc] to harvest."))
 		return
