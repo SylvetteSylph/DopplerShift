@@ -87,3 +87,15 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+
+/turf/open/misc/rimworld_stone/examine(mob/user)
+	. = ..()
+	. += span_notice("This can be smoothed with an empty hand with <b>Right-Click</b>.")
+
+/turf/open/misc/rimworld_stone/attack_hand_secondary(mob/user, list/modifiers)
+	playsound(src, SFX_STONE_DROP, 75, TRUE)
+	if(!do_After(user, 3 SECONDS), target = src)
+		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
+	playsound(src, SFX_STONE_DROP, 75, TRUE)
+	ChangeTurf(/turf/open/rimworld_constructed/smooth)
+	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN

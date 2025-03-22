@@ -15,6 +15,11 @@
 	. = ..()
 	baseturfs = initial(baseturfs)
 
+/turf/closed/rimworld_mineral/examine(mob/user)
+	. = ..()
+	. += span_notice("This can be mined with an empty hand with <b>Left-Click</b>.")
+	. += span_notice("This can be smoothed with an empty hand with <b>Right-Click</b>.")
+
 /turf/closed/rimworld_mineral/attack_hand(mob/user, list/modifiers)
 	. = ..()
 	if(.)
@@ -24,6 +29,14 @@
 		playsound(src, SFX_STONE_DROP, 75, TRUE)
 		epic_loot()
 		ScrapeAway()
+
+/turf/closed/rimworld_mineral/attack_hand_secondary(mob/user, list/modifiers)
+	playsound(src, SFX_STONE_DROP, 75, TRUE)
+	if(!do_After(user, 4 SECONDS), target = src)
+		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
+	playsound(src, SFX_STONE_DROP, 75, TRUE)
+	ChangeTurf(/turf/closed/rimworld_constructed/smooth)
+	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
 /// Use this proc to make ores and whatnot spawn when mined
 /turf/closed/rimworld_mineral/proc/epic_loot()

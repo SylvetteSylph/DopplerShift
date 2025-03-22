@@ -14,6 +14,23 @@
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
+/turf/open/rimworld_constructed/examine(mob/user)
+	. = ..()
+	. += span_notice("This can be deconstructed with an empty hand with <b>Right-Click</b>.")
+
+/turf/open/rimworld_constructed/attack_hand_secondary(mob/user, list/modifiers)
+	playsound(src, 'sound/items/hammering_wood.ogg', 75, TRUE)
+	if(do_after(user, 3 SECONDS, target = src))
+		playsound(src, 'sound/items/hammering_wood.ogg', 75, TRUE)
+		epic_loot()
+		ScrapeAway()
+		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
+	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
+
+/// Use this proc to make ores and whatnot spawn when mined
+/turf/open/rimworld_constructed/proc/epic_loot()
+	return
+
 // Actual floors for real
 
 /turf/open/rimworld_constructed/plank
@@ -26,12 +43,21 @@
 	clawfootstep = FOOTSTEP_WOOD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
+/turf/open/rimworld_constructed/plank/epic_loot()
+	new /obj/item/stack/rimworld_logs(get_turf(src))
+
 /turf/open/rimworld_constructed/brick
 	name = "stone brick flooring"
 	desc = "Bricks layered one aside another to make a sturdy looking floor."
 	icon_state = "brick"
 
+/turf/open/rimworld_constructed/brick/epic_loot()
+	new /obj/item/stack/rimworld_bricks(get_turf(src))
+
 /turf/open/rimworld_constructed/smooth
 	name = "smoothed stone flooring"
 	desc = "Natural stone that has been smoothed to look presentable."
 	icon_state = "smooth"
+
+/turf/open/rimworld_constructed/smooth/epic_loot()
+	return
