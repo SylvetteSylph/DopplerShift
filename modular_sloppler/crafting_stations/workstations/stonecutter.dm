@@ -10,7 +10,7 @@
 // Recipes
 
 /datum/rimworld_recipe/stone_to_brick
-	recipe_name = "Cut Boulders Into Bricks"
+	recipe_name = "Cut Boulders into Bricks"
 	recipe_requirements = list(
 		/obj/item/stack/rimworld_stone = 1
 	)
@@ -19,3 +19,4 @@
 	relevant_skill = /datum/skill/mining
 	relevant_skill_reward = SKILL_EXP_GRANT_LITTLE
 	production_sound = SFX_STONE_DROP
+	stand_strong_recipe = TRUE

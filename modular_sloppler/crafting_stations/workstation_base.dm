@@ -187,7 +187,8 @@
 		return FALSE
 	user.mind.adjust_experience(skill_to_grant, skill_amount)
 	qdel(selected_recipe)
-	selected_recipe = null
+	if(!selected_recipe.stand_strong_recipe)
+		selected_recipe = null
 	update_appearance()
 	return newly_created_thing
 

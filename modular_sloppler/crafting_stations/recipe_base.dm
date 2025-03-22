@@ -13,6 +13,8 @@
 	var/relevant_skill_reward = 30
 	/// What sound do we make when doing the recipe
 	var/production_sound = 'sound/items/hammering_wood.ogg'
+	/// Does this recipe go away when completed, or does it stick around
+	var/stand_strong_recipe = FALSE
 
 /datum/rimworld_recipe/debug_tester
 	recipe_name = "players giving their opinion on a map"
