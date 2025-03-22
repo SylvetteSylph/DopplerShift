@@ -31,7 +31,7 @@
 	turf_type = /turf/open/misc/rimworld_dirt
 	flora_density = 60
 	feature_density = 15
-	fauna_density = 0.05
+	fauna_density = 0.1
 	flora_types = list(
 		/obj/structure/flora/rimworld_grass = 8,
 		/obj/structure/flora/rimworld_grass/short = 6,
