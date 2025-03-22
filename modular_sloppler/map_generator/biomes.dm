@@ -16,7 +16,7 @@
 
 /datum/biome/rimworld_mud
 	turf_type = /turf/open/misc/rimworld_mud
-	flora_density = 2.5
+	flora_density = 4
 	feature_density = 0
 	fauna_density = 0
 	flora_types = list(
@@ -29,7 +29,7 @@
 	turf_type = /turf/open/misc/rimworld_dirt
 	flora_density = 60
 	feature_density = 15
-	fauna_density = 0
+	fauna_density = 1.5
 	flora_types = list(
 		/obj/structure/flora/rimworld_grass = 8,
 		/obj/structure/flora/rimworld_grass/short = 6,
@@ -57,6 +57,12 @@
 	)
 	feature_types = list(
 		/obj/item/stack/rimworld_stone = 1,
+	)
+	fauna_types = list(
+		/obj/effect/spawner/random/rimworld_wild_llamas = 1,
+		/obj/effect/spawner/random/rimworld_wild_yaks = 1,
+		/obj/effect/spawner/random/rimworld_wild_ducks = 1,
+		/obj/effect/spawner/random/rimworld_wild_goats = 1,
 	)
 
 /datum/biome/rimworld_stone_floor
