@@ -5,7 +5,7 @@
 	density = TRUE
 	max_integrity = 100
 	pass_flags_self = PASSTABLE | LETPASSTHROW
-	smoothing_flags = SMOOTH_BITMASK
+	smoothing_flags = SMOOTH_BITMASK|SMOOTH_OBJ
 
 /obj/structure/rimworld_fence/Initialize(mapload)
 	. = ..()

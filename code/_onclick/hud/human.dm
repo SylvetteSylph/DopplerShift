@@ -61,10 +61,10 @@
 	using.screen_loc = ui_human_language
 	static_inventory += using
 
-	using = new /atom/movable/screen/navigate(null, src)
-	using.icon = ui_style
-	using.screen_loc = ui_human_navigate
-	static_inventory += using
+	// using = new /atom/movable/screen/navigate(null, src) // SLOPPLER REMOVAL
+	// using.icon = ui_style
+	// using.screen_loc = ui_human_navigate
+	// static_inventory += using
 
 	using = new /atom/movable/screen/area_creator(null, src)
 	using.icon = ui_style
