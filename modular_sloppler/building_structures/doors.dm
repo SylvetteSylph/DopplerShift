@@ -22,6 +22,7 @@
 /obj/structure/rimworld_door/Initialize(mapload)
 	. = ..()
 	QUEUE_SMOOTH_NEIGHBORS(src)
+	air_update_turf(TRUE)
 
 /obj/structure/rimworld_door/Bumped(mob/bumper)
 	..()
