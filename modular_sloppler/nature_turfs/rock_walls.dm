@@ -25,7 +25,7 @@
 	if(.)
 		return
 	playsound(src, SFX_STONE_DROP, 75, TRUE)
-	if(do_after(user, 10 SECONDS, target = src))
+	if(do_after(user, 6 SECONDS, target = src))
 		playsound(src, SFX_STONE_DROP, 75, TRUE)
 		epic_loot()
 		ScrapeAway()
