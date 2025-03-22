@@ -17,13 +17,15 @@
 /datum/biome/rimworld_mud
 	turf_type = /turf/open/misc/rimworld_mud
 	flora_density = 4
-	feature_density = 0
+	feature_density = 0.01
 	fauna_density = 0
 	flora_types = list(
 		/obj/structure/flora/fantasy_regrowing = 1,
 		/obj/structure/flora/fantasy_regrowing/ungrown = 2,
 	)
-	feature_types = list()
+	feature_types = list(
+		/obj/effect/landmark/latejoin = 1,
+	)
 
 /datum/biome/rimworld_dirt
 	turf_type = /turf/open/misc/rimworld_dirt
