@@ -20,3 +20,7 @@
 	if(icon_variations > 1)
 		icon_state = "[base_icon_state]_[rand(1, icon_variations)]"
 	AddComponent(/datum/component/two_handed, require_twohands = TRUE, force_wielded = 18)
+	AddComponent(/datum/component/butchering, \
+		speed = 15 SECONDS, \
+		effectiveness = 50, \
+	)

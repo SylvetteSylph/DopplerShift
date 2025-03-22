@@ -12,6 +12,7 @@
 	glass_shard_type = null
 	buildstack = null
 	can_flip = FALSE
+	pass_flags_self = PASSTABLE | LETPASSTHROW
 	/// The list of all of the things "on" the table, to use with crafting
 	var/list/crafting_ingredients = list()
 	/// What the currently picked recipe is

@@ -2,6 +2,7 @@ GLOBAL_LIST_INIT(rimworld_log_recipes, list(
 	new/datum/stack_recipe("wood wall", /turf/closed/rimworld_constructed/plank, 3, time = 2.5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND, category = CAT_STRUCTURE),
 	new/datum/stack_recipe("wood floor", /turf/open/rimworld_constructed/plank, 1, time = 1 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_ONE_PER_TURF, category = CAT_STRUCTURE),
 	new/datum/stack_recipe("wood door", /obj/structure/rimworld_door/wood, 5, time = 5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_ONE_PER_TURF, category = CAT_STRUCTURE),
+	new/datum/stack_recipe("wood fence", /obj/structure/rimworld_fence/wood, 2, time = 2 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_ONE_PER_TURF, category = CAT_STRUCTURE),
 	new/datum/stack_recipe("wood cup", /obj/item/rimworld_cup, 1, time = 1 SECONDS, category = CAT_TOOLS),
 	new/datum/stack_recipe_list("utilities", list( \
 		new/datum/stack_recipe("stonecutter", /obj/structure/table/rimworld_crafter/stonecutter, 10, time = 5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_ONE_PER_TURF, category = CAT_STRUCTURE), \

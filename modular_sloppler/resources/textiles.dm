@@ -1,5 +1,11 @@
-GLOBAL_LIST_INIT(rimworld_kenaf_recipes, list())
-GLOBAL_LIST_INIT(rimworld_cloth_recipes, list())
+GLOBAL_LIST_INIT(rimworld_kenaf_recipes, list(
+	new/datum/stack_recipe("jute chestrags", /obj/item/clothing/under/rimworld_chestrags/kenaf, 2, time = 6 SECONDS, category = CAT_TOOLS),
+	new/datum/stack_recipe("jute waistrags", /obj/item/clothing/under/rimworld_waistrags/kenaf, 1, time = 4 SECONDS, category = CAT_TOOLS),
+))
+GLOBAL_LIST_INIT(rimworld_cloth_recipes, list(
+	new/datum/stack_recipe("cloth chestrags", /obj/item/clothing/under/rimworld_chestrags/cloth, 2, time = 6 SECONDS, category = CAT_TOOLS),
+	new/datum/stack_recipe("cloth waistrags", /obj/item/clothing/under/rimworld_waistrags/cloth, 1, time = 4 SECONDS, category = CAT_TOOLS),
+))
 GLOBAL_LIST_INIT(rimworld_leather_recipes, list())
 
 // Kenaf

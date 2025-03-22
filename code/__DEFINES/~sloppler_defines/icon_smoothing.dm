@@ -8,6 +8,8 @@
 
 // Structures connected to walls
 #define SMOOTH_GROUP_RIMWORLD_DOORS S_OBJ(1100)
+#define SMOOTH_GROUP_RIMWORLD_WOOD_FENCE S_OBJ(1101)
+#define SMOOTH_GROUP_RIMWORLD_STONE_FENCE S_OBJ(1102)
 
 // Structures not connected to walls
 #define SMOOTH_GROUP_RIMWORLD_WOOD_TABLE S_OBJ(1200)

@@ -7440,6 +7440,7 @@
 #include "modular_sloppler\animals\yakovlev\yakovlev.dm"
 #include "modular_sloppler\animals\yakovlev\yakovlev_ai.dm"
 #include "modular_sloppler\building_structures\doors.dm"
+#include "modular_sloppler\building_structures\fences.dm"
 #include "modular_sloppler\clothing\clothes\gloves.dm"
 #include "modular_sloppler\clothing\clothes\head.dm"
 #include "modular_sloppler\clothing\clothes\neck.dm"
