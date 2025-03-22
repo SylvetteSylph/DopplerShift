@@ -19,6 +19,10 @@
 	/// How long it takes to open this door
 	var/opening_time = 1 SECONDS
 
+/obj/structure/rimworld_door/Initialize(mapload)
+	. = ..()
+	QUEUE_SMOOTH_NEIGHBORS(src)
+
 /obj/structure/rimworld_door/Bumped(mob/bumper)
 	..()
 	if(!door_open && istype(bumper))
