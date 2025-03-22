@@ -32,7 +32,7 @@
 
 /turf/closed/rimworld_mineral/attack_hand_secondary(mob/user, list/modifiers)
 	playsound(src, SFX_STONE_DROP, 75, TRUE)
-	if(!do_After(user, 4 SECONDS), target = src)
+	if(!do_after(user, 4 SECONDS, target = src))
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 	playsound(src, SFX_STONE_DROP, 75, TRUE)
 	ChangeTurf(/turf/closed/rimworld_constructed/smooth)
