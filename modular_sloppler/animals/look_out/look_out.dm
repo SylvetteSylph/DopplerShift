@@ -89,7 +89,7 @@
 
 /mob/living/basic/rimworld_look_out/young/Initialize(mapload)
 	. = ..()
-	ai_controller.set_blackboard_key(BB_FIND_MOM_TYPES, list(/mob/living/basic/rimworld_look_out))
+	ai_controller.override_blackboard_key(BB_FIND_MOM_TYPES, list(/mob/living/basic/rimworld_look_out))
 	AddComponent(\
 		/datum/component/growth_and_differentiation,\
 		growth_time = 6 MINUTES,\

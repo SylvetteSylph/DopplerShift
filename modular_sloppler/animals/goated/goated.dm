@@ -84,7 +84,7 @@
 
 /mob/living/basic/rimworld_goated/young/Initialize(mapload)
 	. = ..()
-	ai_controller.set_blackboard_key(BB_FIND_MOM_TYPES, list(/mob/living/basic/rimworld_goated))
+	ai_controller.override_blackboard_key(BB_FIND_MOM_TYPES, list(/mob/living/basic/rimworld_goated))
 	AddComponent(\
 		/datum/component/growth_and_differentiation,\
 		growth_time = 10 MINUTES,\

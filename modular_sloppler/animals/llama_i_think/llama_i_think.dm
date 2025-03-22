@@ -68,7 +68,7 @@
 
 /mob/living/basic/rimworld_llama_i_think/young/Initialize(mapload)
 	. = ..()
-	ai_controller.set_blackboard_key(BB_FIND_MOM_TYPES, list(/mob/living/basic/rimworld_llama_i_think))
+	ai_controller.override_blackboard_key(BB_FIND_MOM_TYPES, list(/mob/living/basic/rimworld_llama_i_think))
 	AddComponent(\
 		/datum/component/growth_and_differentiation,\
 		growth_time = 10 MINUTES,\
