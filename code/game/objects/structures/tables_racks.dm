@@ -918,7 +918,7 @@
 
 /obj/structure/rack/examine(mob/user)
 	. = ..()
-	. += span_notice("It's held together by a couple of <b>bolts</b>.")
+	// . += span_notice("It's held together by a couple of <b>bolts</b>.") // SLOPPLER EDIT
 
 /obj/structure/rack/CanAllowThrough(atom/movable/mover, border_dir)
 	. = ..()
