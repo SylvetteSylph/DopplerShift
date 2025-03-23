@@ -53,3 +53,28 @@
 	if(!.)
 		return
 	playsound(parent, opening_sound, 50, TRUE)
+
+// Wooden barrel version
+
+/obj/structure/fantasy_storage_pot/barrel
+	name = "storage barrel"
+	desc = "A massive stoneware pot for storing stuff inside of. Has a handy lid to keep everything inside."
+	icon = 'modular_sloppler/furniture/icons/storage.dmi'
+	icon_state = "barrel"
+	base_icon_state = "barrel"
+	resistance_flags = FLAMMABLE
+	storage_datum_to_use = /datum/storage/fantasy_storage_pot/barrel
+
+/datum/storage/fantasy_storage_pot/barrel
+	opening_sound = 'sound/machines/closet/wooden_closet_close.ogg'
+
+// Wooden shelves
+
+/obj/structure/rack/rimworld_wood
+	name = "shelf"
+	icon = 'modular_sloppler/furniture/icons/storage.dmi'
+	icon_state = "shelf"
+	resistance_flags = FLAMMABLE
+
+/obj/structure/rack/rimworld_wood/atom_deconstruct(disassembled = TRUE)
+	new /obj/item/stack/rimworld_logs(drop_location(), 1)
