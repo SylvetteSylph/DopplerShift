@@ -43,9 +43,27 @@
 /obj/item/food/rimworld_egg/make_germ_sensitive(mapload)
 	return
 
+/obj/item/food/rimworld_egg/cooked
+	name = "cooked egg"
+	desc = "An egg! Cooked."
+	icon_state = "egg_cooked"
+	food_reagents = list(
+		/datum/reagent/consumable/nutriment/protein = 3,
+		/datum/reagent/consumable/eggyolk = 1,
+		/datum/reagent/consumable/nutriment/vitamin = 1,
+	)
+	foodtypes = MEAT | FRIED
+
 /obj/item/food/rimworld_egg/duck
 	name = "duck's egg"
 	desc = "The egg of a duck, maybe this one will make another duck if you leave it on the ground?"
+
+/obj/item/food/rimworld_egg/duck/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/food/rimworld_egg/cooked/duck, rand(1 MINUTES, 2 MINUTES), TRUE, FALSE)
+
+/obj/item/food/rimworld_egg/cooked/duck
+	name = "cooked duck's egg"
+	desc = "The egg of a duck, cooked in it's own shell. Much tastier than not cooked unless you're a lizard, maybe."
 
 // Meats
 
@@ -68,22 +86,66 @@
 /obj/item/food/rimworld_meat/make_germ_sensitive(mapload)
 	return
 
+/obj/item/food/rimworld_meat/cooked
+	name = "cooked debug meat"
+	desc = "A slab cooked ?? of meat."
+	icon_state = "slab_cooked"
+	bite_consumption = 3
+	food_reagents = list(
+		/datum/reagent/consumable/nutriment/protein = 5,
+		/datum/reagent/consumable/nutriment/fat = 1,
+		/datum/reagent/consumable/nutriment/vitamin = 4,
+	)
+	w_class = WEIGHT_CLASS_SMALL
+	tastes = list("meat" = 1)
+	foodtypes = MEAT
+	preserved_food = TRUE
+
 /obj/item/food/rimworld_meat/yak
 	name = "yak's meat"
 	desc = "A cut of the meat of a yak."
+
+/obj/item/food/rimworld_meat/yak/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/food/rimworld_meat/cooked/yak, rand(1 MINUTES, 2 MINUTES), TRUE, FALSE)
+
+/obj/item/food/rimworld_meat/cooked/yak
+	name = "seared yak's meat"
+	desc = "A cut of yak's meat, seared over a fire."
 
 /obj/item/food/rimworld_meat/goat
 	name = "goat's meat"
 	desc = "A cut of the meat of a goat."
 
+/obj/item/food/rimworld_meat/goat/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/food/rimworld_meat/cooked/goat, rand(1 MINUTES, 2 MINUTES), TRUE, FALSE)
+
+/obj/item/food/rimworld_meat/cooked/goat
+	name = "seared goat's meat"
+	desc = "A cut of goat's meat, seared over a fire."
+
 /obj/item/food/rimworld_meat/llama
 	name = "llama's meat"
 	desc = "A cut of the meat of a llama."
+
+/obj/item/food/rimworld_meat/llama/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/food/rimworld_meat/cooked/llama, rand(1 MINUTES, 2 MINUTES), TRUE, FALSE)
+
+/obj/item/food/rimworld_meat/cooked/llama
+	name = "seared llama's meat"
+	desc = "A cut of llama's meat, seared over a fire."
 
 /obj/item/food/rimworld_meat/duck
 	name = "duck's meat"
 	desc = "A cut of the meat of a duck."
 	icon_state = "foul"
+
+/obj/item/food/rimworld_meat/duck/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/food/rimworld_meat/cooked/duck, rand(1 MINUTES, 2 MINUTES), TRUE, FALSE)
+
+/obj/item/food/rimworld_meat/cooked/duck
+	name = "seared duck's meat"
+	desc = "A cut of duck's meat, seared over a fire."
+	icon_state = "foul_cooked"
 
 /obj/item/food/rimworld_meat/fat
 	name = "animal fat"
@@ -91,4 +153,16 @@
 	icon_state = "fat"
 	food_reagents = list(
 		/datum/reagent/consumable/nutriment/fat = 5,
+	)
+
+/obj/item/food/rimworld_meat/fat/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/food/rimworld_meat/cooked/fat, rand(1 MINUTES, 2 MINUTES), TRUE, FALSE)
+
+/obj/item/food/rimworld_meat/cooked/fat
+	name = "seared animal fat"
+	desc = "An animal's fat, made more palatable by fire."
+	icon_state = "fat_cooked"
+	food_reagents = list(
+		/datum/reagent/consumable/nutriment/fat = 4,
+		/datum/reagent/consumable/nutriment/vitamin = 2,
 	)
