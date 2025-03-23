@@ -24,7 +24,7 @@
 		if(outfit.l_hand)
 			LAZYADD(outfit.backpack_contents, outfit.l_hand)
 		outfit.l_hand = item_path
-
+/* // SLOPPLER REMOVAL
 /datum/loadout_item/inhand/cane
 	name = "Cane"
 	item_path = /obj/item/cane
@@ -40,3 +40,4 @@
 /datum/loadout_item/inhand/briefcase_secure
 	name = "Briefcase (Secure)"
 	item_path = /obj/item/storage/briefcase/secure
+*/

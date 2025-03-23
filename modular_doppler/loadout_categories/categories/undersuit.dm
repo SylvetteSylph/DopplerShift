@@ -33,6 +33,7 @@
 *	DOPPLER STANDARD UNIFORM OPTIONS
 */
 
+/* // SLOPPLER REMOVAL
 /datum/loadout_item/undersuit/doppler_uniform
 	name = "Doppler Uniform"
 	item_path = /obj/item/clothing/under/misc/doppler_uniform/standard
@@ -346,3 +347,4 @@
 /datum/loadout_item/undersuit/disco
 	name = "Executive Suit"
 	item_path = /obj/item/clothing/under/suit/black_really
+*/

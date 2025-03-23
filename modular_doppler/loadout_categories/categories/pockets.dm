@@ -5,6 +5,7 @@
 /obj/item/toy/plush/on_loadout_custom_described()
 	normal_desc = desc
 
+/* // SLOPPLER REMOVAL
 // The wallet loadout item is special, and puts the player's ID and other small items into it on initialize (fancy!)
 /datum/loadout_item/pocket_items/wallet
 	name = "Wallet"
@@ -309,3 +310,4 @@
 /datum/loadout_item/pocket_items/security_suit_strap
 	name = "Security Equipment Strap"
 	item_path = /obj/item/job_equipment_strap/security
+*/

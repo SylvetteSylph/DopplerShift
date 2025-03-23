@@ -4,7 +4,6 @@
 	type_to_generate = /datum/loadout_item/belts
 	tab_order = /datum/loadout_category/accessories::tab_order + 1
 
-
 /*
 *	LOADOUT ITEM DATUMS FOR THE BELT SLOT
 */
@@ -19,7 +18,7 @@
 	else
 		outfit.belt = item_path
 
-
+/* // SLOPPLER REMOVAL
 /datum/loadout_item/belts/fanny_pack_black
 	name = "Black Fannypack"
 	item_path = /obj/item/storage/belt/fannypack/black
@@ -99,3 +98,4 @@
 /datum/loadout_item/belts/crusader_belt
 	name = "Sword Belt & Sheath"
 	item_path = /obj/item/storage/belt/crusader
+*/

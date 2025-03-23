@@ -68,7 +68,7 @@
 		BODYSHAPE_HUMANOID_T = CLOTH_WORN_ICON,
 	)
 
-/obj/item/clothing/under/rimworld_shirt/leather
+/obj/item/clothing/under/rimworld_skirt/leather
 	name = "leather underskirt"
 	icon = LEATHER_OBJ_ICON
 	worn_icon = LEATHER_WORN_ICON

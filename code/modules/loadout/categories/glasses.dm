@@ -23,7 +23,7 @@
 	else
 		outfit.glasses = item_path
 // DOPPLER EDIT END
-
+/* // SLOPPLER REMOVAL
 /datum/loadout_item/glasses/prescription_glasses
 	name = "Glasses"
 	item_path = /obj/item/clothing/glasses/regular
@@ -68,3 +68,4 @@
 /datum/loadout_item/glasses/eyepatch/medical
 	name = "Medical Eyepatch"
 	item_path = /obj/item/clothing/glasses/eyepatch/medical
+*/

@@ -1,3 +1,4 @@
+/* // SLOPPLER REMOVAL
 /datum/loadout_item/head/tv_head
 	name = "TV Head"
 	item_path = /obj/item/clothing/head/costume/tv_head
@@ -97,3 +98,4 @@
 /datum/loadout_item/head/breach_helmet
 	name = "Breach Helmet"
 	item_path = /obj/item/clothing/head/utility/hardhat/welding/doppler_dc
+*/

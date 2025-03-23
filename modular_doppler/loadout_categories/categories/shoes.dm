@@ -23,6 +23,7 @@
 	else
 		outfit.shoes = item_path
 
+/* // SLOPPLER REMOVAL
 /datum/loadout_item/shoes/medical
 	name = "Medical Shoes"
 	item_path = /obj/item/clothing/shoes/medical
@@ -142,3 +143,4 @@
 /datum/loadout_item/shoes/rollerblades
 	name = "Inline Skates"
 	item_path = /obj/item/clothing/shoes/rollerblades
+*/

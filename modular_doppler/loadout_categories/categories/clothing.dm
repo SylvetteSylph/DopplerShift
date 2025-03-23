@@ -7,7 +7,6 @@
 /*
 *	LOADOUT ITEM DATUMS FOR THE (EXO/OUTER)SUIT SLOT
 */
-
 /datum/loadout_item/suit
 	abstract_type = /datum/loadout_item/suit
 
@@ -26,7 +25,7 @@
 /*
 *	WINTER COATS
 */
-
+/* // SLOPPLER REMOVAL
 /datum/loadout_item/suit/winter_coat
 	name = "Winter Coat"
 	item_path = /obj/item/clothing/suit/hooded/wintercoat
@@ -378,3 +377,4 @@
 /datum/loadout_item/suit/sec_dep_jacket_red
 	name = "Security Department Jacket"
 	item_path = /obj/item/clothing/suit/jacket/doppler/departmental_jacket/sec/red
+*/

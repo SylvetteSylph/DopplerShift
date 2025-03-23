@@ -85,8 +85,8 @@
 		bite_consumption = bite_consumption,\
 		junkiness = junkiness,\
 		reagent_purity = starting_reagent_purity,\
-		consumption_sound = consumption_sound,\ // SLOPPER ADDITION
-	)
+		consumption_sound = consumption_sound,\
+	) // SLOPPER ADDITION LINE ABOVE
 
 ///This proc handles processable elements, overwrite this if you want to add behavior such as slicing, forking, spooning, whatever, to turn the item into something else
 /obj/item/food/proc/make_processable()

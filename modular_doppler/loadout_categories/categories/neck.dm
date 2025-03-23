@@ -1,3 +1,4 @@
+/* // SLOPPLER REMOVAL
 /datum/loadout_item/neck/colonial_cloak
 	name = "Colonial Cloak"
 	item_path = /obj/item/clothing/neck/cloak/colonial
@@ -65,3 +66,4 @@
 /datum/loadout_item/neck/bowtie
 	name = "Bowtie (Colorable)"
 	item_path = /obj/item/clothing/neck/bowtie
+*/

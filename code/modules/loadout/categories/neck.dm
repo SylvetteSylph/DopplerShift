@@ -20,7 +20,7 @@
 	else
 		outfit.neck = item_path
 // DOPPLER EDIT END
-
+/* // SLOPPLER REMOVAL
 /datum/loadout_item/neck/scarf_greyscale
 	name = "Scarf (Colorable)"
 	item_path = /obj/item/clothing/neck/scarf
@@ -44,3 +44,4 @@
 /datum/loadout_item/neck/necktie_loose
 	name = "Necktie (Loose)"
 	item_path = /obj/item/clothing/neck/tie/detective
+*/

@@ -19,6 +19,7 @@
 	else
 		outfit.gloves = item_path
 
+/* // SLOPPLER REMOVAL
 /datum/loadout_item/gloves/fingerless
 	name = "Fingerless Gloves"
 	item_path = /obj/item/clothing/gloves/fingerless
@@ -98,3 +99,4 @@
 /datum/loadout_item/gloves/aerostatic
 	name = "Aerostatic Gloves"
 	item_path = /obj/item/clothing/gloves/kim
+*/

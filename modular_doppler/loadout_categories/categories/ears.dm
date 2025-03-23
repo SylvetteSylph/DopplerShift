@@ -4,7 +4,6 @@
 	type_to_generate = /datum/loadout_item/ears
 	tab_order = /datum/loadout_category/belt::tab_order + 1
 
-
 /*
 *	LOADOUT ITEM DATUMS FOR THE EAR SLOT
 */
@@ -18,7 +17,7 @@
 		outfit.ears = item_path
 	else
 		outfit.ears = item_path
-
+/* // SLOPPLER REMOVAL
 /datum/loadout_item/ears/headphones
 	name = "Headphones"
 	item_path = /obj/item/instrument/piano_synth/headphones
@@ -30,3 +29,4 @@
 /datum/loadout_item/ears/frontier
 	name = "Frontier Radio"
 	item_path = /obj/item/radio/headset/headset_frontier_colonist
+*/

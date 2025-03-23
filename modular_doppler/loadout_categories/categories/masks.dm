@@ -23,6 +23,7 @@
 	else
 		outfit.mask = item_path
 
+/* // SLOPPLER REMOVAL
 /datum/loadout_item/mask/face_mask
 	name = "Face Mask"
 	item_path = /obj/item/clothing/mask/breath
@@ -102,3 +103,4 @@
 /datum/loadout_item/mask/half_face
 	name = "Half-Face Rebreather"
 	item_path = /obj/item/clothing/mask/gas/nightlight
+*/

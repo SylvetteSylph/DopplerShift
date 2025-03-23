@@ -4,7 +4,6 @@
 	type_to_generate = /datum/loadout_item/backpack
 	tab_order = /datum/loadout_category/belt::tab_order + 1
 
-
 /*
 *	LOADOUT ITEM DATUMS FOR THE BACK SLOT
 */
@@ -17,7 +16,7 @@
 	outfit.back = item_path
 
 
-
+/* // SLOPPLER REMOVAL
 /datum/loadout_item/backpack
 	name = "Custom Backpack"
 	item_path = /obj/item/storage/backpack/custom
@@ -69,3 +68,4 @@
 /datum/loadout_item/backpack/gravity_harness
 	name = "Gravity Harness"
 	item_path = /obj/item/gravity_harness/with_cell
+*/

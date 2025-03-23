@@ -16,6 +16,7 @@
 			LAZYADD(outfit.backpack_contents, outfit.l_hand)
 		outfit.l_hand = item_path
 
+		/* // SLOPPLER REMOVAL
 /datum/loadout_item/toy/toy_sword
 	name = "Fake Energy-Sword"
 	item_path = /obj/item/toy/sword
@@ -76,3 +77,4 @@
 	name = "Harmonica"
 	item_path = /obj/item/instrument/harmonica
 	restricted_roles =  list(JOB_PRISONER)
+*/

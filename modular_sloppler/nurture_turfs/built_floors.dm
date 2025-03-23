@@ -45,7 +45,7 @@
 	barefootstep = FOOTSTEP_WOOD_BAREFOOT
 	clawfootstep = FOOTSTEP_WOOD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	gianed_skill = /datum/skill/rimworld_carpentry
+	gained_skill = /datum/skill/rimworld_carpentry
 
 /turf/open/rimworld_constructed/plank/epic_loot()
 	new /obj/item/stack/rimworld_logs(get_turf(src))

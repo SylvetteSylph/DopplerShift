@@ -1,3 +1,4 @@
+/* // SLOPPLER REMOVAL
 /datum/loadout_item/glasses/welding
 	name = "Welding Goggles"
 	item_path = /obj/item/clothing/glasses/welding
@@ -85,3 +86,4 @@
 /datum/loadout_item/glasses/hud_eyepatch_sci
 	name = "Science HUD Eyepatch"
 	item_path = /obj/item/clothing/glasses/hud/eyepatch/sci
+*/

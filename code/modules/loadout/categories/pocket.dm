@@ -42,7 +42,7 @@
 		return NONE
 
 	return ..()
-
+/* // SLOPPLER REMOVAL
 /datum/loadout_item/pocket_items/lipstick_black
 	name = "Lipstick (Black)"
 	item_path = /obj/item/lipstick/black
@@ -193,3 +193,4 @@
 /datum/loadout_item/pocket_items/d00
 	name = "D00"
 	item_path = /obj/item/dice/d00 */
+*/
