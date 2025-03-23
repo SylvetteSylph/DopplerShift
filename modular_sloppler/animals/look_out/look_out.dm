@@ -36,13 +36,12 @@
 		/obj/item/food/fantasy_grown/ratweed_seeds,
 		/obj/item/food/fantasy_grown/rice_seeds,
 	)
-	AddComponent(/datum/component/tameable, food_types = food_types, tame_chance = 25, bonus_tame_chance = 15, unique = TRUE)
 	if(lays_eggs)
 		AddComponent(\
 			/datum/component/egg_layer,\
 			/obj/item/food/rimworld_egg/duck,\
 			food_types,\
-			feed_messages = list("[src] quacks the seeds down."),\
+			feed_messages = list("[src] snaps up the seeds happily."),\
 			lay_messages = EGG_LAYING_MESSAGES,\
 			eggs_left = 0,\
 			eggs_added_from_eating = rand(1, 2),\
