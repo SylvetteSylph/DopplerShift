@@ -28,6 +28,10 @@ GLOBAL_LIST_INIT(rimworld_leather_recipes, list())
 	throw_range = 3
 	campfire_fuel_value = 2 MINUTES
 	novariants = FALSE
+	splint_factor = 0.65
+	burn_cleanliness_bonus = 0.7
+	absorption_rate = 0.075
+	absorption_capacity = 4
 
 /obj/item/stack/rimworld_kenaf/Initialize(mapload, new_amount, merge, list/mat_override, mat_amt)
 	. = ..()
@@ -57,6 +61,10 @@ GLOBAL_LIST_INIT(rimworld_leather_recipes, list())
 	throw_range = 3
 	campfire_fuel_value = 2 MINUTES
 	novariants = FALSE
+	splint_factor = 0.7
+	burn_cleanliness_bonus = 0.75
+	absorption_rate = 0.075
+	absorption_capacity = 5
 
 /obj/item/stack/rimworld_cloth/Initialize(mapload, new_amount, merge, list/mat_override, mat_amt)
 	. = ..()
