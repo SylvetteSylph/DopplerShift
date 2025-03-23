@@ -6,13 +6,15 @@
 	icon = 'modular_sloppler/food/icons/animal_products.dmi'
 	icon_state = "milj"
 	food_reagents = list(
-		/datum/reagent/consumable/milk = 10
+		/datum/reagent/consumable/milk = 10,
+		/datum/reagent/consumable/nutriment/peptides = 2,
 	)
 	tastes = list("milk" = 3)
 	trash_type = /obj/item/rimworld_cup
 	foodtypes = DAIRY
 	w_class = WEIGHT_CLASS_SMALL
 	preserved_food = TRUE
+	consumption_sound = 'sound/items/drink.ogg'
 
 /obj/item/food/rimworld_milk/make_germ_sensitive(mapload)
 	return

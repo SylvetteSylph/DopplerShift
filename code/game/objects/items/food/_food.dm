@@ -50,6 +50,8 @@
 	var/crafting_complexity = 0
 	///Buff given when a hand-crafted version of this item is consumed. Randomized according to crafting_complexity if not assigned.
 	var/datum/status_effect/food/crafted_food_buff = null
+	/// does the food make a special sound when you eat it? // SLOPPLER ADDITION
+	var/consumption_sound = 'sound/items/eatfood.ogg' // SLOPPLER ADDITION
 
 /obj/item/food/Initialize(mapload)
 	if(food_reagents)
@@ -83,6 +85,7 @@
 		bite_consumption = bite_consumption,\
 		junkiness = junkiness,\
 		reagent_purity = starting_reagent_purity,\
+		consumption_sound = consumption_sound,\ // SLOPPER ADDITION
 	)
 
 ///This proc handles processable elements, overwrite this if you want to add behavior such as slicing, forking, spooning, whatever, to turn the item into something else

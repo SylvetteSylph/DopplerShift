@@ -40,6 +40,8 @@ Behavior that's still missing from this component that original food items had t
 	var/volume = 50
 	///The flavortext for taste (haha get it flavor text)
 	var/list/tastes
+	/// Sound made when eating // SLOPPLER ADDITION
+	var/consumption_sound = 'sound/items/eatfood.ogg' // SLOPPLER ADDITION
 
 /datum/component/edible/Initialize(
 	list/initial_reagents,
@@ -55,6 +57,7 @@ Behavior that's still missing from this component that original food items had t
 	datum/callback/on_consume,
 	datum/callback/check_liked,
 	reagent_purity = 0.5,
+	consumption_sound, // SLOPPLER ADDITION
 )
 	if(!isatom(parent))
 		return COMPONENT_INCOMPATIBLE
@@ -70,6 +73,7 @@ Behavior that's still missing from this component that original food items had t
 	src.on_consume = on_consume
 	src.tastes = string_assoc_list(tastes)
 	src.check_liked = check_liked
+	src.consumption_sound = consumption_sound // SLOPPLER ADDITION
 
 	setup_initial_reagents(initial_reagents, reagent_purity)
 
@@ -472,7 +476,7 @@ Behavior that's still missing from this component that original food items had t
 		return FALSE
 	if(eater.satiety > -200)
 		eater.satiety -= junkiness
-	playsound(eater.loc,'sound/items/eatfood.ogg', rand(10,50), TRUE)
+	playsound(eater.loc, consumption_sound, rand(10,50), TRUE) // SLOPPLER EDIT - playsound(eater.loc,'sound/items/eatfood.ogg', rand(10,50), TRUE)
 	if(!owner.reagents.total_volume)
 		return
 	var/sig_return = SEND_SIGNAL(parent, COMSIG_FOOD_EATEN, eater, feeder, bitecount, bite_consumption)
