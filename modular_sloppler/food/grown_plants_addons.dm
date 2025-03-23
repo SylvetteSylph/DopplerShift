@@ -47,7 +47,7 @@
 	if(!is_type_in_list(interacting_turf, turfs_we_plant_on))
 		balloon_alert(user, "cannot plant here")
 		return
-	if(!do_after(user, 5 SECONDS, interacting_turf))
+	if(!do_after(user, (5 SECONDS) * user.mind.get_skill_modifier(/datum/skill/rimworld_farming, SKILL_SPEED_MODIFIER), interacting_turf))
 		return
 	new plant_to_make(interacting_turf)
 	balloon_alert(user, "planted")

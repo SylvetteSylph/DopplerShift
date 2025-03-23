@@ -25,16 +25,18 @@
 	if(.)
 		return
 	playsound(src, SFX_STONE_DROP, 75, TRUE)
-	if(do_after(user, 6 SECONDS, target = src))
+	if(do_after(user, (6 SECONDS) * user.mind.get_skill_modifier(/datum/skill/mining, SKILL_SPEED_MODIFIER), target = src))
 		playsound(src, SFX_STONE_DROP, 75, TRUE)
 		epic_loot()
+		user.mind.adjust_experience(/datum/skill/mining, SKILL_EXP_GRANT_LITTLE)
 		ScrapeAway()
 
 /turf/closed/rimworld_mineral/attack_hand_secondary(mob/user, list/modifiers)
 	playsound(src, SFX_STONE_DROP, 75, TRUE)
-	if(!do_after(user, 4 SECONDS, target = src))
+	if(!do_after(user, (4 SECONDS) * user.mind.get_skill_modifier(/datum/skill/rimworld_masonry, SKILL_SPEED_MODIFIER), target = src))
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 	playsound(src, SFX_STONE_DROP, 75, TRUE)
+	user.mind.adjust_experience(/datum/skill/rimworld_masonry, SKILL_EXP_GRANT_LITTLE)
 	ChangeTurf(/turf/closed/rimworld_constructed/smooth)
 	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
