@@ -2,7 +2,7 @@
 	name = "Leatherworks"
 	desc = "All the tools you need to make things out of leathers."
 	icon = 'modular_sloppler/crafting_stations/icons/stations.dmi'
-	icon_state = "Leatherworks"
+	icon_state = "leatherworks"
 	allowed_choices = list(
 		/datum/rimworld_recipe/leather_backpack,
 		/datum/rimworld_recipe/leather_satchel,

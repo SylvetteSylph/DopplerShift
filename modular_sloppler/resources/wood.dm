@@ -7,6 +7,7 @@ GLOBAL_LIST_INIT(rimworld_log_recipes, list(
 	new/datum/stack_recipe_list("utilities", list( \
 		new/datum/stack_recipe("stonecutter", /obj/structure/table/rimworld_crafter/stonecutter, 10, time = 5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_ONE_PER_TURF, category = CAT_STRUCTURE), \
 		new/datum/stack_recipe("loom", /obj/structure/table/rimworld_crafter/loom, 10, time = 5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_ONE_PER_TURF, category = CAT_STRUCTURE), \
+		new/datum/stack_recipe("leatherworks", /obj/structure/table/rimworld_crafter/leatherworks, 10, time = 5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_ONE_PER_TURF, category = CAT_STRUCTURE), \
 		new/datum/stack_recipe("firepit", /obj/structure/rimworld_campfire, 10, time = 5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_ONE_PER_TURF, category = CAT_STRUCTURE), \
 		new/datum/stack_recipe("storage barrel", /obj/structure/fantasy_storage_pot/barrel, 5, time = 5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_ONE_PER_TURF, category = CAT_STRUCTURE), \
 	)),

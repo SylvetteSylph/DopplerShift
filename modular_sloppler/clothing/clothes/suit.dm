@@ -7,6 +7,7 @@
 	worn_icon_state = "raincoat"
 	inhand_icon_state = null
 	allowed = null
+	supports_variations_flags = CLOTHING_NO_VARIATION
 
 /obj/item/clothing/suit/jacket/rimworld_raincoat/Initialize(mapload)
 	. = ..()
@@ -36,6 +37,7 @@
 	worn_icon_state = "jacket"
 	inhand_icon_state = null
 	allowed = null
+	supports_variations_flags = CLOTHING_NO_VARIATION
 
 /obj/item/clothing/suit/jacket/rimworld_jacket/Initialize(mapload)
 	. = ..()
@@ -65,6 +67,7 @@
 	worn_icon_state = "vest"
 	inhand_icon_state = null
 	allowed = null
+	supports_variations_flags = CLOTHING_NO_VARIATION
 
 /obj/item/clothing/suit/jacket/rimworld_vest/Initialize(mapload)
 	. = ..()

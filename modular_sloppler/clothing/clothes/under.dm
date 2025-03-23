@@ -10,6 +10,7 @@
 	has_sensor = NO_SENSORS
 	can_adjust = TRUE
 	alt_covers_chest = FALSE
+	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION
 
 /obj/item/clothing/under/rimworld_shirt/kenaf
 	name = "jute underclothes"
@@ -51,6 +52,7 @@
 	has_sensor = NO_SENSORS
 	can_adjust = TRUE
 	alt_covers_chest = FALSE
+	supports_variations_flags = CLOTHING_NO_VARIATION
 
 /obj/item/clothing/under/rimworld_skirt/kenaf
 	name = "jute underskirt"
@@ -88,6 +90,7 @@
 	body_parts_covered = CHEST|GROIN|LEGS
 	has_sensor = NO_SENSORS
 	can_adjust = FALSE
+	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION
 
 /obj/item/clothing/under/rimworld_chestrags/kenaf
 	name = "jute chestrags"
@@ -119,6 +122,7 @@
 	body_parts_covered = CHEST|GROIN|LEGS
 	has_sensor = NO_SENSORS
 	can_adjust = FALSE
+	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION
 
 /obj/item/clothing/under/rimworld_waistrags/kenaf
 	name = "jute waistrags"
