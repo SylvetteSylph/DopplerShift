@@ -23,4 +23,5 @@
 	AddComponent(/datum/component/butchering, \
 		speed = 15 SECONDS, \
 		effectiveness = 50, \
+		can_be_blunt = FALSE, \
 	)
