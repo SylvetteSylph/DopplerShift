@@ -49,7 +49,7 @@
 	)
 	resulting_item = /obj/item/stack/rimworld_kenaf
 	crafting_time = 3 SECONDS
-	relevant_skill = /datum/skill/production
+	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_LITTLE
 	production_sound = SFX_RUSTLE
 	stand_strong_recipe = TRUE
@@ -61,7 +61,7 @@
 	)
 	resulting_item = /obj/item/stack/rimworld_cloth
 	crafting_time = 3 SECONDS
-	relevant_skill = /datum/skill/production
+	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_LITTLE
 	production_sound = SFX_RUSTLE
 	stand_strong_recipe = TRUE
@@ -77,8 +77,8 @@
 	)
 	resulting_item = /obj/item/storage/backpack/rimworld_backpack/kenaf
 	crafting_time = 10 SECONDS
-	relevant_skill = /datum/skill/production
-	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
+	relevant_skill = /datum/skill/rimworld_tailoring
+	relevant_skill_reward = SKILL_EXP_GRANT_LOTS
 	production_sound = SFX_RUSTLE
 
 /datum/rimworld_recipe/kenaf_satchel
@@ -88,8 +88,8 @@
 	)
 	resulting_item = /obj/item/storage/backpack/rimworld_satchel/kenaf
 	crafting_time = 10 SECONDS
-	relevant_skill = /datum/skill/production
-	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
+	relevant_skill = /datum/skill/rimworld_tailoring
+	relevant_skill_reward = SKILL_EXP_GRANT_LOTS
 	production_sound = SFX_RUSTLE
 
 /datum/rimworld_recipe/cloth_backpack
@@ -99,8 +99,8 @@
 	)
 	resulting_item = /obj/item/storage/backpack/rimworld_backpack/cloth
 	crafting_time = 10 SECONDS
-	relevant_skill = /datum/skill/production
-	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
+	relevant_skill = /datum/skill/rimworld_tailoring
+	relevant_skill_reward = SKILL_EXP_GRANT_LOTS
 	production_sound = SFX_RUSTLE
 
 /datum/rimworld_recipe/cloth_satchel
@@ -110,8 +110,8 @@
 	)
 	resulting_item = /obj/item/storage/backpack/rimworld_satchel/cloth
 	crafting_time = 10 SECONDS
-	relevant_skill = /datum/skill/production
-	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
+	relevant_skill = /datum/skill/rimworld_tailoring
+	relevant_skill_reward = SKILL_EXP_GRANT_LOTS
 	production_sound = SFX_RUSTLE
 
 // Gloves
@@ -123,7 +123,7 @@
 	)
 	resulting_item = /obj/item/clothing/gloves/rimworld_gloves/kenaf
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
+	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
 	production_sound = SFX_RUSTLE
 
@@ -134,7 +134,7 @@
 	)
 	resulting_item = /obj/item/clothing/gloves/rimworld_gloves/cloth
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
+	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
 	production_sound = SFX_RUSTLE
 
@@ -147,7 +147,7 @@
 	)
 	resulting_item = /obj/item/clothing/head/rimworld_hood/kenaf
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
+	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
 	production_sound = SFX_RUSTLE
 
@@ -158,7 +158,7 @@
 	)
 	resulting_item = /obj/item/clothing/head/rimworld_hood/cloth
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
+	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
 	production_sound = SFX_RUSTLE
 
@@ -171,7 +171,7 @@
 	)
 	resulting_item = /obj/item/clothing/neck/rimworld_mantle/kenaf
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
+	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
 	production_sound = SFX_RUSTLE
 
@@ -182,7 +182,7 @@
 	)
 	resulting_item = /obj/item/clothing/neck/rimworld_mantle/cloth
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
+	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
 	production_sound = SFX_RUSTLE
 
@@ -193,7 +193,7 @@
 	)
 	resulting_item = /obj/item/clothing/neck/rimworld_scarf/kenaf
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
+	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
 	production_sound = SFX_RUSTLE
 
@@ -204,7 +204,7 @@
 	)
 	resulting_item = /obj/item/clothing/neck/rimworld_scarf/cloth
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
+	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
 	production_sound = SFX_RUSTLE
 
@@ -215,8 +215,8 @@
 	)
 	resulting_item = /obj/item/clothing/neck/rimworld_cape/kenaf
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
-	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
+	relevant_skill = /datum/skill/rimworld_tailoring
+	relevant_skill_reward = SKILL_EXP_GRANT_LOTS
 	production_sound = SFX_RUSTLE
 
 /datum/rimworld_recipe/cloth_cape
@@ -226,8 +226,8 @@
 	)
 	resulting_item = /obj/item/clothing/neck/rimworld_cape/cloth
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
-	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
+	relevant_skill = /datum/skill/rimworld_tailoring
+	relevant_skill_reward = SKILL_EXP_GRANT_LOTS
 	production_sound = SFX_RUSTLE
 
 /datum/rimworld_recipe/kenaf_banner
@@ -237,8 +237,8 @@
 	)
 	resulting_item = /obj/item/clothing/neck/rimworld_banner/kenaf
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
-	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
+	relevant_skill = /datum/skill/rimworld_tailoring
+	relevant_skill_reward = SKILL_EXP_GRANT_LOTS
 	production_sound = SFX_RUSTLE
 
 /datum/rimworld_recipe/cloth_banner
@@ -248,8 +248,8 @@
 	)
 	resulting_item = /obj/item/clothing/neck/rimworld_banner/cloth
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
-	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
+	relevant_skill = /datum/skill/rimworld_tailoring
+	relevant_skill_reward = SKILL_EXP_GRANT_LOTS
 	production_sound = SFX_RUSTLE
 
 // Shoes
@@ -261,7 +261,7 @@
 	)
 	resulting_item = /obj/item/clothing/shoes/rimworld_shoes/kenaf
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
+	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
 	production_sound = SFX_RUSTLE
 
@@ -272,7 +272,7 @@
 	)
 	resulting_item = /obj/item/clothing/shoes/rimworld_shoes/cloth
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
+	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
 	production_sound = SFX_RUSTLE
 
@@ -285,8 +285,8 @@
 	)
 	resulting_item = /obj/item/clothing/suit/jacket/rimworld_raincoat/kenaf
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
-	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
+	relevant_skill = /datum/skill/rimworld_tailoring
+	relevant_skill_reward = SKILL_EXP_GRANT_LOTS
 	production_sound = SFX_RUSTLE
 
 /datum/rimworld_recipe/cloth_raincoat
@@ -296,8 +296,8 @@
 	)
 	resulting_item = /obj/item/clothing/suit/jacket/rimworld_raincoat/cloth
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
-	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
+	relevant_skill = /datum/skill/rimworld_tailoring
+	relevant_skill_reward = SKILL_EXP_GRANT_LOTS
 	production_sound = SFX_RUSTLE
 
 /datum/rimworld_recipe/kenaf_jacket
@@ -307,8 +307,8 @@
 	)
 	resulting_item = /obj/item/clothing/suit/jacket/rimworld_jacket/kenaf
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
-	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
+	relevant_skill = /datum/skill/rimworld_tailoring
+	relevant_skill_reward = SKILL_EXP_GRANT_LOTS
 	production_sound = SFX_RUSTLE
 
 /datum/rimworld_recipe/cloth_jacket
@@ -318,8 +318,8 @@
 	)
 	resulting_item = /obj/item/clothing/suit/jacket/rimworld_jacket/cloth
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
-	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
+	relevant_skill = /datum/skill/rimworld_tailoring
+	relevant_skill_reward = SKILL_EXP_GRANT_LOTS
 	production_sound = SFX_RUSTLE
 
 /datum/rimworld_recipe/kenaf_vest
@@ -329,7 +329,7 @@
 	)
 	resulting_item = /obj/item/clothing/suit/jacket/rimworld_vest/kenaf
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
+	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
 	production_sound = SFX_RUSTLE
 
@@ -340,7 +340,7 @@
 	)
 	resulting_item = /obj/item/clothing/suit/jacket/rimworld_vest/cloth
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
+	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
 	production_sound = SFX_RUSTLE
 
@@ -353,7 +353,7 @@
 	)
 	resulting_item = /obj/item/clothing/under/rimworld_shirt/kenaf
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
+	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
 	production_sound = SFX_RUSTLE
 
@@ -364,7 +364,7 @@
 	)
 	resulting_item = /obj/item/clothing/under/rimworld_shirt/cloth
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
+	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
 	production_sound = SFX_RUSTLE
 
@@ -375,7 +375,7 @@
 	)
 	resulting_item = /obj/item/clothing/under/rimworld_skirt/kenaf
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
+	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
 	production_sound = SFX_RUSTLE
 
@@ -386,7 +386,7 @@
 	)
 	resulting_item = /obj/item/clothing/under/rimworld_skirt/cloth
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
+	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
 	production_sound = SFX_RUSTLE
 
@@ -397,7 +397,7 @@
 	)
 	resulting_item = /obj/item/clothing/under/rimworld_chestrags/kenaf
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
+	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
 	production_sound = SFX_RUSTLE
 
@@ -408,7 +408,7 @@
 	)
 	resulting_item = /obj/item/clothing/under/rimworld_chestrags/cloth
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
+	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
 	production_sound = SFX_RUSTLE
 
@@ -419,7 +419,7 @@
 	)
 	resulting_item = /obj/item/clothing/under/rimworld_waistrags/kenaf
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
+	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
 	production_sound = SFX_RUSTLE
 
@@ -430,6 +430,6 @@
 	)
 	resulting_item = /obj/item/clothing/under/rimworld_waistrags/cloth
 	crafting_time = 5 SECONDS
-	relevant_skill = /datum/skill/production
+	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
 	production_sound = SFX_RUSTLE

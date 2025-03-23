@@ -16,7 +16,7 @@
 	)
 	resulting_item = /obj/item/stack/rimworld_bricks/crafted
 	crafting_time = 4 SECONDS
-	relevant_skill = /datum/skill/mining
+	relevant_skill = /datum/skill/rimworld_masonry
 	relevant_skill_reward = SKILL_EXP_GRANT_LITTLE
 	production_sound = SFX_STONE_DROP
 	stand_strong_recipe = TRUE

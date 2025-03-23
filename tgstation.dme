@@ -7450,6 +7450,7 @@
 #include "modular_sloppler\clothing\clothes\under.dm"
 #include "modular_sloppler\crafting_stations\recipe_base.dm"
 #include "modular_sloppler\crafting_stations\workstation_base.dm"
+#include "modular_sloppler\crafting_stations\workstations\leatherworks.dm"
 #include "modular_sloppler\crafting_stations\workstations\loom.dm"
 #include "modular_sloppler\crafting_stations\workstations\stonecutter.dm"
 #include "modular_sloppler\fluff_plants\greenery.dm"
@@ -7485,4 +7486,5 @@
 #include "modular_sloppler\resources\rock_and_stone.dm"
 #include "modular_sloppler\resources\textiles.dm"
 #include "modular_sloppler\resources\wood.dm"
+#include "modular_sloppler\skills\skills_generic.dm"
 // END_INCLUDE

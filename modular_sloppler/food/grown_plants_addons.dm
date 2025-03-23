@@ -51,6 +51,7 @@
 		return
 	new plant_to_make(interacting_turf)
 	balloon_alert(user, "planted")
+	user.mind.adjust_experience(/datum/skill/rimworld_farming, SKILL_EXP_GRANT_LITTLE)
 	qdel(src)
 
 /// Copy of the ferment proc from regular grown tg plants

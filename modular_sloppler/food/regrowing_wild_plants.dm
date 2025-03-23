@@ -51,11 +51,12 @@
 	harvested = TRUE
 	addtimer(CALLBACK(src, PROC_REF(regrow)), rand(regrowth_time_low, regrowth_time_high))
 
-/obj/structure/flora/fantasy_regrowing/harvest(user, product_amount_multiplier)
+/obj/structure/flora/fantasy_regrowing/harvest(mob/user, product_amount_multiplier)
 	if(!..())
 		return FALSE
 	icon_state = harvest_icon_state
 	update_appearance()
+	user.mind.adjust_experience(/datum/skill/rimworld_farming, SKILL_EXP_GRANT_MEDIUM)
 	return TRUE
 
 /obj/structure/flora/fantasy_regrowing/can_harvest(mob/user, obj/item/harvesting_item)

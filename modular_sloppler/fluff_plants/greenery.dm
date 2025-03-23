@@ -19,6 +19,7 @@
 	playsound(src, SFX_CRUNCHY_BUSH_WHACK, 50, TRUE)
 	if(do_after(user, 1 SECONDS, target = src))
 		playsound(src, SFX_CRUNCHY_BUSH_WHACK, 50, TRUE)
+		user.mind.adjust_experience(/datum/skill/rimworld_farming, SKILL_EXP_GRANT_LITTLE)
 		qdel(src)
 
 /obj/structure/flora/rimworld_grass/short
@@ -92,6 +93,8 @@
 	if(do_after(user, 10 SECONDS, target = src))
 		playsound(src, SFX_TREE_CHOP, 50, TRUE)
 		new /obj/item/stack/rimworld_logs(get_turf(src), rand(8, 15))
+		user.mind.adjust_experience(/datum/skill/rimworld_farming, SKILL_EXP_GRANT_MEDIUM)
+		user.mind.adjust_experience(/datum/skill/rimworld_carpentry, SKILL_EXP_GRANT_LOTS)
 		qdel(src)
 
 /obj/structure/flora/rimworld_tree/birch
