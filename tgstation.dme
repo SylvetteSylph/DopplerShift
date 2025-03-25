@@ -7453,6 +7453,7 @@
 #include "modular_sloppler\crafting_stations\workstations\leatherworks.dm"
 #include "modular_sloppler\crafting_stations\workstations\loom.dm"
 #include "modular_sloppler\crafting_stations\workstations\stonecutter.dm"
+#include "modular_sloppler\crafting_stations\workstations\weapons.dm"
 #include "modular_sloppler\fluff_plants\greenery.dm"
 #include "modular_sloppler\food\grown_plants_addons.dm"
 #include "modular_sloppler\food\regrowing_wild_plants.dm"
@@ -7488,4 +7489,6 @@
 #include "modular_sloppler\resources\textiles.dm"
 #include "modular_sloppler\resources\wood.dm"
 #include "modular_sloppler\skills\skills_generic.dm"
+#include "modular_sloppler\war\primitive.dm"
+#include "modular_sloppler\war\primitive_bow.dm"
 // END_INCLUDE

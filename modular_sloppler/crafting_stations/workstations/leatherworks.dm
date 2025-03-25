@@ -1,11 +1,12 @@
 /obj/structure/table/rimworld_crafter/leatherworks
-	name = "Leatherworks"
+	name = "leatherworks"
 	desc = "All the tools you need to make things out of leathers."
 	icon = 'modular_sloppler/crafting_stations/icons/stations.dmi'
 	icon_state = "leatherworks"
 	allowed_choices = list(
 		/datum/rimworld_recipe/leather_backpack,
 		/datum/rimworld_recipe/leather_satchel,
+		/datum/rimworld_recipe/leather_quiver,
 		/datum/rimworld_recipe/leather_gloves,
 		/datum/rimworld_recipe/leather_hood,
 		/datum/rimworld_recipe/leather_mantle,
@@ -42,6 +43,17 @@
 		/obj/item/stack/rimworld_leather = 3
 	)
 	resulting_item = /obj/item/storage/backpack/rimworld_satchel/leather
+	crafting_time = 10 SECONDS
+	relevant_skill = /datum/skill/rimworld_tailoring
+	relevant_skill_reward = SKILL_EXP_GRANT_LOTS
+	production_sound = SFX_RUSTLE
+
+/datum/rimworld_recipe/leather_quiver
+	recipe_name = "Leather Quiver"
+	recipe_requirements = list(
+		/obj/item/stack/rimworld_leather = 2
+	)
+	resulting_item = /obj/item/storage/bag/quiver/rimworld
 	crafting_time = 10 SECONDS
 	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_LOTS
