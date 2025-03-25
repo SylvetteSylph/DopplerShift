@@ -56,7 +56,7 @@
 		embryo_type = /mob/living/basic/rimworld_look_out/young,\
 		minimum_growth_rate = 1,\
 		maximum_growth_rate = 2,\
-		total_growth_required = 200,\
+		total_growth_required = 750,\
 		current_growth = 0,\
 		location_allowlist = typecacheof(list(/turf)),\
 		spoilable = FALSE,\
