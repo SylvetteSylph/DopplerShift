@@ -47,3 +47,24 @@
 	)
 	can_distill = FALSE
 	distill_reagent = FALSE
+
+/obj/item/food/fantasy_grown/hideroot/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/food/fantasy_grown/hideroot/cooked, rand(1 MINUTES, 2 MINUTES), TRUE, FALSE)
+
+/obj/item/food/fantasy_grown/hideroot/cooked
+	name = "cooked hideroot"
+	desc = "The root of the similarly named hideroot plant, edible now that it has been cooked."
+	icon_state = "hideroot_cooked"
+	foodtypes = VEGETABLES
+	turfs_we_plant_on = list()
+	plant_to_make = null
+	tastes = list(
+		"starch" = 3,
+		"dirt" = 2,
+	)
+	food_reagents = list(
+		/datum/reagent/consumable/nutriment = 4,
+		/datum/reagent/consumable/nutriment/vitamin = 2,
+	)
+	can_distill = FALSE
+	distill_reagent = FALSE

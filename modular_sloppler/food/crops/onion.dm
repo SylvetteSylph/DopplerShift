@@ -25,7 +25,7 @@
 /obj/structure/flora/fantasy_regrowing/onions/ungrown
 	spawns_harvested = TRUE
 
-/// Berry bunches, mm tasty
+/// onio
 
 /obj/item/food/fantasy_grown/onions
 	name = "onion"
@@ -41,6 +41,26 @@
 	)
 	food_reagents = list(
 		/datum/reagent/consumable/nutriment = 1,
+		/datum/reagent/consumable/nutriment/vitamin = 3,
+	)
+	can_distill = FALSE
+	distill_reagent = FALSE
+
+/obj/item/food/fantasy_grown/onions/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/food/fantasy_grown/onions/cooked, rand(1 MINUTES, 2 MINUTES), TRUE, FALSE)
+
+/obj/item/food/fantasy_grown/onions/cooked
+	name = "roasted onion"
+	desc = "Behold, an roasted onion."
+	icon_state = "onions_cooked"
+	foodtypes = VEGETABLES
+	plant_to_make = null
+	turfs_we_plant_on = list()
+	tastes = list(
+		"onion" = 2,
+	)
+	food_reagents = list(
+		/datum/reagent/consumable/nutriment = 4,
 		/datum/reagent/consumable/nutriment/vitamin = 3,
 	)
 	can_distill = FALSE

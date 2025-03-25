@@ -167,11 +167,6 @@
 	QDEL_NULL(particles)
 	STOP_PROCESSING(SSobj, src)
 
-/// Campfire but it looks like swamp wood
-
-/obj/structure/rimworld_campfire/swamp
-	icon_state = "campfire_swamp"
-
 /// Particle system used by these fires to look cooler (and I dont want to sprite fire)
 
 /particles/fantasy_campfire

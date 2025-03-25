@@ -64,3 +64,6 @@
 	)
 	can_distill = FALSE
 	distill_reagent = FALSE
+
+/obj/item/food/fantasy_grown/cotton_seeds/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/food/fantasy_grown/cooked_seeds, rand(45 SECONDS, 1.5 MINUTES), TRUE, FALSE)

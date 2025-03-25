@@ -45,3 +45,23 @@
 	)
 	can_distill = FALSE
 	distill_reagent = FALSE
+
+/obj/item/food/fantasy_grown/parsnips/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/food/fantasy_grown/parsnips/cooked, rand(1 MINUTES, 2 MINUTES), TRUE, FALSE)
+
+/obj/item/food/fantasy_grown/parsnips/cooked
+	name = "roasted parsnip"
+	desc = "Behold, a roasted parsnip."
+	icon_state = "parsnip_cooked"
+	foodtypes = VEGETABLES
+	plant_to_make = null
+	turfs_we_plant_on = list()
+	tastes = list(
+		"parsnip" = 2,
+	)
+	food_reagents = list(
+		/datum/reagent/consumable/nutriment = 4,
+		/datum/reagent/consumable/nutriment/vitamin = 3,
+	)
+	can_distill = FALSE
+	distill_reagent = FALSE

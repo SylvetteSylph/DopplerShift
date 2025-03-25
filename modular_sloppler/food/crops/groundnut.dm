@@ -45,3 +45,24 @@
 	)
 	can_distill = FALSE
 	distill_reagent = FALSE
+
+/obj/item/food/fantasy_grown/groundnut/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/food/fantasy_grown/groundnut/cooked, rand(1 MINUTES, 2 MINUTES), TRUE, FALSE)
+
+/obj/item/food/fantasy_grown/groundnut/cooked
+	name = "roasted groundnuts"
+	desc = "A collection of groundnuts, which have been roasted finely."
+	icon_state = "groundnuts_cooked"
+	foodtypes = NUTS
+	turfs_we_plant_on = list()
+	plant_to_make = null
+	tastes = list(
+		"char" = 1,
+		"tree nut" = 2,
+	)
+	food_reagents = list(
+		/datum/reagent/consumable/nutriment = 3,
+		/datum/reagent/consumable/nutriment/vitamin = 2,
+	)
+	can_distill = FALSE
+	distill_reagent = FALSE
