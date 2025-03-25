@@ -87,6 +87,12 @@
 	. = ..()
 	. += "You can harvest this quicker and get more wood with an axe."
 
+/obj/structure/flora/rimworld_tree/harvest(mob/user, product_amount_multiplier)
+	if(!..())
+		return FALSE
+	user.mind.adjust_experience(/datum/skill/rimworld_farming, SKILL_EXP_GRANT_MEDIUM)
+	user.mind.adjust_experience(/datum/skill/rimworld_carpentry, SKILL_EXP_GRANT_LOTS)
+
 /// Gets the seethrough map for standing behind the tree
 /obj/structure/flora/rimworld_tree/proc/get_seethrough_map()
 	return SEE_THROUGH_MAP_DEFAULT
