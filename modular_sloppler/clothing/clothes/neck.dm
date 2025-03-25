@@ -16,13 +16,13 @@
 
 /obj/item/clothing/neck/rimworld_mantle/cloth
 	name = "cloth mantle"
-	icon = KENAF_OBJ_ICON
-	worn_icon = KENAF_WORN_ICON
+	icon = CLOTH_OBJ_ICON
+	worn_icon = CLOTH_WORN_ICON
 
 /obj/item/clothing/neck/rimworld_mantle/leather
 	name = "leather mantle"
-	icon = KENAF_OBJ_ICON
-	worn_icon = KENAF_WORN_ICON
+	icon = LEATHER_OBJ_ICON
+	worn_icon = LEATHER_WORN_ICON
 
 // scarf
 
@@ -42,13 +42,13 @@
 
 /obj/item/clothing/neck/rimworld_scarf/cloth
 	name = "cloth scarf"
-	icon = KENAF_OBJ_ICON
-	worn_icon = KENAF_WORN_ICON
+	icon = CLOTH_OBJ_ICON
+	worn_icon = CLOTH_WORN_ICON
 
 /obj/item/clothing/neck/rimworld_scarf/leather
 	name = "leather scarf"
-	icon = KENAF_OBJ_ICON
-	worn_icon = KENAF_WORN_ICON
+	icon = LEATHER_OBJ_ICON
+	worn_icon = LEATHER_WORN_ICON
 
 // cape
 
@@ -68,13 +68,13 @@
 
 /obj/item/clothing/neck/rimworld_cape/cloth
 	name = "cloth cape"
-	icon = KENAF_OBJ_ICON
-	worn_icon = KENAF_WORN_ICON
+	icon = CLOTH_OBJ_ICON
+	worn_icon = CLOTH_WORN_ICON
 
 /obj/item/clothing/neck/rimworld_cape/leather
 	name = "leather cape"
-	icon = KENAF_OBJ_ICON
-	worn_icon = KENAF_WORN_ICON
+	icon = LEATHER_OBJ_ICON
+	worn_icon = LEATHER_WORN_ICON
 
 // banner
 
@@ -94,10 +94,10 @@
 
 /obj/item/clothing/neck/rimworld_banner/cloth
 	name = "cloth banner scarf"
-	icon = KENAF_OBJ_ICON
-	worn_icon = KENAF_WORN_ICON
+	icon = CLOTH_OBJ_ICON
+	worn_icon = CLOTH_WORN_ICON
 
 /obj/item/clothing/neck/rimworld_banner/leather
 	name = "leather banner scarf"
-	icon = KENAF_OBJ_ICON
-	worn_icon = KENAF_WORN_ICON
+	icon = LEATHER_OBJ_ICON
+	worn_icon = LEATHER_WORN_ICON

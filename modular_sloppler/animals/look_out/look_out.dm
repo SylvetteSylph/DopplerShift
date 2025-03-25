@@ -8,6 +8,7 @@
 	icon_gib = null
 	butcher_results = list(
 		/obj/item/food/rimworld_meat/duck = 2,
+		/obj/item/stack/rimworld_leather = 1,
 	)
 	speak_emote = list("quacks")
 	attack_sound = 'sound/items/weapons/punch1.ogg'

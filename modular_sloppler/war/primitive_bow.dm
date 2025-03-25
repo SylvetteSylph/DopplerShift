@@ -14,6 +14,7 @@
 	slot_flags = ITEM_SLOT_BACK
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/bow/rimworld
 	projectile_damage_multiplier = 1
+	load_sound = 'sound/items/weapons/draw_bow.ogg'
 
 /obj/item/ammo_box/magazine/internal/bow/rimworld
 	name = "bowstring"
