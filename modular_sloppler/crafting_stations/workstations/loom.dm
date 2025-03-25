@@ -47,7 +47,7 @@
 	recipe_requirements = list(
 		/obj/item/food/fantasy_grown/kenaf = 1
 	)
-	resulting_item = /obj/item/stack/rimworld_kenaf
+	resulting_item = /obj/item/stack/medical/gauze/rimworld_kenaf
 	crafting_time = 3 SECONDS
 	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_LITTLE
@@ -59,7 +59,7 @@
 	recipe_requirements = list(
 		/obj/item/food/fantasy_grown/cotton = 1
 	)
-	resulting_item = /obj/item/stack/rimworld_cloth
+	resulting_item = /obj/item/stack/medical/gauze/rimworld_cloth
 	crafting_time = 3 SECONDS
 	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_LITTLE
@@ -73,7 +73,7 @@
 /datum/rimworld_recipe/kenaf_backpack
 	recipe_name = "Jute Backpack"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_kenaf = 4
+		/obj/item/stack/medical/gauze/rimworld_kenaf = 4
 	)
 	resulting_item = /obj/item/storage/backpack/rimworld_backpack/kenaf
 	crafting_time = 10 SECONDS
@@ -84,7 +84,7 @@
 /datum/rimworld_recipe/kenaf_satchel
 	recipe_name = "Jute Satchel"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_kenaf = 4
+		/obj/item/stack/medical/gauze/rimworld_kenaf = 4
 	)
 	resulting_item = /obj/item/storage/backpack/rimworld_satchel/kenaf
 	crafting_time = 10 SECONDS
@@ -95,7 +95,7 @@
 /datum/rimworld_recipe/cloth_backpack
 	recipe_name = "Cloth Backpack"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_cloth = 4
+		/obj/item/stack/medical/gauze/rimworld_cloth = 4
 	)
 	resulting_item = /obj/item/storage/backpack/rimworld_backpack/cloth
 	crafting_time = 10 SECONDS
@@ -106,7 +106,7 @@
 /datum/rimworld_recipe/cloth_satchel
 	recipe_name = "Cloth Satchel"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_cloth = 4
+		/obj/item/stack/medical/gauze/rimworld_cloth = 4
 	)
 	resulting_item = /obj/item/storage/backpack/rimworld_satchel/cloth
 	crafting_time = 10 SECONDS
@@ -119,7 +119,7 @@
 /datum/rimworld_recipe/kenaf_gloves
 	recipe_name = "Jute Gloves"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_kenaf = 1
+		/obj/item/stack/medical/gauze/rimworld_kenaf = 1
 	)
 	resulting_item = /obj/item/clothing/gloves/rimworld_gloves/kenaf
 	crafting_time = 5 SECONDS
@@ -130,7 +130,7 @@
 /datum/rimworld_recipe/cloth_gloves
 	recipe_name = "Cloth Gloves"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_cloth = 1
+		/obj/item/stack/medical/gauze/rimworld_cloth = 1
 	)
 	resulting_item = /obj/item/clothing/gloves/rimworld_gloves/cloth
 	crafting_time = 5 SECONDS
@@ -143,7 +143,7 @@
 /datum/rimworld_recipe/kenaf_hood
 	recipe_name = "Jute Hood"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_kenaf = 2
+		/obj/item/stack/medical/gauze/rimworld_kenaf = 2
 	)
 	resulting_item = /obj/item/clothing/head/rimworld_hood/kenaf
 	crafting_time = 5 SECONDS
@@ -154,7 +154,7 @@
 /datum/rimworld_recipe/cloth_hood
 	recipe_name = "Cloth Hood"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_cloth = 2
+		/obj/item/stack/medical/gauze/rimworld_cloth = 2
 	)
 	resulting_item = /obj/item/clothing/head/rimworld_hood/cloth
 	crafting_time = 5 SECONDS
@@ -167,7 +167,7 @@
 /datum/rimworld_recipe/kenaf_mantle
 	recipe_name = "Jute Mantle"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_kenaf = 2
+		/obj/item/stack/medical/gauze/rimworld_kenaf = 2
 	)
 	resulting_item = /obj/item/clothing/neck/rimworld_mantle/kenaf
 	crafting_time = 5 SECONDS
@@ -178,7 +178,7 @@
 /datum/rimworld_recipe/cloth_mantle
 	recipe_name = "Cloth Mantle"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_cloth = 2
+		/obj/item/stack/medical/gauze/rimworld_cloth = 2
 	)
 	resulting_item = /obj/item/clothing/neck/rimworld_mantle/cloth
 	crafting_time = 5 SECONDS
@@ -189,7 +189,7 @@
 /datum/rimworld_recipe/kenaf_scarf
 	recipe_name = "Jute Scarf"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_kenaf = 2
+		/obj/item/stack/medical/gauze/rimworld_kenaf = 2
 	)
 	resulting_item = /obj/item/clothing/neck/rimworld_scarf/kenaf
 	crafting_time = 5 SECONDS
@@ -200,7 +200,7 @@
 /datum/rimworld_recipe/cloth_scarf
 	recipe_name = "Cloth Scarf"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_cloth = 2
+		/obj/item/stack/medical/gauze/rimworld_cloth = 2
 	)
 	resulting_item = /obj/item/clothing/neck/rimworld_scarf/cloth
 	crafting_time = 5 SECONDS
@@ -211,7 +211,7 @@
 /datum/rimworld_recipe/kenaf_cape
 	recipe_name = "Jute Cape"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_kenaf = 3
+		/obj/item/stack/medical/gauze/rimworld_kenaf = 3
 	)
 	resulting_item = /obj/item/clothing/neck/rimworld_cape/kenaf
 	crafting_time = 5 SECONDS
@@ -222,7 +222,7 @@
 /datum/rimworld_recipe/cloth_cape
 	recipe_name = "Cloth Cape"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_cloth = 3
+		/obj/item/stack/medical/gauze/rimworld_cloth = 3
 	)
 	resulting_item = /obj/item/clothing/neck/rimworld_cape/cloth
 	crafting_time = 5 SECONDS
@@ -233,7 +233,7 @@
 /datum/rimworld_recipe/kenaf_banner
 	recipe_name = "Jute Banner Scarf"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_kenaf = 3
+		/obj/item/stack/medical/gauze/rimworld_kenaf = 3
 	)
 	resulting_item = /obj/item/clothing/neck/rimworld_banner/kenaf
 	crafting_time = 5 SECONDS
@@ -244,7 +244,7 @@
 /datum/rimworld_recipe/cloth_banner
 	recipe_name = "Cloth Banner Scarf"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_cloth = 3
+		/obj/item/stack/medical/gauze/rimworld_cloth = 3
 	)
 	resulting_item = /obj/item/clothing/neck/rimworld_banner/cloth
 	crafting_time = 5 SECONDS
@@ -257,7 +257,7 @@
 /datum/rimworld_recipe/kenaf_shoes
 	recipe_name = "Jute Shoes"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_kenaf = 2
+		/obj/item/stack/medical/gauze/rimworld_kenaf = 2
 	)
 	resulting_item = /obj/item/clothing/shoes/rimworld_shoes/kenaf
 	crafting_time = 5 SECONDS
@@ -268,7 +268,7 @@
 /datum/rimworld_recipe/cloth_shoes
 	recipe_name = "Cloth Shoes"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_cloth = 2
+		/obj/item/stack/medical/gauze/rimworld_cloth = 2
 	)
 	resulting_item = /obj/item/clothing/shoes/rimworld_shoes/cloth
 	crafting_time = 5 SECONDS
@@ -281,7 +281,7 @@
 /datum/rimworld_recipe/kenaf_raincoat
 	recipe_name = "Jute Raincoat"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_kenaf = 3
+		/obj/item/stack/medical/gauze/rimworld_kenaf = 3
 	)
 	resulting_item = /obj/item/clothing/suit/jacket/rimworld_raincoat/kenaf
 	crafting_time = 5 SECONDS
@@ -292,7 +292,7 @@
 /datum/rimworld_recipe/cloth_raincoat
 	recipe_name = "Cloth Raincoat"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_cloth = 3
+		/obj/item/stack/medical/gauze/rimworld_cloth = 3
 	)
 	resulting_item = /obj/item/clothing/suit/jacket/rimworld_raincoat/cloth
 	crafting_time = 5 SECONDS
@@ -303,7 +303,7 @@
 /datum/rimworld_recipe/kenaf_jacket
 	recipe_name = "Jute Jacket"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_kenaf = 3
+		/obj/item/stack/medical/gauze/rimworld_kenaf = 3
 	)
 	resulting_item = /obj/item/clothing/suit/jacket/rimworld_jacket/kenaf
 	crafting_time = 5 SECONDS
@@ -314,7 +314,7 @@
 /datum/rimworld_recipe/cloth_jacket
 	recipe_name = "Cloth Jacket"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_cloth = 3
+		/obj/item/stack/medical/gauze/rimworld_cloth = 3
 	)
 	resulting_item = /obj/item/clothing/suit/jacket/rimworld_jacket/cloth
 	crafting_time = 5 SECONDS
@@ -325,7 +325,7 @@
 /datum/rimworld_recipe/kenaf_vest
 	recipe_name = "Jute Vest"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_kenaf = 2
+		/obj/item/stack/medical/gauze/rimworld_kenaf = 2
 	)
 	resulting_item = /obj/item/clothing/suit/jacket/rimworld_vest/kenaf
 	crafting_time = 5 SECONDS
@@ -336,7 +336,7 @@
 /datum/rimworld_recipe/cloth_vest
 	recipe_name = "Cloth Vest"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_cloth = 2
+		/obj/item/stack/medical/gauze/rimworld_cloth = 2
 	)
 	resulting_item = /obj/item/clothing/suit/jacket/rimworld_vest/cloth
 	crafting_time = 5 SECONDS
@@ -349,7 +349,7 @@
 /datum/rimworld_recipe/kenaf_shirt
 	recipe_name = "Jute Underclothes"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_kenaf = 2
+		/obj/item/stack/medical/gauze/rimworld_kenaf = 2
 	)
 	resulting_item = /obj/item/clothing/under/rimworld_shirt/kenaf
 	crafting_time = 5 SECONDS
@@ -360,7 +360,7 @@
 /datum/rimworld_recipe/cloth_shirt
 	recipe_name = "Cloth Underclothes"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_cloth = 2
+		/obj/item/stack/medical/gauze/rimworld_cloth = 2
 	)
 	resulting_item = /obj/item/clothing/under/rimworld_shirt/cloth
 	crafting_time = 5 SECONDS
@@ -371,7 +371,7 @@
 /datum/rimworld_recipe/kenaf_skirt
 	recipe_name = "Jute Underskirt"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_kenaf = 2
+		/obj/item/stack/medical/gauze/rimworld_kenaf = 2
 	)
 	resulting_item = /obj/item/clothing/under/rimworld_skirt/kenaf
 	crafting_time = 5 SECONDS
@@ -382,7 +382,7 @@
 /datum/rimworld_recipe/cloth_skirt
 	recipe_name = "Cloth Underskirt"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_cloth = 2
+		/obj/item/stack/medical/gauze/rimworld_cloth = 2
 	)
 	resulting_item = /obj/item/clothing/under/rimworld_skirt/cloth
 	crafting_time = 5 SECONDS
@@ -393,7 +393,7 @@
 /datum/rimworld_recipe/kenaf_chestrags
 	recipe_name = "Jute Chestrags"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_kenaf = 2
+		/obj/item/stack/medical/gauze/rimworld_kenaf = 2
 	)
 	resulting_item = /obj/item/clothing/under/rimworld_chestrags/kenaf
 	crafting_time = 5 SECONDS
@@ -404,7 +404,7 @@
 /datum/rimworld_recipe/cloth_chestrags
 	recipe_name = "Cloth Chestrags"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_cloth = 2
+		/obj/item/stack/medical/gauze/rimworld_cloth = 2
 	)
 	resulting_item = /obj/item/clothing/under/rimworld_chestrags/cloth
 	crafting_time = 5 SECONDS
@@ -415,7 +415,7 @@
 /datum/rimworld_recipe/kenaf_waistrags
 	recipe_name = "Jute Waistrags"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_kenaf = 1
+		/obj/item/stack/medical/gauze/rimworld_kenaf = 1
 	)
 	resulting_item = /obj/item/clothing/under/rimworld_waistrags/kenaf
 	crafting_time = 5 SECONDS
@@ -426,7 +426,7 @@
 /datum/rimworld_recipe/cloth_waistrags
 	recipe_name = "Cloth Waistrags"
 	recipe_requirements = list(
-		/obj/item/stack/rimworld_cloth = 1
+		/obj/item/stack/medical/gauze/rimworld_cloth = 1
 	)
 	resulting_item = /obj/item/clothing/under/rimworld_waistrags/cloth
 	crafting_time = 5 SECONDS

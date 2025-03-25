@@ -472,7 +472,7 @@
 	amount = 12
 
 /obj/item/stack/medical/gauze/attackby(obj/item/I, mob/user, params)
-	if(I.tool_behaviour == TOOL_WIRECUTTER || I.get_sharpness())
+	/* if(I.tool_behaviour == TOOL_WIRECUTTER || I.get_sharpness())
 		if(get_amount() < 2)
 			balloon_alert(user, "not enough gauze!")
 			return
@@ -485,8 +485,8 @@
 			visible_message(span_notice("[I] cuts [src] into pieces of cloth."), \
 				blind_message = span_hear("You hear cutting."))
 		use(2)
-	else
-		return ..()
+	else */
+	return ..() // SLOPPLER EDIT - UNDO BY UNCOMMENTING ABOVE AND INDENTING THIS LINE ONCE
 
 /obj/item/stack/medical/gauze/suicide_act(mob/living/user)
 	user.visible_message(span_suicide("[user] begins tightening [src] around [user.p_their()] neck! It looks like [user.p_they()] forgot how to use medical supplies!"))

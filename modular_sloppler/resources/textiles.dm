@@ -10,15 +10,16 @@ GLOBAL_LIST_INIT(rimworld_leather_recipes, list())
 
 // Kenaf
 
-/obj/item/stack/rimworld_kenaf
+/obj/item/stack/medical/gauze/rimworld_kenaf
 	name = "jute sheets"
 	singular_name = "jute sheet"
-	desc = "Kenaf woven into sheets that can be used for many things."
+	desc = "Kenaf woven into sheets that can be used for many things. \
+		If not clothes, then at least bandages, you remember that much right?"
 	icon = 'modular_sloppler/resources/icons/resources.dmi'
 	icon_state = "kenaf"
 	base_icon_state = "kenaf"
 	inhand_icon_state = null
-	merge_type = /obj/item/stack/rimworld_kenaf
+	merge_type = /obj/item/stack/medical/gauze/rimworld_kenaf
 	max_amount = 10
 	resistance_flags = FLAMMABLE
 	w_class = WEIGHT_CLASS_NORMAL
@@ -33,25 +34,26 @@ GLOBAL_LIST_INIT(rimworld_leather_recipes, list())
 	absorption_rate = 0.075
 	absorption_capacity = 4
 
-/obj/item/stack/rimworld_kenaf/Initialize(mapload, new_amount, merge, list/mat_override, mat_amt)
+/obj/item/stack/medical/gauze/rimworld_kenaf/Initialize(mapload, new_amount, merge, list/mat_override, mat_amt)
 	. = ..()
 	update_appearance()
 
-/obj/item/stack/rimworld_kenaf/get_main_recipes()
+/obj/item/stack/medical/gauze/rimworld_kenaf/get_main_recipes()
 	. = ..()
 	. = GLOB.rimworld_kenaf_recipes
 
 // Cloth
 
-/obj/item/stack/rimworld_cloth
+/obj/item/stack/medical/gauze/rimworld_cloth
 	name = "cloth sheets"
 	singular_name = "cloth sheet"
-	desc = "Cotton woven into sheets that can be used for many things."
+	desc = "Cotton woven into sheets that can be used for many things. \
+		If not clothes, then at least bandages, you remember that much right?"
 	icon = 'modular_sloppler/resources/icons/resources.dmi'
 	icon_state = "cloth"
 	base_icon_state = "cloth"
 	inhand_icon_state = null
-	merge_type = /obj/item/stack/rimworld_cloth
+	merge_type = /obj/item/stack/medical/gauze/rimworld_cloth
 	max_amount = 10
 	resistance_flags = FLAMMABLE
 	w_class = WEIGHT_CLASS_NORMAL
@@ -65,12 +67,13 @@ GLOBAL_LIST_INIT(rimworld_leather_recipes, list())
 	burn_cleanliness_bonus = 0.75
 	absorption_rate = 0.075
 	absorption_capacity = 5
+	self_delay = 3 SECONDS
 
-/obj/item/stack/rimworld_cloth/Initialize(mapload, new_amount, merge, list/mat_override, mat_amt)
+/obj/item/stack/medical/gauze/rimworld_cloth/Initialize(mapload, new_amount, merge, list/mat_override, mat_amt)
 	. = ..()
 	update_appearance()
 
-/obj/item/stack/rimworld_cloth/get_main_recipes()
+/obj/item/stack/medical/gauze/rimworld_cloth/get_main_recipes()
 	. = ..()
 	. = GLOB.rimworld_cloth_recipes
 

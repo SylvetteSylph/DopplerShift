@@ -50,7 +50,7 @@
 	recipe_name = "Longbow"
 	recipe_requirements = list(
 		/obj/item/stack/rimworld_leather = 1,
-		/obj/item/stack/rimworld_kenaf = 1,
+		/obj/item/stack/medical/gauze/rimworld_kenaf = 1,
 		/obj/item/stack/rimworld_logs = 2,
 	)
 	resulting_item = /obj/item/gun/ballistic/bow/rimworld
