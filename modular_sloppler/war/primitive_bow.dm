@@ -48,6 +48,7 @@
 /obj/projectile/bullet/arrow/rimworld
 	name = "stone arrow"
 	desc = "Just dodge, dude."
+	icon = 'modular_sloppler/war/icons/ammo.dmi'
 	icon_state = "stone_arrow_projectile"
 	damage = 35
 
