@@ -11,13 +11,16 @@
 	name = "jute hood"
 	icon = KENAF_OBJ_ICON
 	worn_icon = KENAF_WORN_ICON
+	armor_type = /datum/armor/rimworld_fabric_clothes
 
 /obj/item/clothing/head/rimworld_hood/cloth
 	name = "cloth hood"
 	icon = CLOTH_OBJ_ICON
 	worn_icon = CLOTH_WORN_ICON
+	armor_type = /datum/armor/rimworld_fabric_clothes
 
 /obj/item/clothing/head/rimworld_hood/leather
 	name = "leather hood"
 	icon = LEATHER_OBJ_ICON
 	worn_icon = LEATHER_WORN_ICON
+	armor_type = /datum/armor/rimworld_leather_clothes

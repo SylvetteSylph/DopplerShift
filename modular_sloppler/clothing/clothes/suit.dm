@@ -17,16 +17,19 @@
 	name = "jute raincoat"
 	icon = KENAF_OBJ_ICON
 	worn_icon = KENAF_WORN_ICON
+	armor_type = /datum/armor/rimworld_fabric_clothes
 
 /obj/item/clothing/suit/jacket/rimworld_raincoat/cloth
 	name = "cloth raincoat"
 	icon = CLOTH_OBJ_ICON
 	worn_icon = CLOTH_WORN_ICON
+	armor_type = /datum/armor/rimworld_fabric_clothes
 
 /obj/item/clothing/suit/jacket/rimworld_raincoat/leather
 	name = "leather raincoat"
 	icon = LEATHER_OBJ_ICON
 	worn_icon = LEATHER_WORN_ICON
+	armor_type = /datum/armor/rimworld_leather_clothes
 
 // Jacket
 
@@ -47,16 +50,19 @@
 	name = "jute jacket"
 	icon = KENAF_OBJ_ICON
 	worn_icon = KENAF_WORN_ICON
+	armor_type = /datum/armor/rimworld_fabric_clothes
 
 /obj/item/clothing/suit/jacket/rimworld_jacket/cloth
 	name = "cloth jacket"
 	icon = CLOTH_OBJ_ICON
 	worn_icon = CLOTH_WORN_ICON
+	armor_type = /datum/armor/rimworld_fabric_clothes
 
 /obj/item/clothing/suit/jacket/rimworld_jacket/leather
 	name = "leather jacket"
 	icon = LEATHER_OBJ_ICON
 	worn_icon = LEATHER_WORN_ICON
+	armor_type = /datum/armor/rimworld_leather_clothes
 
 // Vest
 
@@ -77,13 +83,16 @@
 	name = "jute vest"
 	icon = KENAF_OBJ_ICON
 	worn_icon = KENAF_WORN_ICON
+	armor_type = /datum/armor/rimworld_fabric_clothes
 
 /obj/item/clothing/suit/jacket/rimworld_vest/cloth
 	name = "cloth vest"
 	icon = CLOTH_OBJ_ICON
 	worn_icon = CLOTH_WORN_ICON
+	armor_type = /datum/armor/rimworld_fabric_clothes
 
 /obj/item/clothing/suit/jacket/rimworld_vest/leather
 	name = "leather vest"
 	icon = LEATHER_OBJ_ICON
 	worn_icon = LEATHER_WORN_ICON
+	armor_type = /datum/armor/rimworld_leather_clothes

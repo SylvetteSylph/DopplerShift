@@ -17,6 +17,7 @@
 		BODYSHAPE_HUMANOID_T = LEATHER_WORN_ICON,
 		BODYSHAPE_DIGITIGRADE_T = LEATHER_DIGI_ICON,
 	)
+	armor_type = /datum/armor/rimworld_leather_clothes
 
 // Shoes
 
@@ -37,6 +38,7 @@
 		BODYSHAPE_HUMANOID_T = KENAF_WORN_ICON,
 		BODYSHAPE_DIGITIGRADE_T = KENAF_DIGI_ICON,
 	)
+	armor_type = /datum/armor/rimworld_fabric_clothes
 
 /obj/item/clothing/shoes/rimworld_shoes/cloth
 	name = "cloth shoes"
@@ -46,6 +48,7 @@
 		BODYSHAPE_HUMANOID_T = CLOTH_WORN_ICON,
 		BODYSHAPE_DIGITIGRADE_T = CLOTH_DIGI_ICON,
 	)
+	armor_type = /datum/armor/rimworld_fabric_clothes
 
 /obj/item/clothing/shoes/rimworld_shoes/leather
 	name = "leather shoes"
@@ -55,3 +58,4 @@
 		BODYSHAPE_HUMANOID_T = LEATHER_WORN_ICON,
 		BODYSHAPE_DIGITIGRADE_T = LEATHER_DIGI_ICON,
 	)
+	armor_type = /datum/armor/rimworld_leather_clothes

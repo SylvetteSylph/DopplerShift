@@ -21,6 +21,7 @@
 	name = "leather backpack"
 	icon = LEATHER_OBJ_ICON
 	worn_icon = LEATHER_WORN_ICON
+	armor_type = /datum/armor/rimworld_leather_clothes
 
 // Satchel
 
@@ -36,13 +37,16 @@
 	name = "jute satchel"
 	icon = KENAF_OBJ_ICON
 	worn_icon = KENAF_WORN_ICON
+	armor_type = /datum/armor/rimworld_fabric_clothes
 
 /obj/item/storage/backpack/rimworld_satchel/cloth
 	name = "cloth satchel"
 	icon = CLOTH_OBJ_ICON
 	worn_icon = CLOTH_WORN_ICON
+	armor_type = /datum/armor/rimworld_fabric_clothes
 
 /obj/item/storage/backpack/rimworld_satchel/leather
 	name = "leather satchelk"
 	icon = LEATHER_OBJ_ICON
 	worn_icon = LEATHER_WORN_ICON
+	armor_type = /datum/armor/rimworld_leather_clothes

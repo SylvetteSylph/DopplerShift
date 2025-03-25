@@ -20,6 +20,7 @@
 		BODYSHAPE_HUMANOID_T = KENAF_WORN_ICON,
 		BODYSHAPE_DIGITIGRADE_T = KENAF_DIGI_ICON,
 	)
+	armor_type = /datum/armor/rimworld_fabric_clothes
 
 /obj/item/clothing/under/rimworld_shirt/cloth
 	name = "cloth underclothes"
@@ -29,6 +30,7 @@
 		BODYSHAPE_HUMANOID_T = CLOTH_WORN_ICON,
 		BODYSHAPE_DIGITIGRADE_T = CLOTH_DIGI_ICON,
 	)
+	armor_type = /datum/armor/rimworld_fabric_clothes
 
 /obj/item/clothing/under/rimworld_shirt/leather
 	name = "leather underclothes"
@@ -38,6 +40,7 @@
 		BODYSHAPE_HUMANOID_T = LEATHER_WORN_ICON,
 		BODYSHAPE_DIGITIGRADE_T = LEATHER_DIGI_ICON,
 	)
+	armor_type = /datum/armor/rimworld_leather_clothes
 
 // The Skirt Version
 
@@ -61,6 +64,7 @@
 	bodyshape_icon_files = list(
 		BODYSHAPE_HUMANOID_T = KENAF_WORN_ICON,
 	)
+	armor_type = /datum/armor/rimworld_fabric_clothes
 
 /obj/item/clothing/under/rimworld_skirt/cloth
 	name = "cloth underskirt"
@@ -69,6 +73,7 @@
 	bodyshape_icon_files = list(
 		BODYSHAPE_HUMANOID_T = CLOTH_WORN_ICON,
 	)
+	armor_type = /datum/armor/rimworld_fabric_clothes
 
 /obj/item/clothing/under/rimworld_skirt/leather
 	name = "leather underskirt"
@@ -77,6 +82,7 @@
 	bodyshape_icon_files = list(
 		BODYSHAPE_HUMANOID_T = LEATHER_WORN_ICON,
 	)
+	armor_type = /datum/armor/rimworld_leather_clothes
 
 // Chestrags
 
@@ -100,6 +106,7 @@
 		BODYSHAPE_HUMANOID_T = KENAF_WORN_ICON,
 		BODYSHAPE_DIGITIGRADE_T = KENAF_DIGI_ICON,
 	)
+	armor_type = /datum/armor/rimworld_fabric_clothes
 
 /obj/item/clothing/under/rimworld_chestrags/cloth
 	name = "cloth chestrags"
@@ -109,6 +116,7 @@
 		BODYSHAPE_HUMANOID_T = CLOTH_WORN_ICON,
 		BODYSHAPE_DIGITIGRADE_T = CLOTH_DIGI_ICON,
 	)
+	armor_type = /datum/armor/rimworld_fabric_clothes
 
 // Waistrags
 
@@ -132,6 +140,7 @@
 		BODYSHAPE_HUMANOID_T = KENAF_WORN_ICON,
 		BODYSHAPE_DIGITIGRADE_T = KENAF_DIGI_ICON,
 	)
+	armor_type = /datum/armor/rimworld_fabric_clothes
 
 /obj/item/clothing/under/rimworld_waistrags/cloth
 	name = "cloth waistrags"
@@ -141,3 +150,4 @@
 		BODYSHAPE_HUMANOID_T = CLOTH_WORN_ICON,
 		BODYSHAPE_DIGITIGRADE_T = CLOTH_DIGI_ICON,
 	)
+	armor_type = /datum/armor/rimworld_fabric_clothes
