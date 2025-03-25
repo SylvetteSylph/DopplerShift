@@ -28,8 +28,8 @@
 	regrowth_time_high = 12 MINUTES
 	/// The icon state of the plant when it is harvested
 	var/harvest_icon_state = "rat_weed_growing"
-	/// If this takes a knife tool to harvest
-	var/knife_harvest = FALSE
+	/// If a knife makes this harvest faster
+	var/knife_harvest = TRUE
 	/// Does this spawn harvested and do we need to wait to grow?
 	var/spawns_harvested = FALSE
 
@@ -41,6 +41,10 @@
 		regrowth_time_high -= 2 MINUTES
 	if(spawns_harvested)
 		set_harvested_on_spawn()
+
+/obj/structure/flora/fantasy_regrowing/examine(mob/user)
+	. = ..()
+	. += span_notice("You can harvest this quicker with a knife.")
 
 /// Sets the plant to look and act harvested when its placed, good for things planted from seeds
 /obj/structure/flora/fantasy_regrowing/proc/set_harvested_on_spawn()

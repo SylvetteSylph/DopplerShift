@@ -103,7 +103,7 @@
 	bare_wound_bonus = 10
 	sharpness = SHARP_EDGED
 	tool_behaviour = TOOL_KNIFE
-	toolspeed = 1
+	toolspeed = 0.8
 	hitsound = 'sound/items/weapons/bladeslice.ogg'
 	attack_verb_continuous = list("slashes", "stabs", "slices", "tears", "lacerates", "rips", "dices", "cuts")
 	attack_verb_simple = list("slash", "stab", "slice", "tear", "lacerate", "rip", "dice", "cut")

@@ -67,19 +67,25 @@
 	SET_BASE_PIXEL(-16,0)
 	layer = FLY_LAYER
 	plane = ABOVE_GAME_PLANE
-
-	harvestable = FALSE
+	harvest_time = 8 SECONDS
+	harvestable = TRUE
 	can_uproot = FALSE
-	product_types = null
-
+	product_types = list(
+		/obj/item/stack/rimworld_logs = 1,
+	)
+	harvest_amount_low = 10 // You get more with an axe than you do with bare hands
+	harvest_amount_high = 18
 	density = TRUE
-
 	flora_flags = FLORA_WOODEN
 	max_integrity = 500
 
 /obj/structure/flora/rimworld_tree/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/seethrough, get_seethrough_map())
+
+/obj/structure/flora/rimworld_tree/examine(mob/user)
+	. = ..()
+	. += "You can harvest this quicker and get more wood with an axe."
 
 /// Gets the seethrough map for standing behind the tree
 /obj/structure/flora/rimworld_tree/proc/get_seethrough_map()
