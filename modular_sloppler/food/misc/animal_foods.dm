@@ -10,6 +10,11 @@
 		/datum/reagent/consumable/nutriment/peptides = 2,
 	)
 	tastes = list("milk" = 3)
+	eatverbs = list(
+		"slurp",
+		"sip",
+		"drink",
+	)
 	trash_type = /obj/item/rimworld_cup
 	foodtypes = DAIRY
 	w_class = WEIGHT_CLASS_SMALL
