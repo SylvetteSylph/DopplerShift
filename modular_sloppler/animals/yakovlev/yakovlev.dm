@@ -41,7 +41,7 @@
 			max_ready = 3, \
 			item_generation_wait = 6 MINUTES, \
 			item_harvest_time = 5 SECONDS, \
-			item_harvest_sound = SFX_LIQUID_POUR, \
+			item_harvest_sound = 'sound/effects/liquid_pour/liquid_pour3.ogg', \
 			delete_harvest_item = TRUE, \
 		)
 	var/static/list/food_types = list(

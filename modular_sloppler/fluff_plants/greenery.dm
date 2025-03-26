@@ -78,6 +78,7 @@
 	density = TRUE
 	flora_flags = FLORA_WOODEN
 	max_integrity = 500
+	delete_on_harvest = TRUE
 
 /obj/structure/flora/rimworld_tree/Initialize(mapload)
 	. = ..()
