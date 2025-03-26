@@ -8,6 +8,7 @@
 	base_icon_state = "boulder"
 	inhand_icon_state = null
 	w_class = WEIGHT_CLASS_BULKY
+	full_w_class = WEIGHT_CLASS_BULKY
 	force = 15
 	throwforce = 10
 	slowdown = 0.5
