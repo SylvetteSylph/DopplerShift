@@ -105,6 +105,12 @@
 /datum/quirk/tranquil
 	event_disabled = TRUE
 
+/datum/quirk/item_quirk/underworld_connections
+	event_disabled = TRUE
+
+/datum/quirk/ship_captain
+	event_disabled = TRUE
+
 // Quirk item granting removals
 /datum/quirk/item_quirk/blindness/add_unique(client/client_source)
 	return
@@ -131,4 +137,7 @@
 	return
 
 /datum/quirk/item_quirk/tagger/add_unique(client/client_source)
+	return
+
+/datum/quirk/item_quirk/nearsighted/add_unique(client/client_source)
 	return
