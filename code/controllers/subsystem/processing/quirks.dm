@@ -79,6 +79,8 @@ PROCESSING_SUBSYSTEM_DEF(quirks)
 	for(var/type in quirk_list)
 		var/datum/quirk/quirk_type = type
 
+		if(initial(quirk_type.event_disabled)) // SLOPPLER ADDITION
+			continue // SLOPPLER ADDITION
 		if(initial(quirk_type.abstract_parent_type) == type)
 			continue
 

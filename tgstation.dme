@@ -7484,6 +7484,7 @@
 #include "modular_sloppler\nurture_turfs\built_walls.dm"
 #include "modular_sloppler\operational_stuff\job.dm"
 #include "modular_sloppler\operational_stuff\loadout.dm"
+#include "modular_sloppler\operational_stuff\quirk_edits.dm"
 #include "modular_sloppler\resources\bricks.dm"
 #include "modular_sloppler\resources\fire.dm"
 #include "modular_sloppler\resources\rock_and_stone.dm"
