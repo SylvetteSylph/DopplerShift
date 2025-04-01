@@ -79,6 +79,7 @@
 	production_sound = 'sound/effects/soup_boil/soup_boil_end.ogg'
 	relevant_skill = /datum/skill/rimworld_cooking
 	relevant_skill_reward = SKILL_EXP_GRANT_LITTLE
+	stand_strong_recipe = TRUE
 
 /datum/rimworld_recipe/millet_dough
 	recipe_name = "Millet Dough"
@@ -90,6 +91,7 @@
 	production_sound = 'sound/effects/soup_boil/soup_boil_end.ogg'
 	relevant_skill = /datum/skill/rimworld_cooking
 	relevant_skill_reward = SKILL_EXP_GRANT_LITTLE
+	stand_strong_recipe = TRUE
 
 /datum/rimworld_recipe/yak_cheese
 	recipe_name = "Yak Cheese"
@@ -101,6 +103,7 @@
 	production_sound = 'sound/effects/soup_boil/soup_boil_end.ogg'
 	relevant_skill = /datum/skill/rimworld_cooking
 	relevant_skill_reward = SKILL_EXP_GRANT_LITTLE
+	stand_strong_recipe = TRUE
 
 /datum/rimworld_recipe/goat_cheese
 	recipe_name = "Goat Cheese"
@@ -112,6 +115,7 @@
 	production_sound = 'sound/effects/soup_boil/soup_boil_end.ogg'
 	relevant_skill = /datum/skill/rimworld_cooking
 	relevant_skill_reward = SKILL_EXP_GRANT_LITTLE
+	stand_strong_recipe = TRUE
 
 /datum/rimworld_recipe/wine
 	recipe_name = "Colberry Wine"
@@ -124,6 +128,7 @@
 	production_sound = 'sound/effects/bubbles/bubbles2.ogg'
 	relevant_skill = /datum/skill/rimworld_cooking
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
+	stand_strong_recipe = TRUE
 
 /datum/rimworld_recipe/hideroot_slop
 	recipe_name = "Hideroot Brew"
@@ -136,6 +141,7 @@
 	production_sound = 'sound/effects/bubbles/bubbles2.ogg'
 	relevant_skill = /datum/skill/rimworld_cooking
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
+	stand_strong_recipe = TRUE
 
 /datum/rimworld_recipe/rice_beer
 	recipe_name = "White-Grain Beer"
@@ -148,6 +154,7 @@
 	production_sound = 'sound/effects/bubbles/bubbles2.ogg'
 	relevant_skill = /datum/skill/rimworld_cooking
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
+	stand_strong_recipe = TRUE
 
 /datum/rimworld_recipe/millet_beer
 	recipe_name = "Millet Beer"
@@ -160,3 +167,4 @@
 	production_sound = 'sound/effects/bubbles/bubbles2.ogg'
 	relevant_skill = /datum/skill/rimworld_cooking
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
+	stand_strong_recipe = TRUE
