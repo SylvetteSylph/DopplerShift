@@ -7,6 +7,7 @@
 		/datum/rimworld_recipe/stone_knife,
 		/datum/rimworld_recipe/stone_axe,
 		/datum/rimworld_recipe/stone_spear,
+		/datum/rimworld_recipe/wood_shield,
 		/datum/rimworld_recipe/basic_bow,
 		/datum/rimworld_recipe/stone_arrows,
 	)
@@ -42,6 +43,16 @@
 		/obj/item/stack/rimworld_logs = 2,
 	)
 	resulting_item = /obj/item/fantasy_spear
+	crafting_time = 10 SECONDS
+	relevant_skill = /datum/skill/rimworld_weapons_making
+	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
+
+/datum/rimworld_recipe/wood_shield
+	recipe_name = "Wooden Shield"
+	recipe_requirements = list(
+		/obj/item/stack/rimworld_logs = 3,
+	)
+	resulting_item = /obj/item/shield/rimworld
 	crafting_time = 10 SECONDS
 	relevant_skill = /datum/skill/rimworld_weapons_making
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
