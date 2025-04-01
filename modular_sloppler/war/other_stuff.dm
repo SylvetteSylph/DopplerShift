@@ -2,6 +2,7 @@
 /obj/item/flashlight/rimworld_lamp
 	name = "oil lamp"
 	desc = "A small bowl filled with oil from animal fat, makes an effective and long lasting lamp."
+	icon = 'modular_sloppler/war/icons/objects.dmi'
 	icon_state = "lamp"
 	inhand_icon_state = null
 	light_range = 3

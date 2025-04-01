@@ -22,6 +22,7 @@
 	consumption_sound = 'sound/items/drink.ogg'
 	pickup_sound = 'sound/items/handling/reagent_containers/plastic_bottle/plastic_bottle_liquid_slosh1.ogg'
 	drop_sound = 'sound/items/handling/reagent_containers/plastic_bottle/plastic_bottle_liquid_slosh2.ogg'
+	crafting_complexity = FOOD_COMPLEXITY_1
 
 /obj/item/food/rimworld_milk/make_germ_sensitive(mapload)
 	return
@@ -55,6 +56,7 @@
 	preserved_food = TRUE
 	pickup_sound = 'sound/items/handling/glove_pick_up.ogg'
 	drop_sound = 'sound/items/handling/glove_drop.ogg'
+	crafting_complexity = FOOD_COMPLEXITY_3
 
 /obj/item/food/rimworld_cheese/make_germ_sensitive(mapload)
 	return
@@ -101,6 +103,7 @@
 		/datum/reagent/consumable/nutriment/vitamin = 1,
 	)
 	foodtypes = MEAT | FRIED
+	crafting_complexity = FOOD_COMPLEXITY_2
 
 /obj/item/food/rimworld_egg/duck
 	name = "duck's egg"
@@ -164,6 +167,7 @@
 /obj/item/food/rimworld_meat/cooked/yak
 	name = "seared yak's meat"
 	desc = "A cut of yak's meat, seared over a fire."
+	crafting_complexity = FOOD_COMPLEXITY_2
 
 /obj/item/food/rimworld_meat/goat
 	name = "goat's meat"
@@ -175,6 +179,7 @@
 /obj/item/food/rimworld_meat/cooked/goat
 	name = "seared goat's meat"
 	desc = "A cut of goat's meat, seared over a fire."
+	crafting_complexity = FOOD_COMPLEXITY_2
 
 /obj/item/food/rimworld_meat/llama
 	name = "llama's meat"
@@ -186,6 +191,7 @@
 /obj/item/food/rimworld_meat/cooked/llama
 	name = "seared llama's meat"
 	desc = "A cut of llama's meat, seared over a fire."
+	crafting_complexity = FOOD_COMPLEXITY_2
 
 /obj/item/food/rimworld_meat/duck
 	name = "duck's meat"
@@ -199,6 +205,7 @@
 	name = "seared duck's meat"
 	desc = "A cut of duck's meat, seared over a fire."
 	icon_state = "foul_cooked"
+	crafting_complexity = FOOD_COMPLEXITY_2
 
 /obj/item/food/rimworld_meat/fat
 	name = "animal fat"
@@ -219,3 +226,4 @@
 		/datum/reagent/consumable/nutriment/fat = 4,
 		/datum/reagent/consumable/nutriment/vitamin = 2,
 	)
+	crafting_complexity = FOOD_COMPLEXITY_1

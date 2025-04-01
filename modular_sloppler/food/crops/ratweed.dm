@@ -28,6 +28,7 @@
 	foodtypes = VEGETABLES
 	turfs_we_plant_on = list()
 	plant_to_make = null
+	crafting_complexity = FOOD_COMPLEXITY_1
 	tastes = list(
 		"coal" = 1,
 	)
@@ -67,6 +68,7 @@
 	foodtypes = NUTS
 	plant_to_make = null
 	turfs_we_plant_on = list()
+	crafting_complexity = FOOD_COMPLEXITY_1
 	tastes = list(
 		"roasted seeds" = 2,
 	)

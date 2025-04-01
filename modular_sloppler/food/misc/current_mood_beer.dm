@@ -22,6 +22,7 @@
 	consumption_sound = 'sound/items/drink.ogg'
 	pickup_sound = 'sound/items/handling/reagent_containers/plastic_bottle/plastic_bottle_liquid_slosh1.ogg'
 	drop_sound = 'sound/items/handling/reagent_containers/plastic_bottle/plastic_bottle_liquid_slosh2.ogg'
+	crafting_complexity = FOOD_COMPLEXITY_3
 
 /obj/item/food/rimworld_alcohol/make_germ_sensitive(mapload)
 	return
@@ -90,8 +91,12 @@
 	preserved_food = TRUE
 	pickup_sound = 'sound/items/handling/glove_pick_up.ogg'
 	drop_sound = 'sound/items/handling/glove_drop.ogg'
+	crafting_complexity = FOOD_COMPLEXITY_2
 
 /obj/item/food/rimworld_dough/make_grillable()
+	return
+
+/obj/item/food/rimworld_dough/make_germ_sensitive(mapload)
 	return
 
 /obj/item/food/rimworld_dough/rice
@@ -127,8 +132,12 @@
 	preserved_food = TRUE
 	pickup_sound = 'sound/items/handling/glove_pick_up.ogg'
 	drop_sound = 'sound/items/handling/glove_drop.ogg'
+	crafting_complexity = FOOD_COMPLEXITY_3
 
 /obj/item/food/rimworld_bread/make_grillable()
+	return
+
+/obj/item/food/rimworld_bread/make_germ_sensitive(mapload)
 	return
 
 /obj/item/food/rimworld_bread/rice

@@ -56,6 +56,7 @@
 	foodtypes = VEGETABLES
 	turfs_we_plant_on = list()
 	plant_to_make = null
+	crafting_complexity = FOOD_COMPLEXITY_2
 	tastes = list(
 		"starch" = 3,
 		"dirt" = 2,

@@ -53,6 +53,7 @@
 	icon_state = "onions_cooked"
 	foodtypes = VEGETABLES
 	plant_to_make = null
+	crafting_complexity = FOOD_COMPLEXITY_2
 	turfs_we_plant_on = list()
 	tastes = list(
 		"onion" = 2,
