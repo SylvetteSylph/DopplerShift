@@ -7444,6 +7444,7 @@
 #include "modular_sloppler\building_structures\fences.dm"
 #include "modular_sloppler\clothing\clothes\gloves.dm"
 #include "modular_sloppler\clothing\clothes\head.dm"
+#include "modular_sloppler\clothing\clothes\mask.dm"
 #include "modular_sloppler\clothing\clothes\neck.dm"
 #include "modular_sloppler\clothing\clothes\shoes.dm"
 #include "modular_sloppler\clothing\clothes\storage.dm"

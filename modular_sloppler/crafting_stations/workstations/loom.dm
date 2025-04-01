@@ -22,6 +22,7 @@
 		/datum/rimworld_recipe/kenaf_skirt,
 		/datum/rimworld_recipe/kenaf_chestrags,
 		/datum/rimworld_recipe/kenaf_waistrags,
+		/datum/rimworld_recipe/kenaf_gaiter,
 		/datum/rimworld_recipe/cloth_backpack,
 		/datum/rimworld_recipe/cloth_satchel,
 		/datum/rimworld_recipe/cloth_gloves,
@@ -38,6 +39,7 @@
 		/datum/rimworld_recipe/cloth_skirt,
 		/datum/rimworld_recipe/cloth_chestrags,
 		/datum/rimworld_recipe/cloth_waistrags,
+		/datum/rimworld_recipe/cloth_gaiter,
 	)
 
 // Recipes
@@ -429,6 +431,30 @@
 		/obj/item/stack/medical/gauze/rimworld_cloth = 1
 	)
 	resulting_item = /obj/item/clothing/under/rimworld_waistrags/cloth
+	crafting_time = 5 SECONDS
+	relevant_skill = /datum/skill/rimworld_tailoring
+	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
+	production_sound = SFX_RUSTLE
+
+// Masks
+
+/datum/rimworld_recipe/kenaf_gaiter
+	recipe_name = "Jute Neck Gaiter"
+	recipe_requirements = list(
+		/obj/item/stack/medical/gauze/rimworld_kenaf = 1
+	)
+	resulting_item = /obj/item/clothing/mask/rimworld_gaiter/kenaf
+	crafting_time = 5 SECONDS
+	relevant_skill = /datum/skill/rimworld_tailoring
+	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
+	production_sound = SFX_RUSTLE
+
+/datum/rimworld_recipe/cloth_gaiter
+	recipe_name = "Cloth Neck Gaiter"
+	recipe_requirements = list(
+		/obj/item/stack/medical/gauze/rimworld_cloth = 1
+	)
+	resulting_item = /obj/item/clothing/mask/rimworld_gaiter/cloth
 	crafting_time = 5 SECONDS
 	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM

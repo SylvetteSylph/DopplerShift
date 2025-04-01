@@ -11,6 +11,9 @@
 		/datum/rimworld_recipe/wood_shield,
 		/datum/rimworld_recipe/basic_bow,
 		/datum/rimworld_recipe/stone_arrows,
+		/datum/rimworld_recipe/wood_visage,
+		/datum/rimworld_recipe/whitewood_visage,
+		/datum/rimworld_recipe/stone_visage,
 	)
 
 // Recipes
@@ -92,3 +95,37 @@
 	relevant_skill = /datum/skill/rimworld_weapons_making
 	relevant_skill_reward = SKILL_EXP_GRANT_LITTLE
 	stand_strong_recipe = TRUE
+
+// Visage masks, I don't want to overload the poor tailor's bench :(
+/datum/rimworld_recipe/wood_visage
+	recipe_name = "Wood Visage Mask"
+	recipe_requirements = list(
+		/obj/item/stack/rimworld_logs = 1
+	)
+	resulting_item = /obj/item/clothing/mask/rimworld_visage/wood
+	crafting_time = 5 SECONDS
+	relevant_skill = /datum/skill/rimworld_tailoring
+	relevant_skill_reward = SKILL_EXP_GRANT_LITTLE
+	production_sound = SFX_RUSTLE
+
+/datum/rimworld_recipe/whitewood_visage
+	recipe_name = "Whitewood Visage Mask"
+	recipe_requirements = list(
+		/obj/item/stack/rimworld_logs = 1
+	)
+	resulting_item = /obj/item/clothing/mask/rimworld_visage/whitewood
+	crafting_time = 5 SECONDS
+	relevant_skill = /datum/skill/rimworld_tailoring
+	relevant_skill_reward = SKILL_EXP_GRANT_LITTLE
+	production_sound = SFX_RUSTLE
+
+/datum/rimworld_recipe/stone_visage
+	recipe_name = "Stone Visage Mask"
+	recipe_requirements = list(
+		/obj/item/stack/rimworld_stone = 1
+	)
+	resulting_item = /obj/item/clothing/mask/rimworld_visage/stone
+	crafting_time = 5 SECONDS
+	relevant_skill = /datum/skill/rimworld_tailoring
+	relevant_skill_reward = SKILL_EXP_GRANT_LITTLE
+	production_sound = SFX_RUSTLE
