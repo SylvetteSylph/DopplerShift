@@ -8,6 +8,7 @@
 	inhand_icon_state = null
 	gender = PLURAL
 	novariants = TRUE
+	repeating = TRUE
 	amount = 12
 	max_amount = 12
 	self_delay = 3 SECONDS
