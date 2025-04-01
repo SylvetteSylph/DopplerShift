@@ -32,10 +32,9 @@
 		"coal" = 1,
 	)
 	food_reagents = list(
-		/datum/reagent/consumable/nutriment/vitamin = 1,
-		/datum/reagent/medicine/omnizine/godblood = 3,
-		/datum/reagent/medicine/coagulant/seraka_extract = 1,
-		/datum/reagent/medicine/mine_salve = 2,
+		/datum/reagent/consumable/nutriment/vitamin = 2,
+		/datum/reagent/medicine/coagulant/seraka_extract = 3,
+		/datum/reagent/consumable/nutriment/peptides = 6,
 	)
 
 // Seeds
