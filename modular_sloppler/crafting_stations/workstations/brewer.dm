@@ -18,6 +18,54 @@
 // Recipes
 
 /datum/rimworld_recipe/rice_dough
+	recipe_name = "Sterilize Cloth Burn Wrap"
+	recipe_requirements = list(
+		/obj/item/stack/medical/gauze/rimworld_cloth = 1,
+		/obj/item/food/rimworld_alcohol/hideroot_slop = 1,
+	)
+	resulting_item = /obj/item/stack/medical/ointment/rimworld_burn_wrap/cloth/crafted
+	crafting_time = 5 SECONDS
+	production_sound = 'sound/effects/soup_boil/soup_boil_end.ogg'
+	relevant_skill = /datum/skill/rimworld_cooking
+	relevant_skill_reward = SKILL_EXP_GRANT_LOTS
+
+/datum/rimworld_recipe/rice_dough
+	recipe_name = "Sterilize Jute Burn Wrap"
+	recipe_requirements = list(
+		/obj/item/stack/medical/gauze/rimworld_kenaf = 1,
+		/obj/item/food/rimworld_alcohol/hideroot_slop = 1,
+	)
+	resulting_item = /obj/item/stack/medical/ointment/rimworld_burn_wrap/jute/crafted
+	crafting_time = 5 SECONDS
+	production_sound = 'sound/effects/soup_boil/soup_boil_end.ogg'
+	relevant_skill = /datum/skill/rimworld_cooking
+	relevant_skill_reward = SKILL_EXP_GRANT_LOTS
+
+/datum/rimworld_recipe/rice_dough
+	recipe_name = "Sterilize Cloth Sutures"
+	recipe_requirements = list(
+		/obj/item/stack/medical/gauze/rimworld_cloth = 1,
+		/obj/item/food/rimworld_alcohol/hideroot_slop = 1,
+	)
+	resulting_item = /obj/item/stack/medical/suture/rimworld_suture/cloth/crafted
+	crafting_time = 5 SECONDS
+	production_sound = 'sound/effects/soup_boil/soup_boil_end.ogg'
+	relevant_skill = /datum/skill/rimworld_cooking
+	relevant_skill_reward = SKILL_EXP_GRANT_LOTS
+
+/datum/rimworld_recipe/rice_dough
+	recipe_name = "Sterilize Jute Sutures"
+	recipe_requirements = list(
+		/obj/item/stack/medical/gauze/rimworld_kenaf = 1,
+		/obj/item/food/rimworld_alcohol/hideroot_slop = 1,
+	)
+	resulting_item = /obj/item/stack/medical/suture/rimworld_suture/jute/crafted
+	crafting_time = 5 SECONDS
+	production_sound = 'sound/effects/soup_boil/soup_boil_end.ogg'
+	relevant_skill = /datum/skill/rimworld_cooking
+	relevant_skill_reward = SKILL_EXP_GRANT_LOTS
+
+/datum/rimworld_recipe/rice_dough
 	recipe_name = "White-Grain Dough"
 	recipe_requirements = list(
 		/obj/item/food/fantasy_grown/rice_panicle = 1,
@@ -67,7 +115,7 @@
 		/obj/item/food/fantasy_grown/grapes = 2,
 		/obj/item/rimworld_cup = 1,
 	)
-	resulting_item = /obj/item/fantasy_knife
+	resulting_item = /obj/item/food/rimworld_alcohol/wine
 	crafting_time = 7 SECONDS
 	production_sound = 'sound/effects/bubbles/bubbles2.ogg'
 	relevant_skill = /datum/skill/rimworld_cooking
@@ -79,7 +127,7 @@
 		/obj/item/food/fantasy_grown/hideroot/cooked = 2,
 		/obj/item/rimworld_cup = 1,
 	)
-	resulting_item = /obj/item/fantasy_knife
+	resulting_item = /obj/item/food/rimworld_alcohol/hideroot_slop
 	crafting_time = 7 SECONDS
 	production_sound = 'sound/effects/bubbles/bubbles2.ogg'
 	relevant_skill = /datum/skill/rimworld_cooking
@@ -91,7 +139,7 @@
 		/obj/item/food/fantasy_grown/rice_panicle = 2,
 		/obj/item/rimworld_cup = 1,
 	)
-	resulting_item = /obj/item/fantasy_knife
+	resulting_item = /obj/item/food/rimworld_alcohol/rice_beer
 	crafting_time = 7 SECONDS
 	production_sound = 'sound/effects/bubbles/bubbles2.ogg'
 	relevant_skill = /datum/skill/rimworld_cooking
@@ -103,7 +151,7 @@
 		/obj/item/food/fantasy_grown/millet_panicle = 2,
 		/obj/item/rimworld_cup = 1,
 	)
-	resulting_item = /obj/item/fantasy_knife
+	resulting_item = /obj/item/food/rimworld_alcohol/beer_beer
 	crafting_time = 7 SECONDS
 	production_sound = 'sound/effects/bubbles/bubbles2.ogg'
 	relevant_skill = /datum/skill/rimworld_cooking

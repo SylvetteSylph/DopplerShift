@@ -7494,6 +7494,7 @@
 #include "modular_sloppler\resources\wood.dm"
 #include "modular_sloppler\skills\skills_generic.dm"
 #include "modular_sloppler\war\armor_definition.dm"
+#include "modular_sloppler\war\healing_stack_items.dm"
 #include "modular_sloppler\war\primitive.dm"
 #include "modular_sloppler\war\primitive_bow.dm"
 // END_INCLUDE
