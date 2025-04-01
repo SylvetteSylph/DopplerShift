@@ -26,6 +26,9 @@
 /obj/item/food/rimworld_alcohol/make_germ_sensitive(mapload)
 	return
 
+/obj/item/food/rimworld_alcohol/make_grillable()
+	return
+
 // Get real
 
 /obj/item/food/rimworld_alcohol/wine
@@ -88,6 +91,9 @@
 	pickup_sound = 'sound/items/handling/glove_pick_up.ogg'
 	drop_sound = 'sound/items/handling/glove_drop.ogg'
 
+/obj/item/food/rimworld_dough/make_grillable()
+	return
+
 /obj/item/food/rimworld_dough/rice
 	name = "white-grain dough"
 	desc = "Prepared dough made with white-grain flour, now all you need to do is cook it."
@@ -121,6 +127,9 @@
 	preserved_food = TRUE
 	pickup_sound = 'sound/items/handling/glove_pick_up.ogg'
 	drop_sound = 'sound/items/handling/glove_drop.ogg'
+
+/obj/item/food/rimworld_bread/make_grillable()
+	return
 
 /obj/item/food/rimworld_bread/rice
 	name = "white-grain bread"

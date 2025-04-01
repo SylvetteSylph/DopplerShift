@@ -16,6 +16,9 @@
 		for(var/turf/plantable_turf as anything in turfs_we_plant_on)
 			. += span_notice("- [plantable_turf.name]")
 
+/obj/item/food/fantasy_grown/make_grillable()
+	return
+
 /obj/item/food/fantasy_grown/make_germ_sensitive(mapload)
 	return
 

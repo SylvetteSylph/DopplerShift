@@ -26,6 +26,9 @@
 /obj/item/food/rimworld_milk/make_germ_sensitive(mapload)
 	return
 
+/obj/item/food/rimworld_milk/make_grillable()
+	return
+
 /obj/item/food/rimworld_milk/yak
 	name = "yak's milk"
 	desc = "The milk of a yak."
@@ -53,6 +56,12 @@
 	pickup_sound = 'sound/items/handling/glove_pick_up.ogg'
 	drop_sound = 'sound/items/handling/glove_drop.ogg'
 
+/obj/item/food/rimworld_cheese/make_germ_sensitive(mapload)
+	return
+
+/obj/item/food/rimworld_cheese/make_grillable()
+	return
+
 /obj/item/food/rimworld_cheese/yak
 	name = "yak cheese"
 	desc = "Quick cheese made from yak's milk."
@@ -77,6 +86,9 @@
 	drop_sound = 'sound/items/handling/glove_drop.ogg'
 
 /obj/item/food/rimworld_egg/make_germ_sensitive(mapload)
+	return
+
+/obj/item/food/rimworld_egg/make_grillable()
 	return
 
 /obj/item/food/rimworld_egg/cooked
@@ -120,6 +132,9 @@
 	preserved_food = TRUE
 	pickup_sound = 'sound/items/handling/glove_pick_up.ogg'
 	drop_sound = 'sound/items/handling/glove_drop.ogg'
+
+/obj/item/food/rimworld_meat/make_grillable()
+	return
 
 /obj/item/food/rimworld_meat/make_germ_sensitive(mapload)
 	return
