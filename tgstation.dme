@@ -7473,7 +7473,6 @@
 #include "modular_sloppler\food\misc\current_mood_beer.dm"
 #include "modular_sloppler\food\misc\wooden_cup.dm"
 #include "modular_sloppler\furniture\chairs.dm"
-#include "modular_sloppler\furniture\fermenting_barrel.dm"
 #include "modular_sloppler\furniture\storage.dm"
 #include "modular_sloppler\furniture\tables.dm"
 #include "modular_sloppler\map_generator\area.dm"

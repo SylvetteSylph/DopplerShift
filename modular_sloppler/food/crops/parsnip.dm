@@ -43,8 +43,6 @@
 		/datum/reagent/consumable/nutriment = 1,
 		/datum/reagent/consumable/nutriment/vitamin = 3,
 	)
-	can_distill = FALSE
-	distill_reagent = FALSE
 
 /obj/item/food/fantasy_grown/parsnips/make_grillable()
 	AddComponent(/datum/component/grillable, /obj/item/food/fantasy_grown/parsnips/cooked, rand(1 MINUTES, 2 MINUTES), TRUE, FALSE)
@@ -63,5 +61,3 @@
 		/datum/reagent/consumable/nutriment = 4,
 		/datum/reagent/consumable/nutriment/vitamin = 3,
 	)
-	can_distill = FALSE
-	distill_reagent = FALSE

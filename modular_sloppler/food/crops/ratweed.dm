@@ -16,8 +16,6 @@
 	food_reagents = list(
 		/datum/reagent/consumable/nutriment = 2,
 	)
-	can_distill = FALSE
-	distill_reagent = FALSE
 
 /obj/item/food/fantasy_grown/ratweed_leaf/make_grillable()
 	AddComponent(/datum/component/grillable, /obj/item/food/fantasy_grown/ratweed_leaf/cooked, rand(45 SECONDS, 1.5 MINUTES), TRUE, FALSE)
@@ -39,8 +37,6 @@
 		/datum/reagent/medicine/coagulant/seraka_extract = 1,
 		/datum/reagent/medicine/mine_salve = 2,
 	)
-	can_distill = FALSE
-	distill_reagent = FALSE
 
 // Seeds
 
@@ -61,8 +57,6 @@
 		/datum/reagent/consumable/nutriment = 2,
 		/datum/reagent/consumable/nutriment/vitamin = 1,
 	)
-	can_distill = FALSE
-	distill_reagent = FALSE
 
 /obj/item/food/fantasy_grown/ratweed_seeds/make_grillable()
 	AddComponent(/datum/component/grillable, /obj/item/food/fantasy_grown/cooked_seeds, rand(45 SECONDS, 1.5 MINUTES), TRUE, FALSE)
@@ -81,5 +75,3 @@
 		/datum/reagent/consumable/nutriment = 2,
 		/datum/reagent/consumable/nutriment/vitamin = 3,
 	)
-	can_distill = FALSE
-	distill_reagent = FALSE

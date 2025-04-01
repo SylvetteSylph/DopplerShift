@@ -43,8 +43,6 @@
 		/datum/reagent/consumable/nutriment = 1,
 		/datum/reagent/consumable/nutriment/vitamin = 2,
 	)
-	can_distill = FALSE
-	distill_reagent = FALSE
 
 /obj/item/food/fantasy_grown/groundnut/make_grillable()
 	AddComponent(/datum/component/grillable, /obj/item/food/fantasy_grown/groundnut/cooked, rand(1 MINUTES, 2 MINUTES), TRUE, FALSE)
@@ -64,5 +62,3 @@
 		/datum/reagent/consumable/nutriment = 3,
 		/datum/reagent/consumable/nutriment/vitamin = 2,
 	)
-	can_distill = FALSE
-	distill_reagent = FALSE

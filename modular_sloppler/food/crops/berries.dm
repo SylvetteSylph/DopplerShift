@@ -43,8 +43,6 @@
 		/datum/reagent/consumable/nutriment = 2,
 		/datum/reagent/consumable/nutriment/vitamin = 2,
 	)
-	can_distill = FALSE
-	distill_reagent = FALSE
 
 // Seeds
 
@@ -64,8 +62,6 @@
 		/datum/reagent/consumable/nutriment = 2,
 		/datum/reagent/consumable/nutriment/vitamin = 1,
 	)
-	can_distill = FALSE
-	distill_reagent = FALSE
 
 /obj/item/food/fantasy_grown/grape_seeds/make_grillable()
 	AddComponent(/datum/component/grillable, /obj/item/food/fantasy_grown/cooked_seeds, rand(45 SECONDS, 1.5 MINUTES), TRUE, FALSE)

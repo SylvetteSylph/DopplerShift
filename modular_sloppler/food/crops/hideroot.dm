@@ -45,8 +45,6 @@
 		/datum/reagent/consumable/nutriment = 4,
 		/datum/reagent/toxin = 1,
 	)
-	can_distill = FALSE
-	distill_reagent = FALSE
 
 /obj/item/food/fantasy_grown/hideroot/make_grillable()
 	AddComponent(/datum/component/grillable, /obj/item/food/fantasy_grown/hideroot/cooked, rand(1 MINUTES, 2 MINUTES), TRUE, FALSE)
@@ -66,5 +64,3 @@
 		/datum/reagent/consumable/nutriment = 4,
 		/datum/reagent/consumable/nutriment/vitamin = 2,
 	)
-	can_distill = FALSE
-	distill_reagent = FALSE
