@@ -44,6 +44,9 @@ GLOBAL_LIST_INIT(rimworld_leather_recipes, list())
 	. = ..()
 	. = GLOB.rimworld_kenaf_recipes
 
+/obj/item/stack/medical/gauze/rimworld_kenaf/crafted
+	amount = 2
+
 // Cloth
 
 /obj/item/stack/medical/gauze/rimworld_cloth
@@ -80,6 +83,9 @@ GLOBAL_LIST_INIT(rimworld_leather_recipes, list())
 /obj/item/stack/medical/gauze/rimworld_cloth/get_main_recipes()
 	. = ..()
 	. = GLOB.rimworld_cloth_recipes
+
+/obj/item/stack/medical/gauze/rimworld_cloth/crafted
+	amount = 2
 
 // Leather
 

@@ -5,16 +5,13 @@
 	icon = 'modular_doppler/modular_cosmetics/GAGS/icons/obj/face.dmi'
 	icon_state = "gaiter"
 	worn_icon = 'modular_doppler/modular_cosmetics/GAGS/icons/mob/face.dmi'
-	worn_icon_state = "gaiter"
 	inhand_icon_state = null
 	actions_types = list(/datum/action/item_action/adjust)
 	alternate_worn_layer = UNDER_UNIFORM_LAYER
 	supported_bodyshapes = null
 	bodyshape_icon_files = null
-	clothing_flags = BLOCK_GAS_SMOKE_EFFECT|MASKINTERNALS
 	w_class = WEIGHT_CLASS_SMALL
 	flags_inv = HIDEFACIALHAIR | HIDEFACE | HIDESNOUT
-	visor_flags = BLOCK_GAS_SMOKE_EFFECT | MASKINTERNALS
 	visor_flags_inv = HIDEFACIALHAIR | HIDEFACE | HIDESNOUT
 	flags_cover = MASKCOVERSMOUTH
 	visor_flags_cover = MASKCOVERSMOUTH
@@ -58,7 +55,7 @@
 	worn_icon = 'modular_sloppler/clothing/icons/misc_worn.dmi'
 	worn_icon_state = null
 	inhand_icon_state = null
-	flags_inv = HIDEFACE|HIDEFACIALHAIR
+	flags_inv = HIDEFACE | HIDEFACIALHAIR | HIDESNOUT
 
 /obj/item/clothing/mask/rimworld_visage/wood
 	name = "wood visage mask"

@@ -49,7 +49,7 @@
 	recipe_requirements = list(
 		/obj/item/food/fantasy_grown/kenaf = 1
 	)
-	resulting_item = /obj/item/stack/medical/gauze/rimworld_kenaf
+	resulting_item = /obj/item/stack/medical/gauze/rimworld_kenaf/crafted
 	crafting_time = 3 SECONDS
 	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_LITTLE
@@ -61,7 +61,7 @@
 	recipe_requirements = list(
 		/obj/item/food/fantasy_grown/cotton = 1
 	)
-	resulting_item = /obj/item/stack/medical/gauze/rimworld_cloth
+	resulting_item = /obj/item/stack/medical/gauze/rimworld_cloth/crafted
 	crafting_time = 3 SECONDS
 	relevant_skill = /datum/skill/rimworld_tailoring
 	relevant_skill_reward = SKILL_EXP_GRANT_LITTLE
