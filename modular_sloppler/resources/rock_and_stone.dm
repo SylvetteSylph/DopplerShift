@@ -13,6 +13,8 @@
 	throwforce = 10
 	slowdown = 0.5
 	max_amount = 1
+	pickup_sound = SFX_STONE_PICKUP
+	drop_sound = SFX_STONE_DROP
 	/// How many variations of sprite does this have?
 	var/icon_variations = 3
 

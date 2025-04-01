@@ -33,6 +33,8 @@ GLOBAL_LIST_INIT(rimworld_leather_recipes, list())
 	burn_cleanliness_bonus = 0.7
 	absorption_rate = 0.075
 	absorption_capacity = 4
+	pickup_sound = 'sound/items/handling/materials/skin_pick_up.ogg'
+	drop_sound = 'sound/items/handling/materials/skin_drop.ogg'
 
 /obj/item/stack/medical/gauze/rimworld_kenaf/Initialize(mapload, new_amount, merge, list/mat_override, mat_amt)
 	. = ..()
@@ -68,6 +70,8 @@ GLOBAL_LIST_INIT(rimworld_leather_recipes, list())
 	absorption_rate = 0.075
 	absorption_capacity = 5
 	self_delay = 3 SECONDS
+	pickup_sound = 'sound/items/handling/materials/skin_pick_up.ogg'
+	drop_sound = 'sound/items/handling/materials/skin_drop.ogg'
 
 /obj/item/stack/medical/gauze/rimworld_cloth/Initialize(mapload, new_amount, merge, list/mat_override, mat_amt)
 	. = ..()
@@ -97,6 +101,8 @@ GLOBAL_LIST_INIT(rimworld_leather_recipes, list())
 	throw_range = 3
 	campfire_fuel_value = 2 MINUTES
 	novariants = FALSE
+	pickup_sound = 'sound/items/handling/materials/skin_pick_up.ogg'
+	drop_sound = 'sound/items/handling/materials/skin_drop.ogg'
 
 /obj/item/stack/rimworld_leather/Initialize(mapload, new_amount, merge, list/mat_override, mat_amt)
 	. = ..()

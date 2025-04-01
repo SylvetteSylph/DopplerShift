@@ -31,6 +31,8 @@ GLOBAL_LIST_INIT(rimworld_brick_recipes, list(
 	throw_speed = 5
 	throw_range = 3
 	novariants = FALSE
+	pickup_sound = SFX_STONE_PICKUP
+	drop_sound = SFX_STONE_DROP
 
 /obj/item/stack/rimworld_bricks/get_main_recipes()
 	. = ..()

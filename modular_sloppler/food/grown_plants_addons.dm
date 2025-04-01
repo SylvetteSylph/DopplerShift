@@ -2,6 +2,8 @@
 	icon = 'modular_sloppler/food/icons/harvested_plants.dmi'
 	icon_state = "a_decadent_meal"
 	preserved_food = TRUE
+	pickup_sound = 'sound/items/handling/glove_pick_up.ogg'
+	drop_sound = 'sound/items/handling/glove_drop.ogg'
 	/// List of what types of turfs this can be planted on
 	var/list/turfs_we_plant_on = list()
 	/// What type of plant we make when we're planted down

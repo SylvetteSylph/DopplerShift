@@ -20,6 +20,8 @@
 	w_class = WEIGHT_CLASS_SMALL
 	preserved_food = TRUE
 	consumption_sound = 'sound/items/drink.ogg'
+	pickup_sound = 'sound/items/handling/reagent_containers/plastic_bottle/plastic_bottle_liquid_slosh1.ogg'
+	drop_sound = 'sound/items/handling/reagent_containers/plastic_bottle/plastic_bottle_liquid_slosh2.ogg'
 
 /obj/item/food/rimworld_milk/make_germ_sensitive(mapload)
 	return
@@ -44,6 +46,8 @@
 	foodtypes = MEAT | RAW
 	w_class = WEIGHT_CLASS_TINY
 	preserved_food = TRUE
+	pickup_sound = 'sound/items/handling/glove_pick_up.ogg'
+	drop_sound = 'sound/items/handling/glove_drop.ogg'
 
 /obj/item/food/rimworld_egg/make_germ_sensitive(mapload)
 	return
@@ -87,6 +91,8 @@
 	tastes = list("meat" = 1)
 	foodtypes = MEAT | RAW
 	preserved_food = TRUE
+	pickup_sound = 'sound/items/handling/glove_pick_up.ogg'
+	drop_sound = 'sound/items/handling/glove_drop.ogg'
 
 /obj/item/food/rimworld_meat/make_germ_sensitive(mapload)
 	return

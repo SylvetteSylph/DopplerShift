@@ -37,6 +37,8 @@ GLOBAL_LIST_INIT(rimworld_log_recipes, list(
 	throw_range = 3
 	campfire_fuel_value = 5 MINUTES
 	novariants = FALSE
+	pickup_sound = 'sound/items/handling/materials/wood_pick_up.ogg'
+	drop_sound = 'sound/items/handling/materials/wood_drop.ogg'
 
 /obj/item/stack/rimworld_logs/Initialize(mapload, new_amount, merge, list/mat_override, mat_amt)
 	. = ..()

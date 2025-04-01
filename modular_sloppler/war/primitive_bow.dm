@@ -15,6 +15,8 @@
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/bow/rimworld
 	projectile_damage_multiplier = 1
 	load_sound = 'sound/items/weapons/draw_bow.ogg'
+	pickup_sound = 'sound/items/handling/materials/wood_pick_up.ogg'
+	drop_sound = 'sound/items/handling/materials/wood_drop.ogg'
 
 /obj/item/ammo_box/magazine/internal/bow/rimworld
 	name = "bowstring"
@@ -44,6 +46,8 @@
 	base_icon_state = "stone_arrow"
 	worn_icon_state = null
 	projectile_type = /obj/projectile/bullet/arrow/rimworld
+	pickup_sound = 'sound/items/handling/gun/ballistics/magazine/magazine_pickup1.ogg'
+	drop_sound = 'sound/items/handling/gun/ballistics/magazine/magazine_drop1.ogg'
 
 /obj/projectile/bullet/arrow/rimworld
 	name = "stone arrow"

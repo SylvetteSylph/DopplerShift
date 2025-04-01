@@ -24,6 +24,8 @@
 	wound_bonus = -15
 	bare_wound_bonus = 10
 	reach = 2
+	pickup_sound = 'sound/items/handling/tools/rpd_pickup.ogg'
+	drop_sound = 'sound/items/handling/tools/rpd_drop.ogg'
 	/// How much damage to do unwielded
 	var/force_unwielded = 10
 	/// How much damage to do wielded
@@ -73,6 +75,8 @@
 	attack_verb_simple = list("chop", "tear", "lacerate", "cut")
 	hitsound = 'sound/items/weapons/bladeslice.ogg'
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_BACK
+	pickup_sound = 'sound/items/handling/tools/rpd_pickup.ogg'
+	drop_sound = 'sound/items/handling/tools/rpd_drop.ogg'
 
 /obj/item/fantasy_axe/Initialize(mapload)
 	. = ..()
@@ -108,6 +112,8 @@
 	attack_verb_continuous = list("slashes", "stabs", "slices", "tears", "lacerates", "rips", "dices", "cuts")
 	attack_verb_simple = list("slash", "stab", "slice", "tear", "lacerate", "rip", "dice", "cut")
 	slot_flags = ITEM_SLOT_BELT
+	pickup_sound = 'sound/items/handling/tools/rpd_pickup.ogg'
+	drop_sound = 'sound/items/handling/tools/rpd_drop.ogg'
 
 /obj/item/fantasy_knife/Initialize(mapload)
 	. = ..()
@@ -116,3 +122,23 @@
 		speed = 3 SECONDS, \
 		effectiveness = 120, \
 	)
+
+// Shield
+
+/obj/item/shield/rimworld
+	name = "wooden shield"
+	desc = "A simple shield made of wood, made to get hurt so you don't."
+	icon = 'modular_sloppler/war/icons/objects.dmi'
+	icon_state = "shield"
+	lefthand_file = 'modular_sloppler/war/icons/lefthand.dmi'
+	righthand_file = 'modular_sloppler/war/icons/righthand.dmi'
+	inhand_icon_state = "shield"
+	worn_icon = 'modular_sloppler/war/icons/worn.dmi'
+	worn_icon_state = "shield"
+	transparent = FALSE
+	max_integrity = 75
+	block_sound = 'sound/items/handling/materials/wood_pick_up.ogg'
+	shield_break_leftover = /obj/item/stack/rimworld_logs
+	armor_type = /datum/armor/item_shield/riot
+	pickup_sound = 'sound/items/handling/materials/wood_pick_up.ogg'
+	drop_sound = 'sound/items/handling/materials/wood_drop.ogg'
