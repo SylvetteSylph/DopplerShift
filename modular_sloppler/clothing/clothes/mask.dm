@@ -56,6 +56,8 @@
 	worn_icon_state = null
 	inhand_icon_state = null
 	flags_inv = HIDEFACE | HIDEFACIALHAIR | HIDESNOUT
+	supported_bodyshapes = null
+	bodyshape_icon_files = null
 
 /obj/item/clothing/mask/rimworld_visage/wood
 	name = "wood visage mask"
