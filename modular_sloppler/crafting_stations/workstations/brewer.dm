@@ -13,11 +13,15 @@
 		/datum/rimworld_recipe/hideroot_slop,
 		/datum/rimworld_recipe/rice_beer,
 		/datum/rimworld_recipe/millet_beer,
+		/datum/rimworld_recipe/cloth_burn_wrap,
+		/datum/rimworld_recipe/jute_burn_wrap,
+		/datum/rimworld_recipe/cloth_suture,
+		/datum/rimworld_recipe/jute_suture,
 	)
 
 // Recipes
 
-/datum/rimworld_recipe/rice_dough
+/datum/rimworld_recipe/cloth_burn_wrap
 	recipe_name = "Sterilize Cloth Burn Wrap"
 	recipe_requirements = list(
 		/obj/item/stack/medical/gauze/rimworld_cloth = 1,
@@ -29,7 +33,7 @@
 	relevant_skill = /datum/skill/rimworld_cooking
 	relevant_skill_reward = SKILL_EXP_GRANT_LOTS
 
-/datum/rimworld_recipe/rice_dough
+/datum/rimworld_recipe/jute_burn_wrap
 	recipe_name = "Sterilize Jute Burn Wrap"
 	recipe_requirements = list(
 		/obj/item/stack/medical/gauze/rimworld_kenaf = 1,
@@ -41,7 +45,7 @@
 	relevant_skill = /datum/skill/rimworld_cooking
 	relevant_skill_reward = SKILL_EXP_GRANT_LOTS
 
-/datum/rimworld_recipe/rice_dough
+/datum/rimworld_recipe/cloth_suture
 	recipe_name = "Sterilize Cloth Sutures"
 	recipe_requirements = list(
 		/obj/item/stack/medical/gauze/rimworld_cloth = 1,
@@ -53,7 +57,7 @@
 	relevant_skill = /datum/skill/rimworld_cooking
 	relevant_skill_reward = SKILL_EXP_GRANT_LOTS
 
-/datum/rimworld_recipe/rice_dough
+/datum/rimworld_recipe/jute_suture
 	recipe_name = "Sterilize Jute Sutures"
 	recipe_requirements = list(
 		/obj/item/stack/medical/gauze/rimworld_kenaf = 1,
