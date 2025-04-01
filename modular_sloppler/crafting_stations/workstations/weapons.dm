@@ -4,6 +4,7 @@
 	icon = 'modular_sloppler/crafting_stations/icons/stations.dmi'
 	icon_state = "weapons"
 	allowed_choices = list(
+		/datum/rimworld_recipe/oil_lamp,
 		/datum/rimworld_recipe/stone_knife,
 		/datum/rimworld_recipe/stone_axe,
 		/datum/rimworld_recipe/stone_spear,
@@ -13,6 +14,17 @@
 	)
 
 // Recipes
+
+/datum/rimworld_recipe/oil_lamp
+	recipe_name = "Oil Lamp"
+	recipe_requirements = list(
+		/obj/item/stack/rimworld_stone = 1,
+		/obj/item/food/rimworld_meat/fat = 1,
+	)
+	resulting_item = /obj/item/flashlight/rimworld_lamp
+	crafting_time = 5 SECONDS
+	relevant_skill = /datum/skill/rimworld_weapons_making
+	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
 
 /datum/rimworld_recipe/stone_knife
 	recipe_name = "Stone Knife"
