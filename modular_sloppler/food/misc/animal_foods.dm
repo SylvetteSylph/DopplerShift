@@ -7,7 +7,7 @@
 	icon_state = "milj"
 	food_reagents = list(
 		/datum/reagent/consumable/milk = 10,
-		/datum/reagent/consumable/nutriment/peptides = 2,
+		/datum/reagent/consumable/nutriment/peptides = 5,
 	)
 	tastes = list("milk" = 3)
 	eatverbs = list(
@@ -33,6 +33,33 @@
 /obj/item/food/rimworld_milk/goated
 	name = "goat's milk"
 	desc = "The milk of a goat."
+
+// And on the fourth day, James May said, cheese.
+
+/obj/item/food/rimworld_cheese
+	name = "evil debug cheese"
+	desc = "Wouldn't you want to know where this comes from."
+	icon = 'modular_sloppler/food/icons/big_cook.dmi'
+	icon_state = "cheese"
+	food_reagents = list(
+		/datum/reagent/consumable/nutriment/fat = 10,
+		/datum/reagent/consumable/nutriment/protein = 5,
+		/datum/reagent/consumable/nutriment/vitamin = 5,
+	)
+	tastes = list("farmer's cheese" = 3)
+	foodtypes = DAIRY
+	w_class = WEIGHT_CLASS_NORMAL
+	preserved_food = TRUE
+	pickup_sound = 'sound/items/handling/glove_pick_up.ogg'
+	drop_sound = 'sound/items/handling/glove_drop.ogg'
+
+/obj/item/food/rimworld_cheese/yak
+	name = "yak cheese"
+	desc = "Quick cheese made from yak's milk."
+
+/obj/item/food/rimworld_cheese/goated
+	name = "goat cheese"
+	desc = "Quick cheese made from goat's milk."
 
 // Eggs
 

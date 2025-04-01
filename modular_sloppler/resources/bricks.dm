@@ -7,6 +7,7 @@ GLOBAL_LIST_INIT(rimworld_brick_recipes, list(
 	new/datum/stack_recipe("stone fence", /obj/structure/rimworld_fence/stone, 2, time = 2 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_ONE_PER_TURF, category = CAT_STRUCTURE),
 	new/datum/stack_recipe_list("utilities", list( \
 		new/datum/stack_recipe("storage vessel", /obj/structure/fantasy_storage_pot, 5, time = 5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_ONE_PER_TURF, category = CAT_STRUCTURE), \
+		new/datum/stack_recipe("cooking station", /obj/structure/table/rimworld_crafter/brewer, 10, time = 5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_ONE_PER_TURF, category = CAT_STRUCTURE), \
 	)),
 	new/datum/stack_recipe_list("furniture", list( \
 		new/datum/stack_recipe("stone counter", /obj/structure/table/rimworld/stone, 2, time = 2 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_ONE_PER_TURF, category = CAT_STRUCTURE), \

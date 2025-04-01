@@ -53,8 +53,10 @@
 		item_picked.undo_messy(duration = 0)
 
 /// Messes up items when you drop them to the floor
+/* // SLOPPLER EDIT
 /mob/dropItemToGround(obj/item/item_dropped, force, silent, invdrop)
 	. = ..()
 	if(. && item_dropped)
 		if(!(item_dropped.item_flags & NO_PIXEL_RANDOM_DROP))
 			item_dropped.do_messy(duration = 2)
+*/
