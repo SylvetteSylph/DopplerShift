@@ -5,6 +5,7 @@
 	icon_state = "weapons"
 	allowed_choices = list(
 		/datum/rimworld_recipe/oil_lamp,
+		/datum/rimworld_recipe/soap,
 		/datum/rimworld_recipe/stone_knife,
 		/datum/rimworld_recipe/stone_axe,
 		/datum/rimworld_recipe/stone_spear,
@@ -28,6 +29,16 @@
 	crafting_time = 5 SECONDS
 	relevant_skill = /datum/skill/rimworld_weapons_making
 	relevant_skill_reward = SKILL_EXP_GRANT_MEDIUM
+
+/datum/rimworld_recipe/soap
+	recipe_name = "Soap"
+	recipe_requirements = list(
+		/obj/item/food/rimworld_meat/fat = 1,
+	)
+	resulting_item = /obj/item/soap/rimworld
+	crafting_time = 5 SECONDS
+	relevant_skill = /datum/skill/rimworld_cooking
+	relevant_skill_reward = SKILL_EXP_GRANT_LITTLE
 
 /datum/rimworld_recipe/stone_knife
 	recipe_name = "Stone Knife"
