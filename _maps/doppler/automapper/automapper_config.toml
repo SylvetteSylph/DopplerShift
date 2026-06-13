@@ -18,6 +18,14 @@ required_map = "builtin"
 coordinates = [3, 21, 1]
 trait_name = "CentCom"
 
+# Fourth Celestial Alignment Flag
+[templates.4ca_flag]
+map_files = ["4ca_flag.dmm"]
+directory = "_maps/doppler/automapper/templates/centcom/"
+required_map = "builtin"
+coordinates = [189, 76, 1]
+trait_name = "CentCom"
+
 
 # METASTATION MAP TEMPLATES
 # Metastation Cryo

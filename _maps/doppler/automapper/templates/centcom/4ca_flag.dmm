@@ -1,0 +1,576 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/effect/turf_decal/tile/yellow/opposingcorners,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"b" = (
+/obj/structure/table,
+/obj/item/paper_bin{
+	pixel_y = 7;
+	pixel_x = -4
+	},
+/obj/item/pen{
+	pixel_x = -5;
+	pixel_y = 9
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"c" = (
+/obj/item/kirbyplants/organic/plant22,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/yellow{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"e" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/yellow/corner{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"f" = (
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"g" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"h" = (
+/obj/structure/chair,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/status_display/evac/directional/north,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"i" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"j" = (
+/obj/effect/turf_decal/tile/yellow/half/contrasted{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"k" = (
+/obj/effect/turf_decal/tile/yellow/opposingcorners{
+	dir = 1
+	},
+/obj/machinery/light/floor,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"o" = (
+/obj/effect/turf_decal/tile/yellow/opposingcorners{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"p" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/yellow{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"q" = (
+/obj/effect/turf_decal/tile/yellow/half/contrasted{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"r" = (
+/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/machinery/light/floor,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"s" = (
+/obj/effect/turf_decal/tile/yellow/anticorner/contrasted,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"t" = (
+/obj/structure/chair,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"u" = (
+/obj/item/kirbyplants/organic/plant21,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/yellow/corner,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"v" = (
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"w" = (
+/obj/structure/table,
+/obj/item/toy/katana{
+	pixel_y = 8
+	},
+/obj/item/toy/plush/carpplushie,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"x" = (
+/obj/effect/turf_decal/tile/yellow,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"y" = (
+/obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"z" = (
+/obj/structure/chair{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/status_display/evac/directional/south,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"A" = (
+/obj/effect/turf_decal/delivery,
+/obj/machinery/light/floor,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"B" = (
+/obj/structure/chair{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/yellow{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"C" = (
+/obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"E" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"F" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"G" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/yellow/corner{
+	dir = 4
+	},
+/obj/item/kirbyplants/organic/plant21,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"H" = (
+/obj/effect/turf_decal/siding/yellow{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"I" = (
+/obj/effect/turf_decal/siding/yellow,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"J" = (
+/obj/machinery/light/floor,
+/obj/effect/turf_decal/tile/yellow/fourcorners,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"K" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/structure/closet/crate/bin,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"L" = (
+/obj/structure/chair{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/light/directional/west,
+/obj/effect/turf_decal/siding/yellow{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"M" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/yellow/corner{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"N" = (
+/obj/item/kirbyplants/organic/plant21,
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"O" = (
+/obj/effect/turf_decal/tile/yellow/half/contrasted{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"P" = (
+/obj/structure/table,
+/obj/item/toy/sword{
+	pixel_y = 8;
+	pixel_x = 14
+	},
+/obj/item/gun/ballistic/shotgun/toy/crossbow{
+	pixel_y = 11;
+	pixel_x = -2
+	},
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"Q" = (
+/obj/structure/chair{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"R" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/yellow{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"S" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"T" = (
+/obj/structure/chair{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/status_display/evac/directional/west,
+/obj/effect/turf_decal/siding/yellow{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"U" = (
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"V" = (
+/obj/effect/turf_decal/tile/yellow/fourcorners,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"W" = (
+/obj/structure/chair,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/light/directional/north,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"X" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"Y" = (
+/obj/structure/chair{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/light/directional/south,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"Z" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+
+(1,1,1) = {"
+E
+u
+B
+L
+T
+R
+c
+R
+T
+L
+B
+G
+X
+"}
+(2,1,1) = {"
+F
+I
+V
+V
+V
+V
+y
+V
+V
+V
+V
+H
+U
+"}
+(3,1,1) = {"
+b
+I
+V
+r
+V
+V
+Z
+C
+V
+r
+V
+H
+P
+"}
+(4,1,1) = {"
+h
+I
+V
+V
+V
+q
+f
+x
+s
+V
+V
+H
+z
+"}
+(5,1,1) = {"
+t
+I
+V
+V
+V
+V
+j
+V
+V
+V
+V
+H
+Q
+"}
+(6,1,1) = {"
+t
+I
+V
+y
+S
+V
+V
+V
+V
+V
+V
+H
+Q
+"}
+(7,1,1) = {"
+F
+I
+V
+V
+s
+V
+V
+V
+V
+O
+q
+H
+U
+"}
+(8,1,1) = {"
+F
+I
+V
+V
+V
+V
+J
+O
+q
+O
+q
+H
+N
+"}
+(9,1,1) = {"
+F
+I
+V
+V
+V
+y
+a
+O
+q
+O
+q
+H
+U
+"}
+(10,1,1) = {"
+t
+I
+V
+y
+a
+o
+a
+O
+q
+O
+q
+H
+Q
+"}
+(11,1,1) = {"
+W
+I
+a
+o
+a
+o
+a
+O
+q
+V
+V
+H
+Y
+"}
+(12,1,1) = {"
+h
+I
+a
+o
+a
+o
+a
+V
+V
+V
+V
+H
+z
+"}
+(13,1,1) = {"
+w
+I
+a
+k
+a
+s
+V
+V
+V
+r
+V
+H
+K
+"}
+(14,1,1) = {"
+F
+I
+a
+s
+V
+V
+V
+V
+V
+V
+V
+H
+U
+"}
+(15,1,1) = {"
+g
+M
+p
+p
+p
+p
+p
+p
+p
+p
+p
+e
+i
+"}
+(16,1,1) = {"
+v
+A
+v
+v
+v
+v
+A
+v
+v
+v
+v
+A
+v
+"}
