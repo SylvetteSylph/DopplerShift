@@ -7951,7 +7951,6 @@
 #include "modular_doppler\vehicles\motorcycle.dm"
 #include "modular_doppler\vehicles\wheelchair.dm"
 #include "modular_doppler\verbs\code\communication.dm"
-#include "modular_doppler\verbs\code\do_checks.dm"
 #include "modular_doppler\verbs\code\do_verbs.dm"
 #include "modular_doppler\verbs\code\log_category_game.dm"
 #include "modular_doppler\verbs\code\looc.dm"
