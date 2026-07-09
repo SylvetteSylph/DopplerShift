@@ -66,5 +66,5 @@
 	light_color = "#82fa8c"
 
 /datum/id_trim/job/bridge_assistant
-	department_color = COLOR_SERVICE_LIME
+	department_color = COLOR_SERVICE_PURPLE
 	subdepartment_color = COLOR_COMMAND_BLUE

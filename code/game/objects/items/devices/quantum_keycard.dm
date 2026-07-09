@@ -19,12 +19,12 @@
 	var/static/list/gags_coloring = list(
 		/area/station/maintenance = COLOR_ASSISTANT_GRAY,
 		/area/station/security = COLOR_SECURITY_RED,
-		/area/station/service = COLOR_SERVICE_LIME,
+		/area/station/service = COLOR_SERVICE_PURPLE, // DOPPLER SHIFT EDIT CHANGE, ORIGINAL: "COLOR_SERVICE_LIME"
 		/area/centcom = COLOR_CENTCOM_BLUE,  // how?
 		/area/station/command = COLOR_COMMAND_BLUE,
 		/area/station/ai_monitored = COLOR_COMMAND_BLUE,
-		/area/station/medical = COLOR_MEDICAL_BLUE,
-		/area/station/science = COLOR_SCIENCE_PINK,
+		/area/station/medical = COLOR_MEDICAL_GREEN, // DOPPLER SHIFT EDIT CHANGE, ORIGINAL: "COLOR_MEDICAL_BLUE"
+		/area/station/science = COLOR_SCIENCE_BLUE, // DOPPLER SHIFT EDIT CHANGE, ORIGINAL: "COLOR_SCIENCE_PINK"
 		/area/station/engineering = COLOR_ENGINEERING_ORANGE,
 		/area/station/cargo = COLOR_CARGO_BROWN,
 		/area/mine = COLOR_CARGO_BROWN
