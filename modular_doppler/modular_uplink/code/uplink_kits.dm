@@ -150,6 +150,16 @@
 	new /obj/item/clothing/head/helmet/rus_ushanka(src)
 	new /obj/item/storage/box/syndie_kit/poster_box(src)
 
+/obj/item/storage/box/syndicate/bundle/tiziran
+
+/obj/item/storage/box/syndicate/bundle/tiziran/PopulateContents()
+	new /obj/item/mod/control/pre_equipped/raider(src) // 10 TC
+	new /obj/item/gun/ballistic/bolt_thrower(src) // 10 TC
+	new /obj/item/melee/tizirian_sword/megachoppa(src) // 5 TC
+	new /obj/item/ammo_box/magazine/ammo_stack/bolt_slug/full(src) // 1 TC each
+	new /obj/item/ammo_box/magazine/ammo_stack/bolt_slug/full(src)
+	new /obj/item/tank/jetpack/oxygen/harness(src) // 1 TC, typically in the tiziran raider suit storage unit.
+
 /obj/item/storage/box/syndicate/bundle/bond
 
 /obj/item/storage/box/syndicate/bundle/bond/PopulateContents()

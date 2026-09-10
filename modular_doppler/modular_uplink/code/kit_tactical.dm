@@ -105,3 +105,11 @@
 	item = /obj/item/storage/box/syndicate/bundle/rev
 	cost = 20
 	purchasable_from = ~(UPLINK_ALL_SYNDIE_OPS | UPLINK_SPY)
+
+/datum/uplink_item/tackit/tiziran
+	name = "Tiziran Raider Equipment"
+	desc = "With a raider MODsuit, a bolt-thrower with two extra stacks of machined slugs, a great sword, and a jet harness, \
+		this is the standard set for the leader of any well-equipped Tiziran Raider group... or wanna-be copycats."
+	item = /obj/item/storage/box/syndicate/bundle/tiziran
+	cost = 20
+	purchasable_from = ~(UPLINK_ALL_SYNDIE_OPS | UPLINK_SPY)
