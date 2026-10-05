@@ -1,0 +1,4 @@
+author: "kannthus"
+delete-after: True
+changes:
+  - qol: "adds dopplers own headshot URL"
