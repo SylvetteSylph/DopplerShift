@@ -1,0 +1,6 @@
+author: "TheOneAndOnlyCreeperJoe"
+delete-after: True
+changes:
+  - rscdel: "Genemodded no longer lists any positive mutations, nor Stoner/Fiery Sweat"
+  - qol: "Genemodded sorts mutations alphabetically now"
+  - bugfix: "Genemodded has had several mutations removed that were causing CI/CD issues."
