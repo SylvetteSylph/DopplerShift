@@ -1,0 +1,4 @@
+author: "TheOneAndOnlyCreeperJoe"
+delete-after: True
+changes:
+  - server: "The blackbox now more in-depth tracks players spawning in with powers, alongside some side statistics such as species and assignment."
