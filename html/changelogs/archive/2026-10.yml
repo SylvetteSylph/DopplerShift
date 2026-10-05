@@ -3,3 +3,14 @@
   - rscadd: There's now an LOOC roll dice verb. Defaults to 1d20, allows input for
       other dice-sizes. Behaves as LOOC does, but looks slightly different to verify
       its authenticity.
+2026-10-05:
+  desertmote:
+  - image: Updates protogen head according to feedback
+  kittysmooch:
+  - bugfix: 'all security undersuits are rollable
+
+      :cl:'
+  - rscdel: Local ordinances have banned the production of laser scatter shells.
+  - balance: 'platillo gauntlets are suddenly too big for trigger guards
+
+      :cl:'
