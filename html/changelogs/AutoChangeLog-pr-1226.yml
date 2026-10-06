@@ -1,9 +1,0 @@
-author: "TheOneAndOnlyCreeperJoe"
-delete-after: True
-changes:
-  - rscadd: "Riftwalker now has variant-rifts with unique spawning behavior, e.g you can now find them in maintenance and more commonly around teleportation-structures!"
-  - rscadd: "Science can now print rift goggles, which let them see riftwalker rifts and use equipment on it (though not go through rifts)."
-  - balance: "Riftwalker no longer is affected by dispelling and anti-magic. Instead, it is disabled as anomalies are. Just like anomalies, it can drop a bluespace anomaly core (chance-based)."
-  - balance: "Riftwalker spawns 2 extra pairs of rifts per round to offset the new diversity."
-  - image: "Riftwalker has new sprites!"
-  - sound: "Adds a new sound to one of the rarer rift variants."
