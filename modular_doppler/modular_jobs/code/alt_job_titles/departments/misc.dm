@@ -29,7 +29,6 @@
 		"Colonist",
 		"Civilian",
 		"Visitor",
-		"Contractor",
 		"Freelancer",
 		"Businessperson",
 		"Artist",
