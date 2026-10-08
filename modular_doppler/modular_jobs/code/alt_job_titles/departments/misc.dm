@@ -26,7 +26,6 @@
 /datum/job/assistant
 	alt_titles = list(
 		JOB_OFF_DUTY,
-		"Off-Duty Staff",
 		"Colonist",
 		"Civilian",
 		"Visitor",
