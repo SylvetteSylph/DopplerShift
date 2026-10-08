@@ -6,7 +6,6 @@
 	name = "colonist's formal uniform"
 	desc = "A colonist's formal-wear. For colonist weddings, and the like."
 
-
 /**
  * SPECIAL ITEMS
  */
