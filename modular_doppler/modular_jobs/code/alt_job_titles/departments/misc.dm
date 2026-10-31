@@ -36,6 +36,16 @@
 		"Entertainer",
 	)
 
+/datum/job/roustabout
+	alt_titles = list(
+		JOB_ROUSTABOUT,
+		"Stevedore",
+		"Deckhand",
+		"Contractor",
+		"Roughneck",
+		"Laborer",
+	)
+
 /datum/job/ai
 	alt_titles = list(
 		JOB_AI,
